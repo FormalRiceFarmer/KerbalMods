@@ -1,4 +1,4 @@
-patchedNodeCount = 525
+patchedNodeCount = 532
 catEatenCount = 0
 UrlConfig
 {
@@ -3152,6 +3152,14 @@ UrlConfig
 			WarpPlugin/thermal_click
 			{
 				compress = false
+				mipmaps = false
+				scale = 1
+				max_size = 0
+				make_not_readable = false
+			}
+			SCANsat/Icons/.*
+			{
+				compress = true
 				mipmaps = false
 				scale = 1
 				max_size = 0
@@ -12931,6 +12939,13 @@ UrlConfig
 		{
 			name = ModuleHighDefCamera
 		}
+		MODULE
+		{
+			name = SCANhiDefCamera
+			minZoom = 8
+			maxZoom = 20
+			hiDetailOnly = False
+		}
 	}
 }
 UrlConfig
@@ -13061,6 +13076,13 @@ UrlConfig
 		{
 			name = ModuleAnalysisResource
 			resourceName = MetalOre
+		}
+		MODULE
+		{
+			name = SCANhiDefCamera
+			minZoom = 8
+			maxZoom = 20
+			hiDetailOnly = False
 		}
 	}
 }
@@ -30842,6 +30864,104 @@ UrlConfig
 }
 UrlConfig
 {
+	name = QuantumStrut
+	type = PART
+	parentUrl = QuantumStrutsContinued/Parts/QuantumStruts/quantumStrut/part
+	url = QuantumStrutsContinued/Parts/QuantumStruts/quantumStrut/part/QuantumStrut
+	PART
+	{
+		name = QuantumStrut
+		module = Part
+		author = BoJaN
+		rescaleFactor = 0.6
+		node_attach = 0.0, 0.0 , 0.0, 0.0, -1.0, 0.0
+		TechRequired = advScienceTech
+		cost = 1500
+		category = Structural
+		subcategory = 0
+		title = Quantum Strut
+		manufacturer = Bojantek Corporation
+		description = Highly experimental quantum struts harness a form of quantum locking to add support for docked vessels.
+		attachRules = 0,1,0,1,1
+		mass = 0.05
+		dragModelType = default
+		maximum_drag = 0.01
+		minimum_drag = 0.01
+		angularDrag = 0.1
+		crashTolerance = 50
+		breakingForce = 50
+		breakingTorque = 50
+		maxTemp = 3400
+		MODEL
+		{
+			model = Squad/Parts/Utility/linearRCS/model
+		}
+		MODULE
+		{
+			name = QuantumStrut
+			IsEnabled = true
+			PowerConsumption = 0.01
+			Material = Particles/Additive
+			StartColor = 57, 146, 181
+			EndColor = 11, 29, 36
+			StartSize = 0.03
+			EndSize = 0.0025
+			Start = 0,0,0
+			Dir = 0,1,0
+		}
+	}
+}
+UrlConfig
+{
+	name = StrutGun
+	type = PART
+	parentUrl = QuantumStrutsContinued/Parts/QuantumStruts/strutGun/part
+	url = QuantumStrutsContinued/Parts/QuantumStruts/strutGun/part/StrutGun
+	PART
+	{
+		name = StrutGun
+		module = Part
+		author = BoJaN
+		rescaleFactor = 0.6
+		node_attach = 0.0, 0.0 , 0.0, 0.0, -1.0, 0.0
+		TechRequired = advScienceTech
+		cost = 500
+		category = Structural
+		subcategory = 0
+		title = Strut Gun
+		manufacturer = Bojantek Corporation
+		description = A radial strut gun for attaching and detatching struts when needed
+		attachRules = 0,1,0,1,1
+		mass = 0.05
+		dragModelType = default
+		maximum_drag = 0.01
+		minimum_drag = 0.01
+		angularDrag = 0.1
+		crashTolerance = 50
+		breakingForce = 50
+		breakingTorque = 50
+		maxTemp = 3400
+		MODEL
+		{
+			model = Squad/Parts/Utility/linearRCS/model
+		}
+		MODULE
+		{
+			name = QuantumStrut
+			IsEnabled = true
+			PowerConsumption = 0.01
+			Material = KSP/Sprite
+			StartColor = 50, 50, 50
+			EndColor = 50, 50, 50
+			StartSize = 0.03
+			EndSize = 0.03
+			Start = 0,0,0
+			Dir = 0,1,0
+		}
+	}
+}
+UrlConfig
+{
 	name = RemoteTechSettings
 	type = RemoteTechSettings
 	parentUrl = RemoteTech/RemoteTech_Settings
@@ -31422,6 +31542,2443 @@ UrlConfig
 		MODULE
 		{
 			name = ModuleSPUPassive
+		}
+	}
+}
+UrlConfig
+{
+	name = SCAN: Scientific Committee on Advanced Navigation
+	type = AGENT
+	parentUrl = SCANsat/Flags/Agents
+	url = SCANsat/Flags/Agents/SCAN: Scientific Committee on Advanced Navigation
+	AGENT
+	{
+		name = SCAN: Scientific Committee on Advanced Navigation
+		description = The SCAN agency is dedicated to mapping and surveying every planet in the solar system.
+		logoURL = SCANsat/Flags/SCANsat_Flag
+		logoScaledURL = SCANsat/Flags/SCANsat_Flag_Scaled
+		mentality = Scientific
+		mentality = Pioneer
+	}
+}
+UrlConfig
+{
+	name = SCANsat_Scanner32
+	type = PART
+	parentUrl = SCANsat/Parts/BTDT/BTDT
+	url = SCANsat/Parts/BTDT/BTDT/SCANsat_Scanner32
+	PART
+	{
+		name = SCANsat_Scanner32
+		module = Part
+		author = damny
+		attachRules = 0,1,0,0,0
+		node_attach = 0.0, 0.05, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = fieldScience
+		entryCost = 25000
+		cost = 13000
+		category = Science
+		subcategory = 0
+		title = SCAN Been There Done That®
+		manufacturer = SCAN: Scientific Committee on Advanced Navigation
+		description = This small sensor can automatically identify nearby anomalies. Since it only works over very short distances and at very low altitudes, it's primarily useful to track identified anomalies that have been visited.
+		mass = 0.03
+		dragModelType = default
+		angularDrag = 1
+		bulkheadProfiles = srf
+		crashTolerance = 12
+		maxTemp = 1200
+		emissiveConstant = 0.95
+		thermalMassModifier = 4.0
+		MODEL
+		{
+			model = SCANsat/Parts/BTDT/BTDT
+			scale = 0.5, 0.5, 0.5
+		}
+		MODULE
+		{
+			name = SCANsat
+			sensorType = 32
+			fov = 1
+			min_alt = 0
+			max_alt = 2000
+			best_alt = 0
+			power = 0.1
+			scanName = BTDT Scan
+		}
+	}
+}
+UrlConfig
+{
+	name = SCANsat_Tracker
+	type = PART
+	parentUrl = SCANsat/Parts/MapTraq/MapTraq
+	url = SCANsat/Parts/MapTraq/MapTraq/SCANsat_Tracker
+	PART
+	{
+		name = SCANsat_Tracker
+		module = Part
+		author = damny
+		scale = 1
+		rescaleFactor = 1
+		attachRules = 0,1,0,0,0
+		node_attach = 0.0, 0.05, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = Unresearcheable
+		entryCost = 0
+		cost = 2500
+		category = none
+		subcategory = 0
+		title = SCAN MapTraq®
+		manufacturer = SCAN: Scientific Committee on Advanced Navigation
+		description = Originally intended for the consumer market, this small device can communicate with a mapping satellite network and display a map and your position on it. Since nobody has actually built such a satellite network, these devices can currently be acquired very cheaply in bulk.
+		mass = 0.03
+		dragModelType = default
+		maximum_drag = 0.2
+		minimum_drag = 0.2
+		angularDrag = 2
+		crashTolerance = 7
+		maxTemp = 3600
+		MODEL
+		{
+			model = SCANsat/Parts/MapTraq/MapTraq
+			texture = SCANsat, SCANsat/Parts/BTDT/SCANsat
+			position = 0, 0, 0
+			rotation = 0, 0, 0
+			scale = 1, 1, 1
+		}
+		MODULE
+		{
+			name = SCANsat
+			sensorType = 0
+			fov = 0
+			min_alt = 0
+			max_alt = 0
+			best_alt = 0
+			power = 0.05
+			scanName = Eyeball Scan
+		}
+	}
+}
+UrlConfig
+{
+	name = SCANsat_Scanner24
+	type = PART
+	parentUrl = SCANsat/Parts/MULTI/MULTI
+	url = SCANsat/Parts/MULTI/MULTI/SCANsat_Scanner24
+	PART
+	{
+		name = SCANsat_Scanner24
+		module = Part
+		author = damny
+		attachRules = 0,1,0,0,0
+		node_attach = 0.0, -0.018, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = advExploration
+		entryCost = 20000
+		cost = 9000
+		category = Science
+		subcategory = 0
+		title = SCAN Multispectral Sensor
+		manufacturer = SCAN: Scientific Committee on Advanced Navigation
+		description = This multichannel sensor detects radiation across several infrared, visible light, and RADAR bands. This gives it the capability to differentiate between terrain types and biomes. It can also detect anomalies such as structures on the ground.
+		mass = 0.03
+		dragModelType = default
+		angularDrag = 2
+		bulkheadProfiles = srf
+		crashTolerance = 7
+		maxTemp = 1200
+		emissiveConstant = 0.95
+		thermalMassModifier = 4.0
+		MODEL
+		{
+			model = SCANsat/Parts/MULTI/MULTI
+			scale = 0.2, 0.2, 0.2
+		}
+		MODULE
+		{
+			name = SCANsat
+			sensorType = 24
+			fov = 4
+			min_alt = 5000
+			max_alt = 500000
+			best_alt = 250000
+			power = 1
+			scanName = Multispectral Scan
+			animationName = Multi_Antenna
+		}
+	}
+}
+UrlConfig
+{
+	name = SCANsat_Scanner
+	type = PART
+	parentUrl = SCANsat/Parts/RADAR/RADAR
+	url = SCANsat/Parts/RADAR/RADAR/SCANsat_Scanner
+	PART
+	{
+		name = SCANsat_Scanner
+		module = Part
+		author = damny
+		attachRules = 0,1,0,0,0
+		node_attach = 0.0, -0.11, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = basicScience
+		entryCost = 10000
+		cost = 3500
+		category = Science
+		subcategory = 0
+		title = SCAN RADAR Altimetry Sensor
+		manufacturer = SCAN: Scientific Committee on Advanced Navigation
+		description = SCAN brings you this high performance RADAR altimetry sensor. This is the entry-level model in this sensor family, and commonly sold in a bundle with toy rockets and remote-controlled model planes. After focus group testing revealed that 95% of the target audience tried to duct tape it to the exhaust pipe of their rocket engines, this new and improved model has been made even easier to use.
+		mass = 0.03
+		dragModelType = default
+		angularDrag = 2
+		bulkheadProfiles = srf
+		crashTolerance = 7
+		maxTemp = 1200
+		emissiveConstant = 0.95
+		thermalMassModifier = 4.0
+		MODEL
+		{
+			model = SCANsat/Parts/RADAR/RADAR
+			scale = 2, 2, 2
+		}
+		MODULE
+		{
+			name = SCANsat
+			sensorType = 1
+			fov = 5
+			min_alt = 5000
+			max_alt = 500000
+			best_alt = 5000
+			scanName = RADAR Scan
+			power = 0.1
+			animationName = Collapse_Antenna
+		}
+	}
+}
+UrlConfig
+{
+	name = SCANsat_Scanner2
+	type = PART
+	parentUrl = SCANsat/Parts/SAR/SAR
+	url = SCANsat/Parts/SAR/SAR/SCANsat_Scanner2
+	PART
+	{
+		name = SCANsat_Scanner2
+		module = Part
+		author = damny
+		attachRules = 0,1,0,0,0
+		node_attach = 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0
+		TechRequired = advScienceTech
+		entryCost = 45000
+		cost = 25000
+		category = Science
+		subcategory = 0
+		title = SCAN SAR Altimetry Sensor
+		manufacturer = SCAN: Scientific Committee on Advanced Navigation
+		description = This Synthetic Aperture RADAR sensor uses its flight path to simulate a much larger antenna. This makes it possible to detect terrain elevation at much higher resolution. The downside is that its field of view is comparatively small, and it works better at higher altitudes.
+		mass = 0.03
+		dragModelType = default
+		angularDrag = 2
+		bulkheadProfiles = srf
+		crashTolerance = 7
+		maxTemp = 1200
+		emissiveConstant = 0.95
+		thermalMassModifier = 4.0
+		MODEL
+		{
+			model = SCANsat/Parts/SAR/SAR
+			scale = 1.5, 1.5, 1.5
+		}
+		MODULE
+		{
+			name = SCANsat
+			sensorType = 2
+			fov = 2
+			min_alt = 5000
+			max_alt = 800000
+			best_alt = 750000
+			power = 1.5
+			scanName = SAR Scan
+			animationName = Antenna
+		}
+	}
+}
+UrlConfig
+{
+	name = ACTIVE_TEXTURE_MANAGER_CONFIG
+	type = ACTIVE_TEXTURE_MANAGER_CONFIG
+	parentUrl = SCANsat/Resources/SCANatm
+	url = SCANsat/Resources/SCANatm/ACTIVE_TEXTURE_MANAGER_CONFIG
+	ACTIVE_TEXTURE_MANAGER_CONFIG
+	{
+		folder = SCANsat
+		enabled = true
+		OVERRIDES
+		{
+			SCANsat/Icons/.*
+			{
+				compress = true
+				mipmaps = false
+				scale = 1
+				max_size = 0
+				make_not_readable = false
+			}
+		}
+	}
+}
+UrlConfig
+{
+	name = SCAN_Color_Config
+	type = SCAN_Color_Config
+	parentUrl = SCANsat/Resources/SCANcolors
+	url = SCANsat/Resources/SCANcolors/SCAN_Color_Config
+	SCAN_Color_Config
+	{
+		defaultMinHeightRange = -1000
+		defaultMaxHeightRange = 8000
+		rangeAboveMaxHeight = 10000
+		rangeBelowMinHeight = 10000
+		defaultPalette = Default
+		lowBiomeColor = 0,0.46,0.02345098,1
+		highBiomeColor = 0.7,0.2388235,0,1
+		biomeTransparency = 25
+		stockBiomeMap = False
+		bottomLowSlopeColor = 0.004705883,0.6,0.3788235,1
+		bottemHighSlopeColor = 0.9764706,1,0.4627451,1
+		topLowSlopeColor = 0.9764706,1,0.4627451,1
+		topHighSlopeColor = 0.94,0.2727843,0.007372549,1
+		SCANsat_Altimetry
+		{
+			Item
+			{
+				name = Kerbin
+				index = 1
+				minHeightRange = -1500
+				maxHeightRange = 6500
+				clampHeight = 0
+				paletteName = Default
+				paletteSize = 7
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Sun
+				index = 0
+				minHeightRange = 0
+				maxHeightRange = 1000
+				clampHeight = Null
+				paletteName = Default
+				paletteSize = 7
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Mun
+				index = 2
+				minHeightRange = -500
+				maxHeightRange = 7000
+				clampHeight = Null
+				paletteName = RdGy
+				paletteSize = 11
+				paletteReverse = True
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Minmus
+				index = 3
+				minHeightRange = -500
+				maxHeightRange = 5500
+				clampHeight = Null
+				paletteName = Paired
+				paletteSize = 9
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Moho
+				index = 4
+				minHeightRange = 0
+				maxHeightRange = 6500
+				clampHeight = Null
+				paletteName = PuBuGn
+				paletteSize = 6
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Eve
+				index = 5
+				minHeightRange = -2000
+				maxHeightRange = 7000
+				clampHeight = 0
+				paletteName = BuPu
+				paletteSize = 7
+				paletteReverse = True
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Duna
+				index = 6
+				minHeightRange = 0
+				maxHeightRange = 7500
+				clampHeight = Null
+				paletteName = BuGn
+				paletteSize = 9
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Ike
+				index = 7
+				minHeightRange = 0
+				maxHeightRange = 12000
+				clampHeight = Null
+				paletteName = BrBG
+				paletteSize = 8
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Jool
+				index = 8
+				minHeightRange = 0
+				maxHeightRange = 1000
+				clampHeight = Null
+				paletteName = Default
+				paletteSize = 7
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Laythe
+				index = 9
+				minHeightRange = -3000
+				maxHeightRange = 6000
+				clampHeight = 0
+				paletteName = YlGnBu
+				paletteSize = 8
+				paletteReverse = True
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Vall
+				index = 10
+				minHeightRange = -500
+				maxHeightRange = 7500
+				clampHeight = Null
+				paletteName = Set1
+				paletteSize = 9
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Bop
+				index = 11
+				minHeightRange = 2000
+				maxHeightRange = 21500
+				clampHeight = Null
+				paletteName = PuOr
+				paletteSize = 7
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Tylo
+				index = 12
+				minHeightRange = -500
+				maxHeightRange = 11000
+				clampHeight = Null
+				paletteName = Set3
+				paletteSize = 8
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Gilly
+				index = 13
+				minHeightRange = 1500
+				maxHeightRange = 6000
+				clampHeight = Null
+				paletteName = Accent
+				paletteSize = 7
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Pol
+				index = 14
+				minHeightRange = 500
+				maxHeightRange = 5500
+				clampHeight = Null
+				paletteName = Spectral
+				paletteSize = 8
+				paletteReverse = True
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Dres
+				index = 15
+				minHeightRange = 0
+				maxHeightRange = 5500
+				clampHeight = Null
+				paletteName = Pastel1
+				paletteSize = 9
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+			Item
+			{
+				name = Eeloo
+				index = 16
+				minHeightRange = -500
+				maxHeightRange = 3500
+				clampHeight = Null
+				paletteName = RdYlGn
+				paletteSize = 10
+				paletteReverse = False
+				paletteDiscrete = False
+			}
+		}
+		SCANsat_Resources
+		{
+			Item
+			{
+				name = Ore
+				lowResourceColor = 0.2414545,0.1207273,0.83,1
+				highResourceColor = 0.7888628,0,0.94,1
+				resourceTransparency = 20
+				defaultMinValue = 1
+				defaultMaxValue = 15
+				Resource_Planetary_Config
+				{
+					Item
+					{
+						resourceName = Ore
+						bodyName = Sun
+						index = 0
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Kerbin
+						index = 1
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Mun
+						index = 2
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Minmus
+						index = 3
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Moho
+						index = 4
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Eve
+						index = 5
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Duna
+						index = 6
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Ike
+						index = 7
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Jool
+						index = 8
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Laythe
+						index = 9
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Vall
+						index = 10
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Bop
+						index = 11
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Tylo
+						index = 12
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Gilly
+						index = 13
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Pol
+						index = 14
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Dres
+						index = 15
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+					Item
+					{
+						resourceName = Ore
+						bodyName = Eeloo
+						index = 16
+						lowResourceCutoff = 1
+						highResourceCutoff = 7.5
+					}
+				}
+			}
+			Item
+			{
+				name = Karbonite
+				lowResourceColor = 0,0.3192157,0.74,1
+				highResourceColor = 0.75,0.3823529,0,1
+				resourceTransparency = 20
+				defaultMinValue = 1
+				defaultMaxValue = 10
+				Resource_Planetary_Config
+				{
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Sun
+						index = 0
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Kerbin
+						index = 1
+						lowResourceCutoff = 1.8
+						highResourceCutoff = 2.2
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Mun
+						index = 2
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Minmus
+						index = 3
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Moho
+						index = 4
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Eve
+						index = 5
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Duna
+						index = 6
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Ike
+						index = 7
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Jool
+						index = 8
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Laythe
+						index = 9
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Vall
+						index = 10
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Bop
+						index = 11
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Tylo
+						index = 12
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Gilly
+						index = 13
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Pol
+						index = 14
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Dres
+						index = 15
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Karbonite
+						bodyName = Eeloo
+						index = 16
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+				}
+			}
+			Item
+			{
+				name = Minerals
+				lowResourceColor = 0.4762353,0.04329412,0.92,1
+				highResourceColor = 0,0.576471,0.07451,1
+				resourceTransparency = 20
+				defaultMinValue = 1
+				defaultMaxValue = 10
+				Resource_Planetary_Config
+				{
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Sun
+						index = 0
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Kerbin
+						index = 1
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Mun
+						index = 2
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Minmus
+						index = 3
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Moho
+						index = 4
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Eve
+						index = 5
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Duna
+						index = 6
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Ike
+						index = 7
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Jool
+						index = 8
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Laythe
+						index = 9
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Vall
+						index = 10
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Bop
+						index = 11
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Tylo
+						index = 12
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Gilly
+						index = 13
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Pol
+						index = 14
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Dres
+						index = 15
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Minerals
+						bodyName = Eeloo
+						index = 16
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+				}
+			}
+			Item
+			{
+				name = Substrate
+				lowResourceColor = 0.6418824,0.01380392,0.88,1
+				highResourceColor = 0.7428235,0.82,0,1
+				resourceTransparency = 20
+				defaultMinValue = 1
+				defaultMaxValue = 10
+				Resource_Planetary_Config
+				{
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Sun
+						index = 0
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Kerbin
+						index = 1
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Mun
+						index = 2
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Minmus
+						index = 3
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Moho
+						index = 4
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Eve
+						index = 5
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Duna
+						index = 6
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Ike
+						index = 7
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Jool
+						index = 8
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Laythe
+						index = 9
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Vall
+						index = 10
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Bop
+						index = 11
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Tylo
+						index = 12
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Gilly
+						index = 13
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Pol
+						index = 14
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Dres
+						index = 15
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Substrate
+						bodyName = Eeloo
+						index = 16
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+				}
+			}
+			Item
+			{
+				name = Uraninite
+				lowResourceColor = 0,0.839216,0.760784,1
+				highResourceColor = 1,0.2352941,0.03137255,1
+				resourceTransparency = 20
+				defaultMinValue = 1
+				defaultMaxValue = 10
+				Resource_Planetary_Config
+				{
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Sun
+						index = 0
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Kerbin
+						index = 1
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Mun
+						index = 2
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Minmus
+						index = 3
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Moho
+						index = 4
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Eve
+						index = 5
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Duna
+						index = 6
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Ike
+						index = 7
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Jool
+						index = 8
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Laythe
+						index = 9
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Vall
+						index = 10
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Bop
+						index = 11
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Tylo
+						index = 12
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Gilly
+						index = 13
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Pol
+						index = 14
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Dres
+						index = 15
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Uraninite
+						bodyName = Eeloo
+						index = 16
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+				}
+			}
+			Item
+			{
+				name = Water
+				lowResourceColor = 0.76,0,0.5722353,1
+				highResourceColor = 0,0.5687844,0.98,1
+				resourceTransparency = 20
+				defaultMinValue = 1
+				defaultMaxValue = 10
+				Resource_Planetary_Config
+				{
+					Item
+					{
+						resourceName = Water
+						bodyName = Sun
+						index = 0
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Kerbin
+						index = 1
+						lowResourceCutoff = 5
+						highResourceCutoff = 45
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Mun
+						index = 2
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Minmus
+						index = 3
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Moho
+						index = 4
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Eve
+						index = 5
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Duna
+						index = 6
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Ike
+						index = 7
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Jool
+						index = 8
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Laythe
+						index = 9
+						lowResourceCutoff = 5
+						highResourceCutoff = 40
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Vall
+						index = 10
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Bop
+						index = 11
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Tylo
+						index = 12
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Gilly
+						index = 13
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Pol
+						index = 14
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Dres
+						index = 15
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = Water
+						bodyName = Eeloo
+						index = 16
+						lowResourceCutoff = 0.5
+						highResourceCutoff = 6.5
+					}
+				}
+			}
+			Item
+			{
+				name = MetallicOre
+				lowResourceColor = 1,0,1,1
+				highResourceColor = 0.9,0.6,0,1
+				resourceTransparency = 20
+				defaultMinValue = 1
+				defaultMaxValue = 10
+				Resource_Planetary_Config
+				{
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Jool
+						index = 8
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Kerbin
+						index = 1
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Sun
+						index = 0
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Mun
+						index = 2
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Minmus
+						index = 3
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Moho
+						index = 4
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Eve
+						index = 5
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Duna
+						index = 6
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Ike
+						index = 7
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Laythe
+						index = 9
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Vall
+						index = 10
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Bop
+						index = 11
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Tylo
+						index = 12
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Gilly
+						index = 13
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Pol
+						index = 14
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Dres
+						index = 15
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+					Item
+					{
+						resourceName = MetallicOre
+						bodyName = Eeloo
+						index = 16
+						lowResourceCutoff = 1
+						highResourceCutoff = 6.5
+					}
+				}
+			}
+			Item
+			{
+				name = He-3
+				lowResourceColor = 0,0.5490196,1,1
+				highResourceColor = 0.3670588,0.9,0,1
+				resourceTransparency = 20
+				defaultMinValue = 0
+				defaultMaxValue = 5
+				Resource_Planetary_Config
+				{
+					Item
+					{
+						resourceName = He-3
+						bodyName = Sun
+						index = 0
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Kerbin
+						index = 1
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Mun
+						index = 2
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Minmus
+						index = 3
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Moho
+						index = 4
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Eve
+						index = 5
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Duna
+						index = 6
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Ike
+						index = 7
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Jool
+						index = 8
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Laythe
+						index = 9
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Vall
+						index = 10
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Bop
+						index = 11
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Tylo
+						index = 12
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Gilly
+						index = 13
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Pol
+						index = 14
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Dres
+						index = 15
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+					Item
+					{
+						resourceName = He-3
+						bodyName = Eeloo
+						index = 16
+						lowResourceCutoff = 0
+						highResourceCutoff = 5
+					}
+				}
+			}
+		}
+	}
+}
+UrlConfig
+{
+	name = SCAN_Localization
+	type = SCAN_Localization
+	parentUrl = SCANsat/Resources/SCANlocalization
+	url = SCANsat/Resources/SCANlocalization/SCAN_Localization
+	SCAN_Localization
+	{
+		Language_Packs
+		{
+			Item
+			{
+				activePack = True
+				language = English (USA)
+				settingsHelpAnomalies = Select the marker used to display anomalies on the map.
+				settingsHelpBackground = Toggle background scanning on some or all celestial bodies.
+				settingsHelpTimeWarp = Adjust the scanning frequency during TimeWarp. Higher settings result in fewer gaps in the maps but may have a performance impact at high TimeWarp.
+				settingsHelpGroundTracks = Display a visible indicator of scanning activity in map mode.
+				settingsHelpGroundTracksActive = The ground track indicator can be limited to only be displayed for the active vessel.
+				settingsHelpOverlayTooltips = Displays tooltips for the current mouse position when a planetary overlay map is activated. These tooltips include The cursor coordinates, terrain height, slope, biome name, and resource abundance, depending on scanning coverage.
+				settingsHelpWindowTooltips = Display tooltips on some map window buttons. These are primarily used to identify icon buttons.
+				settingsHelpStockToolbar = Use the stock toolbar. Only one stock button is available. Can be used concurrently with the Blizzy78 Toolbar.
+				settingsHelpMechJeb = The SCANsat zoom map target selection mode can be used to select a MechJeb landing site.
+				settingsHelpResetWindows = Reset all window positions. Use this in case a window has been dragged completely off screen or if any windows are not visible.
+				settingsHelpResetPlanetData = Resets all SCANsat data for the current celestial body. A confirmation window will open before activating Cannot be reversed.
+				settingsHelpResetAllData = Resets all SCANsat data for all celestial bodies. A confirmation window will open before activating. Cannot be reversed.
+				settingsHelpVesselsSensorsPasses = Information about the currently active SCANsat sensors. Vessels indicates the number of vessels with active sensors. Sensors indicates the total number of sensors; instruments with multiple sensor types count each individual sensor. Passes indicates the number of sensor updates performed per second This value is affected by the TimeWarp Resolution setting.
+				resourceSettingsHelpOverlayWindow = Open the planetary overlay map control window.
+				resourceSettingsHelpBiomeLock = Circumvents the requirement for stock surface biome scans SCANsat displays will show the full accuracy for resource abundance with or without any surface biome scans.
+				resourceSettingsHelpInstant = By default, the stock M700 resource scanner's orbital survey will fill in all SCANsat resource maps this can be disabled, requiring standard SCANsat methods for all resource scanning Disabled automatically when stock resource scanning is disabled.
+				resourceSettingsHelpNarrowBand = Numerous SCANsat functions require a Narrow-Band resource scanner on-board the current vessel or in orbit of a celestial body for fully accurate resource abundance data. Disable this to circumvent these restrictions.
+				resourceSettingsHelpDisableStock = Disables all stock resource scanning functions SCANsat scanning methods will be required for all resource data. Replaces several stock resource functions with SCANsat tools. These include The right-click readouts, the high resolution narrow-band scanner map, and the planetary overlay maps.
+				resourceSettingsHelpResetSCANsatResource = Resets all SCANsat resource data for the current celestial body. Other SCANsat data is not affected. A confirmation window will open before activating. Cannot be reversed.
+				resourceSettingsHelpResetStockResource = Resets the stock resource scanning coverage for the current celestial body. A reload or scene change may be required for all changes to take effect. A confirmation window will open before activating. Cannot be reversed.
+				resourceSettingsHelpOverlayInterpolation = Change the number of resource abundance measurements used in constructing the planetary overlay and big map resource overlay. Decrease the value to increase the accuracy of the map Lower values will result in slower map generation.
+				resourceSettingsHelpOverlayHeight = Change the texture size (map width is 2XHeight) used in constructing the planetary overlay and big map resource overlay. Increase the value to increase the quality and accuracy of the map. Higher values will result in slower map generation.
+				resourceSettingsHelpOverlayBiomeHeight = Change the texture size (map width is 2XHeight) used in constructing the planetary overlay biome map. Increase the value to increase the quality and accuracy of the map. Higher values will result in slower map generation.
+				resourceSettingsHelpOverlayTransparency = Create a grey background for planetary overlay resource maps. Used to make clear which sections of the celestial body have been scanned but contain no resources.
+				colorTerrainHelpMin = Defines the low altitude cutoff for the terrain color palette. Anything below this altitude will be shown with the lowest color.
+				colorTerrainHelpMax = Defines the high altitude cutoff for the terrain color palette. Anything above this altitude will be shown with the highest color.
+				colorTerrainHelpClampToggle = Used to define a cutoff between the low and high altitude values. This is particularly useful for ocean planets where it helps to define a sharp distinction between land and ocean.
+				colorTerrainHelpClamp = Defines the clamp altitude cutoff. Anything below the cutoff will be represented by the first two colors in the selected color palette. Anything above the cutoff will be represented with the remaining colors.
+				colorTerrainHelpReverse = Reverses the order of the currently selected color palette.
+				colorTerrainHelpDiscrete = Draws the map using only the specific colors defined by each palette, instead of smoothly interpolating between them.
+				colorTerrainHelpPaletteSize = Adjust the number of colors available in the currently selected color palette.
+				colorBiomeHelpStock = Use the stock biome color scheme for SCANsat biome maps.
+				colorBiomeHelpWhiteBorder = Draw a white border between biomes. Does not apply to the planetary overlay biome maps.
+				colorBiomeHelpTransparency = Adjust the transparency of biome maps. Terrain elevation is shown behind the biome maps Set to 0% to disable terrain drawing.
+				colorPickerHelpLow = The top color swatch shows the updated color selection for the low end of this color spectrum. The bottom color swatch shows the currently active color.
+				colorPickerHelpHigh = The top color swatch shows the updated color selection for the high end of this color spectrum. The bottom color swatch shows the currently active color.
+				colorPickerHelpValue = This slider adjusts the Value (in HSV color terms) or. Brightness for the currently selected color.
+				colorResourceHelpFineControl = Activates Fine Control Mode where the sliders will only show values within 5% of the current selection.
+				colorResourceHelpMin = The low cutoff for resource concentration on the selected celestial body. Resource deposits at this level will be displayed using the low end of the current resource overlay color spectrum Resource deposits below this value will not be shown.
+				colorResourceHelpMax = The high cutoff for resource concentration on the selected celestial body. Resource deposits above this value will be shown using the high end of the current resource overlay color spectrum.
+				colorResourceHelpTransparency = Defines the level of transparency for resource overlays. Increase to allow more of the underlying terrain, slope, or biome map to be visible. This also affect the transparency of resource deposits on the planetary overlay resource map.
+				colorResourceHelpApply = Applies the current values for the selected resource and celestial body only.
+				colorResourceHelpApplyAll = Applies the current values for the selected resource for all celestial bodies.
+				colorResourceHelpDefault = Reverts to the default values for the selected resource and celestial body only.
+				colorResourceHelpDefaultAll = Reverts to the default values for the selected resource for all celestial bodies.
+				colorHelpSaveToConfig = Save all color configuration values to the config file found in your SCANsat/Resources folder These values serve as the defaults for new saves and for all. Revert To Default buttons Values do not need to be saved to the config file to be applied for this save file.
+			}
+		}
+	}
+}
+UrlConfig
+{
+	name = Kethane
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/Kethane
+	SCANSAT_SENSOR
+	{
+		name = Kethane
+		SCANtype = 64
+	}
+}
+UrlConfig
+{
+	name = MetallicOre
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/MetallicOre
+	SCANSAT_SENSOR
+	{
+		name = MetallicOre
+		SCANtype = 128
+	}
+}
+UrlConfig
+{
+	name = Ore
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/Ore
+	SCANSAT_SENSOR
+	{
+		name = Ore
+		SCANtype = 256
+	}
+}
+UrlConfig
+{
+	name = He-3
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/He-3
+	SCANSAT_SENSOR
+	{
+		name = He-3
+		SCANtype = 512
+	}
+}
+UrlConfig
+{
+	name = Uraninite
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/Uraninite
+	SCANSAT_SENSOR
+	{
+		name = Uraninite
+		SCANtype = 1024
+	}
+}
+UrlConfig
+{
+	name = Thorium
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/Thorium
+	SCANSAT_SENSOR
+	{
+		name = Thorium
+		SCANtype = 2048
+	}
+}
+UrlConfig
+{
+	name = Alumina
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/Alumina
+	SCANSAT_SENSOR
+	{
+		name = Alumina
+		SCANtype = 4096
+	}
+}
+UrlConfig
+{
+	name = Water
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/Water
+	SCANSAT_SENSOR
+	{
+		name = Water
+		SCANtype = 8192
+	}
+}
+UrlConfig
+{
+	name = Aquifer
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/Aquifer
+	SCANSAT_SENSOR
+	{
+		name = Aquifer
+		SCANtype = 16384
+	}
+}
+UrlConfig
+{
+	name = Minerals
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/Minerals
+	SCANSAT_SENSOR
+	{
+		name = Minerals
+		SCANtype = 32768
+	}
+}
+UrlConfig
+{
+	name = Substrate
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/Substrate
+	SCANSAT_SENSOR
+	{
+		name = Substrate
+		SCANtype = 65536
+	}
+}
+UrlConfig
+{
+	name = Karbonite
+	type = SCANSAT_SENSOR
+	parentUrl = SCANsat/Resources/SCANresource
+	url = SCANsat/Resources/SCANresource/Karbonite
+	SCANSAT_SENSOR
+	{
+		name = Karbonite
+		SCANtype = 262144
+	}
+}
+UrlConfig
+{
+	name = EXPERIMENT_DEFINITION
+	type = EXPERIMENT_DEFINITION
+	parentUrl = SCANsat/Resources/ScienceDefs
+	url = SCANsat/Resources/ScienceDefs/EXPERIMENT_DEFINITION
+	EXPERIMENT_DEFINITION
+	{
+		id = SCANsatAltimetryLoRes
+		title = Low Resolution Altimetry Scan
+		baseValue = 20
+		scienceCap = 20
+		dataScale = 2
+		requireAtmosphere = False
+		situationMask = 0
+		biomeMask = 0
+		RESULTS
+		{
+			default = Analyzed low resolution altimetry data.
+			default = "RADAR Altimetry Sensor is reporting in. I don't know how, but we have a strong signal and are getting data. This calls for a celebratory round of snacks!"
+			Sun = You wonder if the sensor is malfunctioning.
+			Moho = Well, at least this low resolution data makes Moho look kind of cool. Not quite giant lakes of lava, but still cool.
+			Eve = You contemplate the grainy, rough altitude estimates returned by the scanner and wish that you had sent the high resolution scanner instead. Oh well, it's a great reason to launch more rockets! (As if we really needed a reason anyway)
+			Gilly = Your low resolution scanning confirms what you already knew: Gilly is just a lumpy rock floating in space. At least you don't have to strain your eyes looking at the report.
+			Kerbin = Even this low resolution data of the planets surface is amazingly useful. You can't wait to deploy this technology on the Mun or beyond.
+			Mun = The data shows broad, sweeping strokes of the landscape below. A high resolution scan would be more helpful, but you can probably find a suitable landing site using this data.
+			Minmus = You grudgingly acknowledge that the guys over at the Kerbal Astronomical Society were right: Minmus really is a moon. You wouldn't have believed it if you hadn't seen the altimetry scan with your own eyes.
+			Duna = This low resolution data is a bit grainy and distorted, but it will still be invaluable in searching for a proper landing site on Duna. Suddenly a long-term Duna mission just became a real prospect.
+			Ike = As you pore over the data you are struck by how similar Ike appears to the Mun. You wonder about their comparative surface geology.
+			Dres = Even with the low resolution scanner it is quite apparent that Dres has some prominent mountains. You can't wait for the resource scan results because you're sure "there's gold in them their hills".
+			Jool = Altimetry, what altimetry? It's a gas giant for Kerbal's sake. Let's just pick a number at random and call it good.
+			Laythe = The sensor seems unable to penetrate the water.
+			Vall = Well, here it is: "The data you Vall been waiting for! Hahahahaha! Hahaha. Ha. Ha? What, SOMEONE has to find that funny."
+			Tylo = You're still not sure what the view from the surface with Laythe, Vall, and Jool overhead would be like, but this data will sure help you find a landing site so that you can find out.
+			Bop = Well, the low resolution altimetry data is in, and you decide to package it up and send it back to KSC. You just hope that there is enough juice left in the batteries to get it all sent and keep basic systems running at the same time.
+			Pol = The low resolution scan confirms that Pol does indeed look like a giant pollen grain. Until you upgrade to a high resolution scan, and advance the field of electron microscopy, you will still be left with the question of how strong this resemblance truly is.
+			Eeloo = The scientists back on Kerbin have been waiting for this data for a long time. No doubt there will be celebrations and snacks for all when it gets there.
+		}
+	}
+}
+UrlConfig
+{
+	name = EXPERIMENT_DEFINITION
+	type = EXPERIMENT_DEFINITION
+	parentUrl = SCANsat/Resources/ScienceDefs
+	url = SCANsat/Resources/ScienceDefs/EXPERIMENT_DEFINITION
+	EXPERIMENT_DEFINITION
+	{
+		id = SCANsatAltimetryHiRes
+		title = High Resolution Altimetry Scan
+		baseValue = 20
+		scienceCap = 20
+		dataScale = 3
+		requireAtmosphere = False
+		situationMask = 0
+		biomeMask = 0
+		RESULTS
+		{
+			default = Analyzed high resolution altimetry data.
+			default = "The High Resolution Altimetry Scan definitely is better then the low resolution one. SCAN has once again proven their scanning skills."
+			Sun = You realize that you could have saved some money if you had trusted the low resolution sensor in the first place.
+			Moho = Finally, the awesomeness has returned to Moho! It may not be giant flowing rivers of lava, but this data is spectacular!
+			Eve = The high resolution sensor cut through the hazy purple atmosphere well, and you are able to distinguish minute details on the surface. The scientists back at KSC will be relieved.
+			Gilly = Even in super-high resolution Gilly somehow seems to be in low resolution. That is one seriously lumpy surface.
+			Kerbin = You become mesmerised by all the colors in the data that the new high resolution technology provides. Suddenly Mission Control awakes you from your stupor, and you quickly wipe the drool from the corner of your mouth.
+			Mun = "Hah! No more boring grey moon. Just look at all the colors in that scan! Now we can really pinpoint a prime landing site."
+			Minmus = Wow, not only is Minmus real, it has some amazing topography! You can't wait to land in one of those flat areas.
+			Duna = This high resolution data is amazing. You begin analyzing the hills and valleys, searching for the perfect landing spot.
+			Ike = The data confirms the presence of large sloping hills and craters. Hopefully the analysts back at KSC can use this to find a suitable landing place.
+			Dres = Those... are some serious mountains. You are glad to be analysing this data, rather than trying to climb up some of those hills.
+			Jool = Even in high resolution there does not appear to be a surface on Jool. So much for that theory. At least we still have the grant money!
+			Laythe = The map shows mostly negative heights. You consider draining Laythe just so you can climb its mountains.
+			Vall = The data from the high resolution scanner confirms that the surface of Vall is, indeed, "crinkly". Guess Gene owes you fifty funds.
+			Tylo = Tylo may have been the first of Jool's moons to be discovered, but this data makes it feel like you are discovering the moon for the first time.
+			Bop = Wow, look at all those colors. You have no idea what all that data means, but you're sure that this high resolution data will impress everyone back at KSC.
+			Pol = Even with this amount of high-quality data it is still difficult to find a suitable landing site. How the heck was this moon made, anyway?
+			Eeloo = The cracks and fissures on the surface stand out in striking detail as you examine the data from the SAR Altimetry Sensor. Just look at all those potential landing sites.
+		}
+	}
+}
+UrlConfig
+{
+	name = EXPERIMENT_DEFINITION
+	type = EXPERIMENT_DEFINITION
+	parentUrl = SCANsat/Resources/ScienceDefs
+	url = SCANsat/Resources/ScienceDefs/EXPERIMENT_DEFINITION
+	EXPERIMENT_DEFINITION
+	{
+		id = SCANsatBiomeAnomaly
+		title = Multispectral Analysis
+		baseValue = 20
+		scienceCap = 20
+		dataScale = 4
+		requireAtmosphere = False
+		situationMask = 0
+		biomeMask = 0
+		RESULTS
+		{
+			default = Analyzed multispectral sensor data.
+			default = "Wow, how are we even receiving this data right now? Those SCAN engineers really know what they are doing. Either that or they have not the slightest idea what they are doing. Either way, it's time for some snacks!"
+			Sun = You are surprised by the lack of biometric data.
+			Sun = you wonder why there are no poles visible on the biome map.
+			Moho = As you pore through the data you wonder if you will find the elusive lava lake biome that so many scientists had speculated about.
+			Eve = The intricately swirled lines of Eve's biome map remind you of lava lamps and tie dyed shirts. Man those were the days. Next spacecraft to Eve will have a mandatory disco ball!
+			Gilly = Even with all that squinting those astronomers couldn't see the biomes here. Hah! Dumb astronomers! That's 1 point for science and 0 points for uhhhh... science.
+			Kerbin = This biome data is truly astounding. You just hope that it is crumb-resistant, as you remember eating a particularly messy box of snacks the day that the sensor was installed.
+			Mun = Huh, never knew the moon had biomes. Wonder which one the cheese is in. And if there are any other snacks there as well.
+			Minmus = You contemplate how fitting the name "Greater Flats" is as you pore over the data. Whoever thinks up these names is one smart Kerbal, unlike the engineers we have around here.
+			Duna = You comb through the biome data looking for just the right spot to gather all that sweet, sweet science data from. Mmmmm, science... and snacks.
+			Ike = As you pore over the data coming back from Ike you are surprised at the biome diversity. After all it's just a moon. You can't wait to get your hands on some of the scientific data locked up down there.
+			Dres = Poles, check. Highlands, check. Midlands, check. Lowlands, check. Ridges, check. Impact Ejecta, check. Impact Craters, check. Canyons, check. I think we got it all. Time to shut down the scanner and have some snacks!
+			Jool = You are surprised by the lack of biometric data.
+			Jool = you wonder why there are no poles visible on the biome map.
+			Laythe = You want to throw a party every time the sensor detects a land biome.
+			Vall = Pretty straightforward data: Poles, Highlands, Midlands, and Lowlands. That's a wrap. Now let's have some snacks!
+			Tylo = You are struck by the diversity of the biomes in the report. Not only is Tylo cool to look up from, it's cool to look down at too.
+			Bop = This detailed analysis of Bop's biomes will advance our understanding of the little moon beyond anything we could have hoped. It's been a great day. Snacks all around!
+			Pol = As you take in the biome data coming from Pol you begin to contemplate the possibility that pollen grains have biomes too. Then you quickly squash the thought, knowing what the activists would be like if they got a hold of that idea.
+			Eeloo = It is astounding to have such detailed biome data on a planet so far from Kerbin. You gaze in awe at the report as the data comes in.
+		}
+	}
+}
+UrlConfig
+{
+	name = SCAN_Biome
+	type = CONTRACT_TYPE
+	parentUrl = SCANsat/Resources/Contracts/Biome
+	url = SCANsat/Resources/Contracts/Biome/SCAN_Biome
+	CONTRACT_TYPE
+	{
+		name = SCAN_Biome
+		title = Do a Biome Scan of @/targetBody2
+		group = ScanSatOfficial
+		agent = SCAN: Scientific Committee on Advanced Navigation
+		topic = Science
+		subject = Kerbal
+		motivation = Scanning
+		notes = Scanning can take place while the vessel is not loaded.
+		synopsis = Perform a MultiSpectral scan of @/targetBody2
+		completedMessage = Stunning, through the advances with this scanner we have identified several different biomes for further study.
+		minExpiry = 1
+		maxExpiry = 7
+		deadline = Random(300, 500) * @/targetBody2.Multiplier()
+		cancellable = true
+		declinable = true
+		autoAccept = false
+		targetBody = @/targetBody2
+		rewardScience = 0
+		rewardReputation = 1
+		rewardFunds = Random(40000, 60000.0)
+		failureReputation = 1
+		failureFunds = Random(1000, 10000.0)
+		advanceFunds = Random(2000, 10000.0)
+		prestige = Trivial
+		prestige = Significant
+		DATA
+		{
+			type = CelestialBody
+			requiredValue = true
+			uniqueValue = true
+			targetBody2 = Prestige() == Trivial ? @ScanSatOfficial:p1Bodies.Random() : @ScanSatOfficial:p2Bodies.Random()
+		}
+		DATA
+		{
+			type = double
+			diffModifier2 = Prestige() == Trivial ? 0 : 10
+			scanRequired2 = 75 + @diffModifier2
+			minScan2 = 70 + @diffModifier2
+		}
+		PARAMETER
+		{
+			name = SCANsatCoverage
+			type = SCANsatCoverage
+			targetBody = @/targetBody2
+			coverage = @/scanRequired2
+			scanType = Biome
+		}
+		REQUIREMENT
+		{
+			name = SCANsatCoverage
+			type = SCANsatCoverage
+			targetBody = @/targetBody2
+			minCoverage = 0.0
+			maxCoverage = @/minScan2
+			scanType = Biome
+		}
+		REQUIREMENT
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = HomeWorld()
+		}
+		REQUIREMENT
+		{
+			name = PartUnlocked
+			type = PartUnlocked
+			part = SCANsat_Scanner24
+		}
+	}
+}
+UrlConfig
+{
+	name = ScanSatOfficial
+	type = CONTRACT_GROUP
+	parentUrl = SCANsat/Resources/Contracts/ContractPackScanSatOfficial
+	url = SCANsat/Resources/Contracts/ContractPackScanSatOfficial/ScanSatOfficial
+	CONTRACT_GROUP
+	{
+		name = ScanSatOfficial
+		minVersion = 1.7.0
+		maxSimultaneous = 3
+		DATA
+		{
+			type = List<CelestialBody>
+			p1Bodies = AllBodies().Where(cb => ((cb.IsHomeWorld() || cb.Parent().IsHomeWorld()) && cb.HasSurface()))
+			p2Bodies = OrbitedBodies().Where(cb => cb.HasSurface())
+			p3Bodies = ReachedBodies().Where(cb => cb.HasSurface() && cb != HomeWorld() && cb.Parent() != HomeWorld())
+		}
+	}
+}
+UrlConfig
+{
+	name = SCAN_HiRes
+	type = CONTRACT_TYPE
+	parentUrl = SCANsat/Resources/Contracts/HiRes
+	url = SCANsat/Resources/Contracts/HiRes/SCAN_HiRes
+	CONTRACT_TYPE
+	{
+		name = SCAN_HiRes
+		title = Do a High Resolution Scan of @/targetBody3
+		group = ScanSatOfficial
+		agent = SCAN: Scientific Committee on Advanced Navigation
+		topic = Science
+		subject = Kerbal
+		motivation = Scanning
+		notes = Scanning can take place while the vessel is not loaded.
+		synopsis = Perform a SAR scan of @/targetBody3
+		completedMessage = HD Imaging is a wonderful thing. We now have a detailed map of @/targetBody3
+		minExpiry = 1
+		maxExpiry = 7
+		deadline = Random(400, 600) * @/targetBody3.Multiplier()
+		cancellable = true
+		declinable = true
+		autoAccept = false
+		targetBody = @/targetBody3
+		rewardScience = 0
+		rewardReputation = 1
+		rewardFunds = Random(60000, 80000.0)
+		failureReputation = 1
+		failureFunds = Random(1000, 10000.0)
+		advanceFunds = Random(5000, 15000.0)
+		prestige = Significant
+		prestige = Exceptional
+		DATA
+		{
+			type = CelestialBody
+			requiredValue = true
+			uniqueValue = true
+			targetBody3 = Prestige() == Significant ? @ScanSatOfficial:p2Bodies.Random() : @ScanSatOfficial:p3Bodies.Random()
+		}
+		DATA
+		{
+			type = double
+			diffModifier3 = Prestige() == Significant ? 0 : 10
+			scanRequired3 = 85 + @diffModifier3
+			minScan3 = 80 + @diffModifier3
+		}
+		PARAMETER
+		{
+			name = SCANsatCoverage
+			type = SCANsatCoverage
+			targetBody = @/targetBody3
+			coverage = @/scanRequired3
+			scanType = AltimetryHiRes
+		}
+		REQUIREMENT
+		{
+			name = SCANsatCoverage
+			type = SCANsatCoverage
+			targetBody = @/targetBody3
+			minCoverage = 0.0
+			maxCoverage = @/minScan3
+			scanType = AltimetryHiRes
+		}
+		REQUIREMENT
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = HomeWorld()
+		}
+		REQUIREMENT
+		{
+			name = PartUnlocked
+			type = PartUnlocked
+			part = SCANsat_Scanner2
+		}
+	}
+}
+UrlConfig
+{
+	name = SCAN_LoRes
+	type = CONTRACT_TYPE
+	parentUrl = SCANsat/Resources/Contracts/LoRes
+	url = SCANsat/Resources/Contracts/LoRes/SCAN_LoRes
+	CONTRACT_TYPE
+	{
+		name = SCAN_LoRes
+		title = Do a Low Resolution Scan of @/targetBody1
+		group = ScanSatOfficial
+		topic = Science
+		subject = Kerbal
+		motivation = Scanning
+		agent = SCAN: Scientific Committee on Advanced Navigation
+		notes = Scanning can take place while the vessel is not loaded.
+		synopsis = Perform a RADAR scan of @/targetBody1
+		completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
+		minExpiry = 1
+		maxExpiry = 7
+		deadline = Random(300, 500) * @/targetBody1.Multiplier()
+		cancellable = true
+		declinable = true
+		autoAccept = false
+		targetBody = @/targetBody1
+		rewardScience = 0
+		rewardReputation = 1
+		rewardFunds = Random(40000, 60000.0)
+		failureReputation = 1
+		failureFunds = Random(1000, 10000.0)
+		advanceFunds = Random(2000, 10000.0)
+		prestige = Trivial
+		prestige = Significant
+		DATA
+		{
+			type = CelestialBody
+			requiredValue = true
+			uniqueValue = true
+			targetBody1 = Prestige() == Trivial ? @ScanSatOfficial:p1Bodies.Random() : @ScanSatOfficial:p2Bodies.Random()
+		}
+		DATA
+		{
+			type = double
+			diffModifier1 = Prestige() == Trivial ? 0 : 10
+			scanRequired1 = 75 + @diffModifier1
+			minScan1 = 70 + @diffModifier1
+		}
+		PARAMETER
+		{
+			name = SCANsatCoverage
+			type = SCANsatCoverage
+			targetBody = @/targetBody1
+			coverage = @/scanRequired1
+			scanType = AltimetryLoRes
+		}
+		REQUIREMENT
+		{
+			name = SCANsatCoverage
+			type = SCANsatCoverage
+			targetBody = @/targetBody1
+			minCoverage = 0.0
+			maxCoverage = @/minScan1
+			scanType = AltimetryLoRes
+		}
+		REQUIREMENT
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = HomeWorld()
+		}
+		REQUIREMENT
+		{
+			name = PartUnlocked
+			type = PartUnlocked
+			part = SCANsat_Scanner
+		}
+	}
+}
+UrlConfig
+{
+	name = SCAN_M700
+	type = CONTRACT_TYPE
+	parentUrl = SCANsat/Resources/Contracts/M700
+	url = SCANsat/Resources/Contracts/M700/SCAN_M700
+	CONTRACT_TYPE
+	{
+		name = SCAN_M700
+		title = Scan @/targetBody4 for resources
+		group = ScanSatOfficial
+		topic = Science
+		subject = Kerbal
+		motivation = Scanning
+		agent = SCAN: Scientific Committee on Advanced Navigation
+		notes = Scanning can take place while the vessel is not loaded.
+		synopsis = Scan @/targetBody4 with the M700 Scanner
+		completedMessage = Look at all those lovely resources. We'll have to get a survey team together!
+		minExpiry = 1
+		maxExpiry = 7
+		deadline = Random(300, 500) * @/targetBody4.Multiplier()
+		cancellable = true
+		declinable = true
+		autoAccept = false
+		targetBody = @/targetBody4
+		rewardScience = 0
+		rewardReputation = 1
+		rewardFunds = Random(45000, 70000.0)
+		failureReputation = 1
+		failureFunds = Random(1000, 10000.0)
+		advanceFunds = Random(2000, 10000.0)
+		prestige = Trivial
+		prestige = Significant
+		DATA
+		{
+			type = CelestialBody
+			requiredValue = true
+			uniqueValue = true
+			targetBody4 = Prestige() == Trivial ? @ScanSatOfficial:p1Bodies.Random() : @ScanSatOfficial:p2Bodies.Random()
+		}
+		DATA
+		{
+			type = double
+			diffModifier4 = Prestige() == Trivial ? 0 : 10
+			scanRequired4 = 75 + @diffModifier4
+			minScan4 = 70 + @diffModifier4
+		}
+		PARAMETER
+		{
+			name = SCANsatCoverage
+			type = SCANsatCoverage
+			targetBody = @/targetBody4
+			coverage = @/scanRequired4
+			scanType = FuzzyResources
+		}
+		REQUIREMENT
+		{
+			name = SCANsatCoverage
+			type = SCANsatCoverage
+			targetBody = @/targetBody4
+			minCoverage = 0.0
+			maxCoverage = @/minScan4
+			scanType = FuzzyResources
+		}
+		REQUIREMENT
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = HomeWorld()
+		}
+		REQUIREMENT
+		{
+			name = PartUnlocked
+			type = PartUnlocked
+			part = SurveyScanner
+		}
+	}
+}
+UrlConfig
+{
+	name = SCAN_NarrowBand
+	type = CONTRACT_TYPE
+	parentUrl = SCANsat/Resources/Contracts/NarrowBand
+	url = SCANsat/Resources/Contracts/NarrowBand/SCAN_NarrowBand
+	CONTRACT_TYPE
+	{
+		name = SCAN_NarrowBand
+		title = Scan @/targetBody5 for Ore
+		group = ScanSatOfficial
+		topic = Science
+		subject = Kerbal
+		motivation = Scanning
+		agent = SCAN: Scientific Committee on Advanced Navigation
+		notes = Scanning can take place while the vessel is not loaded.
+		synopsis = Scan @/targetBody5 with the M4435 Narrow-Band Scanner
+		completedMessage = Look at all that lovely Ore. We'll have to get a survey team together!
+		minExpiry = 1
+		maxExpiry = 7
+		deadline = Random(400, 600) * @/targetBody5.Multiplier()
+		cancellable = true
+		declinable = true
+		autoAccept = false
+		targetBody = @/targetBody5
+		rewardScience = 0
+		rewardReputation = 1
+		rewardFunds = Random(60000, 80000.0)
+		failureReputation = 1
+		failureFunds = Random(1000, 10000.0)
+		advanceFunds = Random(5000, 15000.0)
+		prestige = Significant
+		prestige = Exceptional
+		DATA
+		{
+			type = CelestialBody
+			requiredValue = true
+			uniqueValue = true
+			targetBody5 = Prestige() == Significant ? @ScanSatOfficial:p2Bodies.Random() : @ScanSatOfficial:p3Bodies.Random()
+		}
+		DATA
+		{
+			type = double
+			diffModifier5 = Prestige() == Significant ? 0 : 10
+			scanRequired5 = 85 + @diffModifier5
+			minScan5 = 80 + @diffModifier5
+		}
+		PARAMETER
+		{
+			name = SCANsatCoverage
+			type = SCANsatCoverage
+			targetBody = @/targetBody5
+			coverage = @/scanRequired5
+			scanType = Ore
+		}
+		REQUIREMENT
+		{
+			name = SCANsatCoverage
+			type = SCANsatCoverage
+			targetBody = @/targetBody5
+			minCoverage = @/minScan5
+			scanType = FuzzyResources
+		}
+		REQUIREMENT
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = HomeWorld()
+		}
+		REQUIREMENT
+		{
+			name = PartUnlocked
+			type = PartUnlocked
+			part = OrbitalScanner
 		}
 	}
 }
@@ -54830,6 +57387,30 @@ UrlConfig
 			name = TweakScale
 			type = free
 		}
+		MODULE
+		{
+			name = SCANresourceDisplay
+			sensorType = 256
+			ResourceName = Ore
+		}
+		MODULE
+		{
+			name = SCANhiDefCamera
+			minZoom = 8
+			maxZoom = 20
+			hiDetailOnly = False
+		}
+		MODULE
+		{
+			name = ModuleSCANresourceScanner
+			sensorType = 256
+			fov = 3
+			min_alt = 10000
+			max_alt = 500000
+			best_alt = 150000
+			scanName = Ore Scan
+			power = 0.4
+		}
 	}
 }
 UrlConfig
@@ -55192,6 +57773,12 @@ UrlConfig
 			name = ModuleAnalysisResource
 			resourceName = MetalOre
 		}
+		MODULE
+		{
+			name = SCANresourceDisplay
+			sensorType = 256
+			ResourceName = Ore
+		}
 	}
 }
 UrlConfig
@@ -55251,6 +57838,17 @@ UrlConfig
 		{
 			name = TweakScale
 			type = free
+		}
+		MODULE
+		{
+			name = ModuleSCANresourceScanner
+			sensorType = 524288
+			fov = 5
+			min_alt = 15000
+			max_alt = 1000000
+			best_alt = 150000
+			scanName = Resource Scan
+			power = 0.5
 		}
 	}
 }

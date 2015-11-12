@@ -1,3 +1,42 @@
 Executing: KerbalEngineer - 1.0.18.0
 Assembly: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\KerbalEngineer\KerbalEngineer.dll
 
+[Log 05:38:58.0504547]: BuildToolbar->Awake
+[Log 05:38:58.7536285]: BuildToolbar->OnGuiAppLauncherReady
+[Log 05:39:58.2896810]: BuildToolbar->OnDestroy
+[Log 05:40:00.4633920]: ActionMenu was created.
+[Log 05:40:00.4633920]: ActionMenu->Awake
+[Log 05:40:00.4653925]: FlightEngineerCore->Awake
+[Log 05:40:02.7413254]: ActionMenuGui was created.
+[Log 05:40:02.7433096]: ActionMenu->Start
+[Log 05:40:02.7665853]: FlightEngineerCore->Start
+[Log 05:40:13.9953367]: FlightEngineerCore->OnDestroy
+[Log 05:40:14.0689043]: ActionMenu was destroyed.
+[Log 05:40:14.0852182]: ActionMenu->OnDestroy
+[Log 05:40:14.8640995]: ActionMenuGui was destroyed.
+[Log 05:40:23.9355093]: BuildToolbar->Awake
+[Log 05:40:24.5270408]: BuildToolbar->OnGuiAppLauncherReady
+[Log 05:40:37.1142692]: BuildToolbar->OnDestroy
+[Log 05:40:39.4849067]: ActionMenu was created.
+[Log 05:40:39.4849067]: ActionMenu->Awake
+[Log 05:40:39.4859069]: FlightEngineerCore->Awake
+[Log 05:40:41.6580206]: ActionMenuGui was created.
+[Log 05:40:41.6590208]: ActionMenu->Start
+[Log 05:40:41.6630221]: FlightEngineerCore->Start
+[Log 05:40:50.3458055]: FlightEngineerCore->OnDestroy
+[Log 05:40:50.3778246]: ActionMenu was destroyed.
+[Log 05:40:50.3917975]: ActionMenu->OnDestroy
+[Log 05:40:51.2089799]: ActionMenuGui was destroyed.
+[Log 05:40:59.7302457]: BuildToolbar->Awake
+[Log 05:41:00.3374166]: BuildToolbar->OnGuiAppLauncherReady
+[Log 05:41:08.9663250]: BuildToolbar->OnDestroy
+[Log 05:41:11.3411005]: ActionMenu was created.
+[Log 05:41:11.3417340]: ActionMenu->Awake
+[Log 05:41:11.3422348]: FlightEngineerCore->Awake
+[Log 05:41:13.5108146]: ActionMenuGui was created.
+[Log 05:41:13.5108146]: ActionMenu->Start
+[Log 05:41:13.5158120]: FlightEngineerCore->Start
+[Log 05:41:23.0926042]: ActionMenu->OnDestroy
+[Log 05:41:23.1094216]: FlightEngineerCore->OnDestroy
+[Log 05:41:23.1224350]: ActionMenu was destroyed.
+[Log 05:41:23.9174737]: ActionMenuGui was destroyed.

@@ -89,6 +89,10 @@ TweakScale/plugins/Scale_Redist.dll
 WarpPlugin/Plugins/Interstellar.dll
 WarpPlugin/Plugins/MiniAVC.dll
 WarpPlugin/Plugins/OpenResourceSystem_KSPIE.dll
+SCANsat/Plugins/SCANmechjeb.dll
+SCANsat/Plugins/SCANsat.dll
+kerbaljointreinforcement/plugin/kerbaljointreinforcement.dll
+quantumstrutscontinued/plugins/quantumstrutscontinued.dll
 
 
 !optional-files
@@ -112,6 +116,7 @@ RCSBuildAid/Plugins/RCSBuildAid.dll
 RCSBuildAid/Plugins/RCSBuildAidToolbar.dll
 RcsSounds/Plugins/RcsSounds.dll
 TextureReplacer/Plugins/TextureReplacer.dll
+Kerbaltek/HyperEdit_1.4.2.dll
 
 squad/plugins/kspsteamctrlr.dll
 squad/plugins/steamworks.net.dll
@@ -137,6 +142,8 @@ squad/plugins/steamworks.net.dll
 #You can use this application to generate partlists from a KSP installation if you want to add mod parts: http://forum.kerbalspaceprogram.com/threads/57284 
 Filter.by.Resource
 kerbalEVA
+
+Filter.by.Resource
 ModuleAsteroidResource
 ModuleAnalysisResource
 ModuleCrossFeed
