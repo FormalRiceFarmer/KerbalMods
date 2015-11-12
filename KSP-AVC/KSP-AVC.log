@@ -1,11 +1,11 @@
 Executing: KSP-AVC - 1.1.5.0
 Assembly: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\KSP-AVC\KSP-AVC.dll
 
-[Text 05:46:06.8468983]: Starter was created.
-[Text 05:46:09.9522407]: Checking Root: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData
-[Text 05:46:10.0242707]: CheckerProgressGui was created.
-[Text 05:46:10.2689742]: Version file contains errors: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\ExtraplanetaryLaunchpads\Plugins\EL.version
-[Text 05:46:10.2704768]: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\ExtraplanetaryLaunchpads\Plugins\EL.version
+[Text 10:56:27.1353249]: Starter was created.
+[Text 10:56:30.5324414]: Checking Root: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData
+[Text 10:56:30.7158425]: CheckerProgressGui was created.
+[Text 10:56:30.8313335]: Version file contains errors: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\ExtraplanetaryLaunchpads\Plugins\EL.version
+[Text 10:56:30.8343378]: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\ExtraplanetaryLaunchpads\Plugins\EL.version
 	NAME: NULL (required)
 	URL: NULL
 	DOWNLOAD: NULL
@@ -19,50 +19,22 @@ Assembly: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
 
-[Text 05:46:10.5724864]: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\Kerbaltek\PluginData\HyperEdit\HyperEdit.version
-	NAME: HyperEdit
-	URL: https://raw.githubusercontent.com/Ezriilc/HyperEdit/master/HyperEdit.version
-	DOWNLOAD: http://www.kerbaltek.com/hyperedit
+[Text 10:56:31.1345933]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.1345933]: https://raw.githubusercontent.com/ducakar/TextureReplacer/master/GameData/TextureReplacer/TextureReplacer.version
+	NAME: TextureReplacer
+	URL: https://raw.githubusercontent.com/ducakar/TextureReplacer/master/GameData/TextureReplacer/TextureReplacer.version
+	DOWNLOAD: https://kerbalstuff.com/mod/150/TextureReplacer
 	GITHUB: NULL
-	VERSION: 1.4.2
-	KSP_VERSION: 1.0.5
-	KSP_VERSION_MIN: 1.0
-	KSP_VERSION_MAX: 1.0.99
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-[Text 05:46:10.5729872]: Identical remote version found: Using remote version information only.
-[Text 05:46:10.5729872]: https://raw.githubusercontent.com/Crzyrndm/FilterExtension/master/GameData/000_FilterExtensions/FilterExtensions.version
-	NAME: Filter Extensions
-	URL: https://raw.githubusercontent.com/Crzyrndm/FilterExtension/master/GameData/000_FilterExtensions/FilterExtensions.version
-	DOWNLOAD: https://github.com/Crzyrndm/FilterExtension/releases
-	GITHUB: NULL
-	VERSION: 2.4.1.1
-	KSP_VERSION: 1.0.5
+	VERSION: 2.4.10
+	KSP_VERSION: 1.0.4
 	KSP_VERSION_MIN: NULL
 	KSP_VERSION_MAX: NULL
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 05:46:10.5729872]: https://raw.githubusercontent.com/Ezriilc/HyperEdit/master/HyperEdit.version
-	NAME: HyperEdit
-	URL: https://raw.githubusercontent.com/Ezriilc/HyperEdit/master/HyperEdit.version
-	DOWNLOAD: http://www.kerbaltek.com/hyperedit
-	GITHUB: NULL
-	VERSION: 1.4.1
-	KSP_VERSION: 1.0.2
-	KSP_VERSION_MIN: 1.0
-	KSP_VERSION_MAX: 1.0.99
 	CompatibleKspVersion: False
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
-	UpdateAvailable: False
 
-[Text 05:46:10.5804985]: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\MagicSmokeIndustries\InfernalRobotics.version
+[Text 10:56:31.1355939]: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\MagicSmokeIndustries\InfernalRobotics.version
 	NAME: Infernal Robots
 	URL: https://raw.githubusercontent.com/MagicSmokeIndustries/InfernalRobotics/master/InfernalRobotics.version
 	DOWNLOAD: NULL
@@ -75,7 +47,7 @@ Assembly: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
-[Text 05:46:10.5804985]: https://raw.githubusercontent.com/MagicSmokeIndustries/InfernalRobotics/master/InfernalRobotics.version
+[Text 10:56:31.1355939]: https://raw.githubusercontent.com/MagicSmokeIndustries/InfernalRobotics/master/InfernalRobotics.version
 	NAME: Infernal Robots
 	URL: https://raw.githubusercontent.com/MagicSmokeIndustries/InfernalRobotics/master/InfernalRobotics.version
 	DOWNLOAD: NULL
@@ -90,15 +62,28 @@ Assembly: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleGitHubVersion: True
 	UpdateAvailable: False
 
-[Text 05:46:10.8737222]: Identical remote version found: Using remote version information only.
-[Text 05:46:10.8737222]: https://raw.githubusercontent.com/pellinor0/TweakScale/master/GameData/TweakScale/TweakScale.version
-	NAME: TweakScale
-	URL: https://raw.githubusercontent.com/pellinor0/TweakScale/master/GameData/TweakScale/TweakScale.version
-	DOWNLOAD: https://kerbalstuff.com/mod/344/TweakScale%20-%20Rescale%20Everything!/download/
-	GITHUB: Pellinor/TweakScale
-		LatestRelease: NULL
-		AllowPreRelease: False
-	VERSION: 2.2.5
+[Text 10:56:31.1365939]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.1365939]: https://raw.githubusercontent.com/Ezriilc/HyperEdit/master/HyperEdit.version
+	NAME: HyperEdit
+	URL: https://raw.githubusercontent.com/Ezriilc/HyperEdit/master/HyperEdit.version
+	DOWNLOAD: http://www.kerbaltek.com/hyperedit
+	GITHUB: NULL
+	VERSION: 1.4.2
+	KSP_VERSION: 1.0.5
+	KSP_VERSION_MIN: 1.0
+	KSP_VERSION_MAX: 1.0.99
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 10:56:31.1365939]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.1365939]: https://raw.githubusercontent.com/Crzyrndm/FilterExtension/master/GameData/000_FilterExtensions/FilterExtensions.version
+	NAME: Filter Extensions
+	URL: https://raw.githubusercontent.com/Crzyrndm/FilterExtension/master/GameData/000_FilterExtensions/FilterExtensions.version
+	DOWNLOAD: https://github.com/Crzyrndm/FilterExtension/releases
+	GITHUB: NULL
+	VERSION: 2.4.1.1
 	KSP_VERSION: 1.0.5
 	KSP_VERSION_MIN: NULL
 	KSP_VERSION_MAX: NULL
@@ -107,8 +92,23 @@ Assembly: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
 
-[Text 05:46:10.8742230]: Identical remote version found: Using remote version information only.
-[Text 05:46:10.8742230]: https://raw.githubusercontent.com/valerian/ksp-planetshine/master/PlanetShine.version
+[Text 10:56:31.3361753]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.3361753]: https://raw.githubusercontent.com/m4v/RCSBuildAid/master/RCSBuildAid.version
+	NAME: RCS Build Aid
+	URL: https://raw.githubusercontent.com/m4v/RCSBuildAid/master/RCSBuildAid.version
+	DOWNLOAD: http://curse.com/project/220602
+	GITHUB: NULL
+	VERSION: 0.7.2
+	KSP_VERSION: 1.0.2
+	KSP_VERSION_MIN: 1.0.2
+	KSP_VERSION_MAX: 1.0.4
+	CompatibleKspVersion: False
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: False
+	CompatibleGitHubVersion: True
+
+[Text 10:56:31.3366761]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.3366761]: https://raw.githubusercontent.com/valerian/ksp-planetshine/master/PlanetShine.version
 	NAME: PlanetShine
 	URL: https://raw.githubusercontent.com/valerian/ksp-planetshine/master/PlanetShine.version
 	DOWNLOAD: http://kerbalstuff.com/mod/266/PlanetShine
@@ -124,57 +124,51 @@ Assembly: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: False
 	CompatibleGitHubVersion: True
 
-[Text 05:46:10.9728847]: Identical remote version found: Using remote version information only.
-[Text 05:46:10.9728847]: https://raw.githubusercontent.com/m4v/RCSBuildAid/master/RCSBuildAid.version
-	NAME: RCS Build Aid
-	URL: https://raw.githubusercontent.com/m4v/RCSBuildAid/master/RCSBuildAid.version
-	DOWNLOAD: http://curse.com/project/220602
+[Text 10:56:31.4353253]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.4353253]: http://ksp-avc.cybutek.net/version.php?id=157
+	NAME: Interstellar Fuel Switch
+	URL: http://ksp-avc.cybutek.net/version.php?id=157
+	DOWNLOAD: http://forum.kerbalspaceprogram.com/threads/117932-1-0-Interstellar-Fuel-Switch-0-2
 	GITHUB: NULL
-	VERSION: 0.7.2
-	KSP_VERSION: 1.0.2
-	KSP_VERSION_MIN: 1.0.2
-	KSP_VERSION_MAX: 1.0.4
+	VERSION: 1.18
+	KSP_VERSION: 1.0.5
+	KSP_VERSION_MIN: NULL
+	KSP_VERSION_MAX: NULL
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 10:56:31.4389565]: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\RcsSounds\RCSSounds.version
+	NAME: RCS Sounds
+	URL: http://ksp-avc.cybutek.net/version.php?id=11
+	DOWNLOAD: http://kerbal.curseforge.com/ksp-mods/220521-rcs-sounds
+	GITHUB: NULL
+	VERSION: 4.3
+	KSP_VERSION: 0.90
+	KSP_VERSION_MIN: 0.25
+	KSP_VERSION_MAX: 0.90
 	CompatibleKspVersion: False
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: False
 	CompatibleGitHubVersion: True
-
-[Text 05:46:10.9863955]: Identical remote version found: Using remote version information only.
-[Text 05:46:10.9863955]: https://raw.githubusercontent.com/ferram4/Kerbal-Joint-Reinforcement/master/GameData/KerbalJointReinforcement/KerbalJointReinforcement.version
-	NAME: Kerbal Joint Reinforcement
-	URL: https://raw.githubusercontent.com/ferram4/Kerbal-Joint-Reinforcement/master/GameData/KerbalJointReinforcement/KerbalJointReinforcement.version
-	DOWNLOAD: https://github.com/ferram4/Kerbal-Joint-Reinforcement/releases
-	GITHUB: ferram4/Kerbal-Joint-Reinforcement
-		LatestRelease: 3.1.4
-		AllowPreRelease: False
-	VERSION: 3.1.4
-	KSP_VERSION: Any
-	KSP_VERSION_MIN: 1.0
-	KSP_VERSION_MAX: 1.0.5
-	CompatibleKspVersion: True
+[Text 10:56:31.4389565]: http://ksp-avc.cybutek.net/version.php?id=11
+	NAME: RCS Sounds
+	URL: http://ksp-avc.cybutek.net/version.php?id=11
+	DOWNLOAD: http://kerbal.curseforge.com/ksp-mods/220521-rcs-sounds
+	GITHUB: NULL
+	VERSION: 4.4
+	KSP_VERSION: 1.0.4
+	KSP_VERSION_MIN: 0.25
+	KSP_VERSION_MAX: 1.0.99
+	CompatibleKspVersion: False
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
+	UpdateAvailable: False
 
-[Text 05:46:11.2016515]: Identical remote version found: Using remote version information only.
-[Text 05:46:11.2016515]: https://raw.githubusercontent.com/S-C-A-N/SCANsat/release/SCANassets/SCANsat.version
-	NAME: SCANsat
-	URL: https://raw.githubusercontent.com/S-C-A-N/SCANsat/release/SCANassets/SCANsat.version
-	DOWNLOAD: https://github.com/S-C-A-N/SCANsat/releases
-	GITHUB: S-C-A-N/SCANsat
-		LatestRelease: 14.3
-		AllowPreRelease: False
-	VERSION: 1.1.4.3
-	KSP_VERSION: 1.0.5
-	KSP_VERSION_MIN: 1.0.5
-	KSP_VERSION_MAX: 1.0.5
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: False
-
-[Text 05:46:11.2758311]: Identical remote version found: Using remote version information only.
-[Text 05:46:11.2758311]: https://raw.githubusercontent.com/BobPalmer/CommunityResourcePack/master/GameData/CommunityResourcePack/CRP.version
+[Text 10:56:31.5427007]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.5427007]: https://raw.githubusercontent.com/BobPalmer/CommunityResourcePack/master/GameData/CommunityResourcePack/CRP.version
 	NAME: Community Resource Pack
 	URL: https://raw.githubusercontent.com/BobPalmer/CommunityResourcePack/master/GameData/CommunityResourcePack/CRP.version
 	DOWNLOAD: https://github.com/BobPalmer/CommunityResourcePack/releases
@@ -190,128 +184,8 @@ Assembly: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: False
 	CompatibleGitHubVersion: True
 
-[Text 05:46:11.3738873]: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\RcsSounds\RCSSounds.version
-	NAME: RCS Sounds
-	URL: http://ksp-avc.cybutek.net/version.php?id=11
-	DOWNLOAD: http://kerbal.curseforge.com/ksp-mods/220521-rcs-sounds
-	GITHUB: NULL
-	VERSION: 4.3
-	KSP_VERSION: 0.90
-	KSP_VERSION_MIN: 0.25
-	KSP_VERSION_MAX: 0.90
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: False
-	CompatibleGitHubVersion: True
-[Text 05:46:11.3738873]: http://ksp-avc.cybutek.net/version.php?id=11
-	NAME: RCS Sounds
-	URL: http://ksp-avc.cybutek.net/version.php?id=11
-	DOWNLOAD: http://kerbal.curseforge.com/ksp-mods/220521-rcs-sounds
-	GITHUB: NULL
-	VERSION: 4.4
-	KSP_VERSION: 1.0.4
-	KSP_VERSION_MIN: 0.25
-	KSP_VERSION_MAX: 1.0.99
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-	UpdateAvailable: False
-
-[Text 05:46:11.3743881]: Identical remote version found: Using remote version information only.
-[Text 05:46:11.3743881]: http://ksp-avc.cybutek.net/version.php?id=157
-	NAME: Interstellar Fuel Switch
-	URL: http://ksp-avc.cybutek.net/version.php?id=157
-	DOWNLOAD: http://forum.kerbalspaceprogram.com/threads/117932-1-0-Interstellar-Fuel-Switch-0-2
-	GITHUB: NULL
-	VERSION: 1.18
-	KSP_VERSION: 1.0.5
-	KSP_VERSION_MIN: NULL
-	KSP_VERSION_MAX: NULL
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 05:46:11.3949197]: Identical remote version found: Using remote version information only.
-[Text 05:46:11.3949197]: https://raw.githubusercontent.com/RemoteTechnologiesGroup/RemoteTech/master/GameData/RemoteTech/RemoteTech.version
-	NAME: RemoteTech
-	URL: https://raw.githubusercontent.com/RemoteTechnologiesGroup/RemoteTech/master/GameData/RemoteTech/RemoteTech.version
-	DOWNLOAD: https://kerbalstuff.com/mod/134/RemoteTech
-	GITHUB: RemoteTechnologiesGroup/RemoteTech
-		LatestRelease: 1.6.9
-		AllowPreRelease: False
-	VERSION: 1.6.9
-	KSP_VERSION: 1.0.5
-	KSP_VERSION_MIN: 1.0.5
-	KSP_VERSION_MAX: 1.0.5
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 05:46:11.7739250]: Identical remote version found: Using remote version information only.
-[Text 05:46:11.7739250]: http://ksp-avc.cybutek.net/version.php?id=2
-	NAME: KSP-AVC Plugin
-	URL: http://ksp-avc.cybutek.net/version.php?id=2
-	DOWNLOAD: http://kerbal.curseforge.com/ksp-mods/220462-ksp-avc-add-on-version-checker
-	GITHUB: NULL
-	VERSION: 1.1.5
-	KSP_VERSION: 0.25
-	KSP_VERSION_MIN: NULL
-	KSP_VERSION_MAX: 1.0.5
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 05:46:11.7744250]: Identical remote version found: Using remote version information only.
-[Text 05:46:11.7744250]: http://ksp-avc.cybutek.net/version.php?id=6
-	NAME: Kerbal Engineer Redux
-	URL: http://ksp-avc.cybutek.net/version.php?id=6
-	DOWNLOAD: http://kerbal.curseforge.com/ksp-mods/222685-kerbal-engineer-redux
-	GITHUB: NULL
-	VERSION: 1.0.18
-	KSP_VERSION: 1.0.4
-	KSP_VERSION_MIN: NULL
-	KSP_VERSION_MAX: 1.0.5
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 05:46:13.0784343]: Identical remote version found: Using remote version information only.
-[Text 05:46:13.0784343]: http://ksp-avc.cybutek.net/version.php?id=152
-	NAME: KSP Interstellar Extended
-	URL: http://ksp-avc.cybutek.net/version.php?id=152
-	DOWNLOAD: http://forum.kerbalspaceprogram.com/threads/111159-WIP-0-90-KSP-Interstellar-Extended
-	GITHUB: NULL
-	VERSION: 1.6
-	KSP_VERSION: 1.0.5
-	KSP_VERSION_MIN: NULL
-	KSP_VERSION_MAX: NULL
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 05:46:13.5798276]: Identical remote version found: Using remote version information only.
-[Text 05:46:13.5798276]: https://raw.githubusercontent.com/ducakar/TextureReplacer/master/GameData/TextureReplacer/TextureReplacer.version
-	NAME: TextureReplacer
-	URL: https://raw.githubusercontent.com/ducakar/TextureReplacer/master/GameData/TextureReplacer/TextureReplacer.version
-	DOWNLOAD: https://kerbalstuff.com/mod/150/TextureReplacer
-	GITHUB: NULL
-	VERSION: 2.4.10
-	KSP_VERSION: 1.0.4
-	KSP_VERSION_MIN: NULL
-	KSP_VERSION_MAX: NULL
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 05:46:14.1817552]: Identical remote version found: Using remote version information only.
-[Text 05:46:14.1817552]: https://raw.githubusercontent.com/KospY/KAS/master/kas.version
+[Text 10:56:31.6373358]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.6373358]: https://raw.githubusercontent.com/KospY/KAS/master/kas.version
 	NAME: Kerbal Attachment System
 	URL: https://raw.githubusercontent.com/KospY/KAS/master/kas.version
 	DOWNLOAD: http://forum.kerbalspaceprogram.com/threads/92514
@@ -327,7 +201,120 @@ Assembly: C:\Games\Steam\steamapps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
 
-[Text 05:46:14.2097968]: IssueGui was created.
-[Text 05:46:14.2123006]: Starter was destroyed.
-[Text 05:46:14.2138121]: CheckerProgressGui was destroyed.
-[Text 05:47:21.3849391]: IssueGui was destroyed.
+[Text 10:56:31.7422857]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.7422857]: https://raw.githubusercontent.com/S-C-A-N/SCANsat/release/SCANassets/SCANsat.version
+	NAME: SCANsat
+	URL: https://raw.githubusercontent.com/S-C-A-N/SCANsat/release/SCANassets/SCANsat.version
+	DOWNLOAD: https://github.com/S-C-A-N/SCANsat/releases
+	GITHUB: S-C-A-N/SCANsat
+		LatestRelease: 14.3
+		AllowPreRelease: False
+	VERSION: 1.1.4.3
+	KSP_VERSION: 1.0.5
+	KSP_VERSION_MIN: 1.0.5
+	KSP_VERSION_MAX: 1.0.5
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: False
+
+[Text 10:56:31.8368898]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.8368898]: http://ksp-avc.cybutek.net/version.php?id=6
+	NAME: Kerbal Engineer Redux
+	URL: http://ksp-avc.cybutek.net/version.php?id=6
+	DOWNLOAD: http://kerbal.curseforge.com/ksp-mods/222685-kerbal-engineer-redux
+	GITHUB: NULL
+	VERSION: 1.0.18
+	KSP_VERSION: 1.0.4
+	KSP_VERSION_MIN: NULL
+	KSP_VERSION_MAX: 1.0.5
+	CompatibleKspVersion: False
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 10:56:31.8388904]: Identical remote version found: Using remote version information only.
+[Text 10:56:31.8388904]: http://ksp-avc.cybutek.net/version.php?id=2
+	NAME: KSP-AVC Plugin
+	URL: http://ksp-avc.cybutek.net/version.php?id=2
+	DOWNLOAD: http://kerbal.curseforge.com/ksp-mods/220462-ksp-avc-add-on-version-checker
+	GITHUB: NULL
+	VERSION: 1.1.5
+	KSP_VERSION: 0.25
+	KSP_VERSION_MIN: NULL
+	KSP_VERSION_MAX: 1.0.5
+	CompatibleKspVersion: False
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 10:56:32.5442548]: Identical remote version found: Using remote version information only.
+[Text 10:56:32.5442548]: https://raw.githubusercontent.com/RemoteTechnologiesGroup/RemoteTech/master/GameData/RemoteTech/RemoteTech.version
+	NAME: RemoteTech
+	URL: https://raw.githubusercontent.com/RemoteTechnologiesGroup/RemoteTech/master/GameData/RemoteTech/RemoteTech.version
+	DOWNLOAD: https://kerbalstuff.com/mod/134/RemoteTech
+	GITHUB: RemoteTechnologiesGroup/RemoteTech
+		LatestRelease: 1.6.9
+		AllowPreRelease: False
+	VERSION: 1.6.9
+	KSP_VERSION: 1.0.5
+	KSP_VERSION_MIN: 1.0.5
+	KSP_VERSION_MAX: 1.0.5
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 10:56:33.2429180]: Identical remote version found: Using remote version information only.
+[Text 10:56:33.2429180]: http://ksp-avc.cybutek.net/version.php?id=152
+	NAME: KSP Interstellar Extended
+	URL: http://ksp-avc.cybutek.net/version.php?id=152
+	DOWNLOAD: http://forum.kerbalspaceprogram.com/threads/111159-WIP-0-90-KSP-Interstellar-Extended
+	GITHUB: NULL
+	VERSION: 1.6
+	KSP_VERSION: 1.0.5
+	KSP_VERSION_MIN: NULL
+	KSP_VERSION_MAX: NULL
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 10:56:34.4491878]: Identical remote version found: Using remote version information only.
+[Text 10:56:34.4491878]: https://raw.githubusercontent.com/pellinor0/TweakScale/master/GameData/TweakScale/TweakScale.version
+	NAME: TweakScale
+	URL: https://raw.githubusercontent.com/pellinor0/TweakScale/master/GameData/TweakScale/TweakScale.version
+	DOWNLOAD: https://kerbalstuff.com/mod/344/TweakScale%20-%20Rescale%20Everything!/download/
+	GITHUB: Pellinor/TweakScale
+		LatestRelease: NULL
+		AllowPreRelease: False
+	VERSION: 2.2.5
+	KSP_VERSION: 1.0.5
+	KSP_VERSION_MIN: NULL
+	KSP_VERSION_MAX: NULL
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 10:56:34.4506901]: Identical remote version found: Using remote version information only.
+[Text 10:56:34.4506901]: https://raw.githubusercontent.com/ferram4/Kerbal-Joint-Reinforcement/master/GameData/KerbalJointReinforcement/KerbalJointReinforcement.version
+	NAME: Kerbal Joint Reinforcement
+	URL: https://raw.githubusercontent.com/ferram4/Kerbal-Joint-Reinforcement/master/GameData/KerbalJointReinforcement/KerbalJointReinforcement.version
+	DOWNLOAD: https://github.com/ferram4/Kerbal-Joint-Reinforcement/releases
+	GITHUB: ferram4/Kerbal-Joint-Reinforcement
+		LatestRelease: 3.1.4
+		AllowPreRelease: False
+	VERSION: 3.1.4
+	KSP_VERSION: Any
+	KSP_VERSION_MIN: 1.0
+	KSP_VERSION_MAX: 1.0.5
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 10:56:34.4757381]: IssueGui was created.
+[Text 10:56:34.5035108]: Starter was destroyed.
+[Text 10:56:34.5055295]: CheckerProgressGui was destroyed.
+[Text 10:56:48.7851558]: IssueGui was destroyed.

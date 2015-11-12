@@ -16559,8 +16559,8 @@ UrlConfig
 	url = Kerbaltek/HyperEdit_1.4.2/windowpos/HyperEdit
 	HyperEdit
 	{
-		x = 449
-		y = 70
+		x = 611
+		y = 521
 	}
 }
 UrlConfig
@@ -16573,6 +16573,54 @@ UrlConfig
 	{
 		x = 447
 		y = 52
+	}
+}
+UrlConfig
+{
+	name = Select
+	type = Select
+	parentUrl = Kerbaltek/HyperEdit_1.4.2/windowpos
+	url = Kerbaltek/HyperEdit_1.4.2/windowpos/Select
+	Select
+	{
+		x = 810
+		y = 290
+	}
+}
+UrlConfig
+{
+	name = Orbit_Editor
+	type = Orbit_Editor
+	parentUrl = Kerbaltek/HyperEdit_1.4.2/windowpos
+	url = Kerbaltek/HyperEdit_1.4.2/windowpos/Orbit_Editor
+	Orbit_Editor
+	{
+		x = 130
+		y = 82
+	}
+}
+UrlConfig
+{
+	name = Planet_editor
+	type = Planet_editor
+	parentUrl = Kerbaltek/HyperEdit_1.4.2/windowpos
+	url = Kerbaltek/HyperEdit_1.4.2/windowpos/Planet_editor
+	Planet_editor
+	{
+		x = 100
+		y = 100
+	}
+}
+UrlConfig
+{
+	name = Destroy...
+	type = Destroy...
+	parentUrl = Kerbaltek/HyperEdit_1.4.2/windowpos
+	url = Kerbaltek/HyperEdit_1.4.2/windowpos/Destroy...
+	Destroy...
+	{
+		x = 810
+		y = 290
 	}
 }
 UrlConfig

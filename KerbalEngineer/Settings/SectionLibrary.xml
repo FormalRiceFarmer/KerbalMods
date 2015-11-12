@@ -15,7 +15,7 @@
         <IsHud>false</IsHud>
         <IsHudBackground>false</IsHudBackground>
         <IsVisible>true</IsVisible>
-        <LineCount>9</LineCount>
+        <LineCount>19</LineCount>
         <Name>ORBITAL</Name>
         <ReadoutModuleNames>
           <string>Orbital.ApoapsisHeight</string>

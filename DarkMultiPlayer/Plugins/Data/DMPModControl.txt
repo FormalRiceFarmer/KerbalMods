@@ -142,8 +142,7 @@ squad/plugins/steamworks.net.dll
 #You can use this application to generate partlists from a KSP installation if you want to add mod parts: http://forum.kerbalspaceprogram.com/threads/57284 
 Filter.by.Resource
 kerbalEVA
-
-Filter.by.Resource
+kerbalEVAfemale
 ModuleAsteroidResource
 ModuleAnalysisResource
 ModuleCrossFeed
