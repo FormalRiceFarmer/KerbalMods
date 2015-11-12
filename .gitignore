@@ -9,3 +9,6 @@ ModuleManager.Physics
 ModuleManager.TechTree
 toolbar-settings.dat
 *.log
+/DarkMultiPlayer/Plugins/Data/*.xml
+/MechJeb2/Plugins/PluginData
+/DarkMultiPlayer/Plugins/Data/servers.xml
