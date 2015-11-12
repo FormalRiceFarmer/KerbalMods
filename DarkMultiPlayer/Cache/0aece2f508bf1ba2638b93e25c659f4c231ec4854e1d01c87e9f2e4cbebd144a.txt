@@ -1,0 +1,81 @@
+pid = b6b8f66f8d8846468f45a18fe42e44eb
+name = Ast. FIB-013
+type = SpaceObject
+sit = ORBITING
+landed = False
+landedAt = 
+splashed = False
+met = 273.2414459
+lct = 273.2414459
+lastUT = -1
+root = 0
+lat = -1.34709681027602
+lon = 190.745144565566
+alt = 14981257974.8264
+hgt = -1
+nrm = 0,1,0
+rot = -0.4262567,-0.6126887,-0.3045072,0.5917711
+CoM = 0,0,0
+stg = 0
+prst = False
+ref = 0
+ctrl = False
+ORBIT
+{
+	SMA = 14460127640.354
+	ECC = 0.064259125911501
+	INC = 1.71383455289608
+	LPE = 21.1439273983551
+	LAN = 319.16218656211
+	MNA = 5.91169694984849
+	EPH = 3479334.64281309
+	REF = 0
+}
+PART
+{
+	name = PotatoRoid
+	cid = 0
+	uid = 500494474
+	mid = 500494474
+	launchID = 0
+	parent = 0
+	position = 0,0,0
+	rotation = 0,0,0,1
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = 0
+	sepI = 0
+	sidx = 0
+	attm = 0
+	srfN = None, -1
+	mass = 150
+	temp = -1
+	tempExt = 0
+	tempExtUnexp = 0
+	expt = 0.1
+	state = 0
+	connected = True
+	attached = True
+	flag = 
+	rTrf = 
+	modCost = 0
+}
+ACTIONGROUPS
+{
+}
+DISCOVERY
+{
+	state = 1
+	lastObservedTime = 273.2414459
+	lifetime = 1485680.93261719
+	refTime = 1728000
+	size = 2
+}
+FLIGHTPLAN
+{
+}
+CTRLSTATE
+{
+}

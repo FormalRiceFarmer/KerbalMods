@@ -1,0 +1,81 @@
+pid = b2ac9c1dadfb4717ba269995258d9988
+name = Ast. HJX-311
+type = SpaceObject
+sit = ORBITING
+landed = False
+landedAt = 
+splashed = False
+met = 273.2414459
+lct = 273.2414459
+lastUT = -1
+root = 0
+lat = 0.503062470579191
+lon = 176.665449355568
+alt = 14407617074.0544
+hgt = -1
+nrm = 0,1,0
+rot = 0.649354,-0.5299014,0.4903825,0.238891
+CoM = 0,0,0
+stg = 0
+prst = False
+ref = 0
+ctrl = False
+ORBIT
+{
+	SMA = 16862134124.0288
+	ECC = 0.193952463658701
+	INC = 0.545992277972901
+	LPE = 169.6548453758
+	LAN = 64.0156777022447
+	MNA = 0.134065503049258
+	EPH = 1670797.55174863
+	REF = 0
+}
+PART
+{
+	name = PotatoRoid
+	cid = 0
+	uid = 366981642
+	mid = 366981642
+	launchID = 0
+	parent = 0
+	position = 0,0,0
+	rotation = 0,0,0,1
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = 0
+	sepI = 0
+	sidx = 0
+	attm = 0
+	srfN = None, -1
+	mass = 150
+	temp = -1
+	tempExt = 0
+	tempExtUnexp = 0
+	expt = 0.1
+	state = 0
+	connected = True
+	attached = True
+	flag = 
+	rTrf = 
+	modCost = 0
+}
+ACTIONGROUPS
+{
+}
+DISCOVERY
+{
+	state = 29
+	lastObservedTime = 273.2414459
+	lifetime = 924041.546630859
+	refTime = 1728000
+	size = 2
+}
+FLIGHTPLAN
+{
+}
+CTRLSTATE
+{
+}

@@ -1,0 +1,10 @@
+Title: OPT Space Plane Parts V1.7
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. 
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+Credits:
+Models and texture are created by k.yeon
+Texture inspired by Porkjet
+
+Included Plugins:
+Module Manager 2.6.6 by Sarbian - http://forum.kerbalspaceprogram.com/threads/55219-Module-Manager-2-1-0-%28May-04%29-please-read-the-orange-text-in-first-post

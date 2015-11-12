@@ -1,0 +1,261 @@
+pid = 33331e513b1a483b92c07edcfc23d933
+name = Comms Relay Lander Debris
+type = Debris
+sit = LANDED
+landed = True
+landedAt = 
+splashed = False
+met = 1.08000000100583
+lct = 389686.174050323
+lastUT = 389687.254050324
+root = 0
+lat = 1.14422712313404
+lon = 31.21091285342
+alt = 770.494787090574
+hgt = 2.288323
+nrm = -0.1580196,0.6615043,0.7331043
+rot = 0.1451703,0.4302878,-0.3990556,0.7965757
+CoM = 0.494487,-0.2539262,8.828036E-05
+stg = 0
+prst = False
+ref = 0
+ctrl = False
+cPch = 0
+cHdg = 0
+cMod = -1
+ORBIT
+{
+	SMA = 301319.373787698
+	ECC = 0.993802425044208
+	INC = 1.15599093197686
+	LPE = 261.797567267566
+	LAN = 69.4368795573575
+	MNA = 3.1470692444847
+	EPH = 389687.254050324
+	REF = 1
+}
+PART
+{
+	name = sweptWing
+	cid = 4293023406
+	uid = 4118660168
+	mid = 1372252593
+	launchID = 1
+	parent = 0
+	position = 0,0,0
+	rotation = 0,0,0,1
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = -1
+	sepI = 0
+	sidx = -1
+	attm = 1
+	srfN = srfAttach, -1
+	mass = 0.275
+	temp = 377.886673478832
+	tempExt = 335.43023718777
+	tempExtUnexp = 335.383105378461
+	expt = 0.1
+	state = 0
+	connected = False
+	attached = False
+	flag = Squad/Flags/default
+	rTrf = sweptWing
+	modCost = 0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 620
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	name = strutConnector
+	cid = 4293016674
+	uid = 3087188601
+	mid = 1372252593
+	launchID = 1
+	parent = 0
+	position = 3.70839071273804,-1.90530097484589,-1.80877819389025E-07
+	rotation = 0.07266698,-0.9973564,9.270008E-11,9.769652E-08
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = -1
+	sepI = 0
+	sidx = -1
+	attm = 1
+	srfN = srfAttach, 0
+	mass = 0.05
+	temp = 377.996425250384
+	tempExt = 356.394697668419
+	tempExtUnexp = 356.393339004988
+	expt = 0
+	state = 0
+	connected = False
+	attached = True
+	flag = Squad/Flags/default
+	rTrf = strutConnector
+	modCost = 0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 0
+		pos = 2.524694,7.187978,-0.03897924
+		rot = -8.763167E-09,-8.434484E-07,0.9973564,-0.07266722
+		dir = 0.3313868,0.9434811,-0.005116344
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+ACTIONGROUPS
+{
+	Stage = True, 389649.974050289
+	Gear = True, 0
+	Light = False, 0
+	RCS = False, 387410.299009755
+	SAS = False, 389412.625861615
+	Brakes = False, 389474.014050125
+	Abort = False, 0
+	Custom01 = True, 300051.966267853
+	Custom02 = False, 0
+	Custom03 = False, 0
+	Custom04 = False, 0
+	Custom05 = False, 0
+	Custom06 = False, 0
+	Custom07 = False, 0
+	Custom08 = False, 0
+	Custom09 = False, 0
+	Custom10 = False, 0
+}
+DISCOVERY
+{
+	state = -1
+	lastObservedTime = 0
+	lifetime = Infinity
+	refTime = Infinity
+	size = 2
+}
+FLIGHTPLAN
+{
+}
+CTRLSTATE
+{
+	pitch = 0
+	yaw = 0
+	roll = 0
+	trimPitch = 0
+	trimYaw = 0
+	trimRoll = 0
+	mainThrottle = 0
+}

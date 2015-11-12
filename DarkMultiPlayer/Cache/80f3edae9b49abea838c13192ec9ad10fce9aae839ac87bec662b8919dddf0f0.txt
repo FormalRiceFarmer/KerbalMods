@@ -1,0 +1,206 @@
+pid = 12a7160e93444f48a4b5c6dc23c67ef2
+name = Velociteze Debris
+type = Debris
+sit = FLYING
+landed = False
+landedAt = 
+splashed = False
+met = 0.140000000130385
+lct = 467154.233715893
+lastUT = 467154.373715893
+root = 0
+lat = -0.147325788048432
+lon = 285.426124594453
+alt = 65.3783275039168
+hgt = 0.5961114
+nrm = -0.2383076,-0.005742047,-0.971173
+rot = -0.008409145,0.2152949,0.536392,-0.8160031
+CoM = 0,0,0
+stg = 0
+prst = False
+ref = 0
+ctrl = False
+cPch = 0
+cHdg = 0
+cMod = -1
+ORBIT
+{
+	SMA = 301115.629750634
+	ECC = 0.992807199572321
+	INC = 3.34016456960742
+	LPE = 177.469373469462
+	LAN = 262.1303890018
+	MNA = 3.14252129085703
+	EPH = 467154.373715893
+	REF = 1
+}
+PART
+{
+	name = StandardCtrlSrf
+	cid = 4288911410
+	uid = 1832587159
+	mid = 2904433768
+	launchID = 3
+	parent = 0
+	position = 0,0,0
+	rotation = 0,0,0,1.000001
+	mirror = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sqor = -1
+	sepI = 0
+	sidx = -1
+	attm = 1
+	srfN = srfAttach, -1
+	mass = 0.05
+	temp = 302.820583956941
+	tempExt = 303.369452677081
+	tempExtUnexp = 303.37000361278
+	expt = 0.1
+	state = 1
+	connected = False
+	attached = False
+	flag = Squad/Flags/default
+	rTrf = StandardCtrlSrf
+	modCost = 0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = True
+		ignoreYaw = True
+		ignoreRoll = True
+		deploy = False
+		deployInvert = False
+		stagingEnabled = True
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		deploy_UIFlight
+		{
+			controlEnabled = True
+		}
+		deployInvert_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = None
+			}
+			ActionExtend
+			{
+				actionGroup = Custom09
+			}
+			ActionRetract
+			{
+				actionGroup = Custom10
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 400
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+ACTIONGROUPS
+{
+	Stage = True, 466857.593715617
+	Gear = True, 467092.013715835
+	Light = False, 0
+	RCS = False, 0
+	SAS = False, 467104.373715846
+	Brakes = False, 467105.313715847
+	Abort = False, 0
+	Custom01 = False, 0
+	Custom02 = False, 0
+	Custom03 = False, 0
+	Custom04 = False, 0
+	Custom05 = False, 0
+	Custom06 = False, 0
+	Custom07 = False, 0
+	Custom08 = False, 0
+	Custom09 = False, 0
+	Custom10 = False, 0
+}
+DISCOVERY
+{
+	state = -1
+	lastObservedTime = 0
+	lifetime = Infinity
+	refTime = Infinity
+	size = 2
+}
+FLIGHTPLAN
+{
+}
+CTRLSTATE
+{
+	pitch = 0
+	yaw = 0
+	roll = 0
+	trimPitch = 0
+	trimYaw = 0
+	trimRoll = 0
+	mainThrottle = 0
+}

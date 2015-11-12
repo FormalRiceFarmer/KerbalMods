@@ -1,0 +1,353 @@
+pid = a2dddcf547a5460fb71aab4afec9f649
+name = Comms Relay Lander Debris
+type = Debris
+sit = FLYING
+landed = False
+landedAt = 
+splashed = False
+met = 0
+lct = 550214.791444569
+lastUT = 550214.811444569
+root = 0
+lat = 0.0256285446228989
+lon = 104.807610617554
+alt = 349.664665267454
+hgt = 2.636736
+nrm = -0.1173736,-0.9907521,-0.06807469
+rot = 0.2486354,-0.5891222,0.6769497,-0.3644924
+CoM = 0.7878444,-0.4654784,-8.729275E-05
+stg = 0
+prst = False
+ref = 0
+ctrl = False
+cPch = 0
+cHdg = 0
+cMod = -1
+ORBIT
+{
+	SMA = 300903.046281915
+	ECC = 0.995174373394148
+	INC = 5.56526819536338
+	LPE = 180.277998856319
+	LAN = 26.313929355925
+	MNA = 3.13167950271155
+	EPH = 550214.811444569
+	REF = 1
+}
+PART
+{
+	name = sweptWing
+	cid = 4293023406
+	uid = 1231905050
+	mid = 1730704613
+	launchID = 2
+	parent = 0
+	position = 0,0,0
+	rotation = 0,0,0,1
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = -1
+	sepI = 0
+	sidx = -1
+	attm = 1
+	srfN = srfAttach, -1
+	mass = 0.275
+	temp = 311.006849533694
+	tempExt = 308.185625242075
+	tempExtUnexp = 308.181995271012
+	expt = 0.1
+	state = 0
+	connected = False
+	attached = False
+	flag = Squad/Flags/default
+	rTrf = sweptWing
+	modCost = 0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 620
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	name = strutConnector
+	cid = 4293016674
+	uid = 2703821044
+	mid = 1730704613
+	launchID = 2
+	parent = 0
+	position = 3.70838928222656,-1.90530097484589,-1.22904850741179E-08
+	rotation = 0.07266698,-0.9973564,9.270008E-11,9.769652E-08
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = -1
+	sepI = 0
+	sidx = -1
+	attm = 1
+	srfN = srfAttach, 0
+	mass = 0.05
+	temp = 311.027015467708
+	tempExt = 309.929125890809
+	tempExtUnexp = 309.937648706869
+	expt = 0
+	state = 0
+	connected = False
+	attached = True
+	flag = Squad/Flags/default
+	rTrf = strutConnector
+	modCost = 0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 0
+		pos = 2.524694,7.187978,-0.03897924
+		rot = -8.763167E-09,-8.434484E-07,0.9973564,-0.07266722
+		dir = 0.3313868,0.9434811,-0.005116344
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	name = strutConnector
+	cid = 4293014366
+	uid = 3956563595
+	mid = 1730704613
+	launchID = 2
+	parent = 0
+	position = 3.77508902549744,-2.5151309967041,-9.47929379435664E-09
+	rotation = 0.5777658,-0.8162028,-4.942922E-07,7.839556E-07
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = -1
+	sepI = 0
+	sidx = -1
+	attm = 1
+	srfN = srfAttach, 0
+	mass = 0.05
+	temp = 311.027015467708
+	tempExt = 309.929125890809
+	tempExtUnexp = 309.937648706869
+	expt = 0
+	state = 0
+	connected = False
+	attached = True
+	flag = Squad/Flags/default
+	rTrf = strutConnector
+	modCost = 0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 0
+		pos = 5.306911,2.161023,0.1042478
+		rot = -1.988986E-08,-0.222105,-0.7817888,0.5826455
+		dir = 0.9260033,0.3770771,0.0181902
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+ACTIONGROUPS
+{
+	Stage = True, 392657.394648019
+	Gear = True, 0
+	Light = False, 0
+	RCS = False, 549987.635380003
+	SAS = False, 549952.19537997
+	Brakes = False, 0
+	Abort = False, 0
+	Custom01 = True, 0.1
+	Custom02 = False, 0
+	Custom03 = False, 0
+	Custom04 = False, 0
+	Custom05 = False, 0
+	Custom06 = False, 0
+	Custom07 = False, 0
+	Custom08 = False, 0
+	Custom09 = False, 0
+	Custom10 = False, 0
+}
+DISCOVERY
+{
+	state = -1
+	lastObservedTime = 0
+	lifetime = Infinity
+	refTime = Infinity
+	size = 2
+}
+FLIGHTPLAN
+{
+}
+CTRLSTATE
+{
+	pitch = 0
+	yaw = 0
+	roll = 0
+	trimPitch = 0
+	trimYaw = 0
+	trimRoll = 0
+	mainThrottle = 1
+}
