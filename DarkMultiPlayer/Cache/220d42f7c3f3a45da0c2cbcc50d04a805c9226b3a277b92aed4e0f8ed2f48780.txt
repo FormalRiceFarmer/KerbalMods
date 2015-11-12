@@ -1,0 +1,146 @@
+pid = cd155cec7736428ea71fc7e82daa9224
+name = Mun Lander Debris
+type = Debris
+sit = FLYING
+landed = False
+landedAt = 
+splashed = False
+met = 0
+lct = 607511.788237429
+lastUT = 607511.808237429
+root = 0
+lat = -0.0973032241794103
+lon = -74.5587692937669
+alt = 4333.50036180287
+hgt = 4260.968
+nrm = -0.0184535,0.9991555,0.03671391
+rot = -0.07803313,-0.7124981,0.6903809,-0.09814144
+CoM = 0,0,0
+stg = 0
+prst = False
+ref = 0
+ctrl = False
+cPch = 0
+cHdg = 0
+cMod = -1
+ORBIT
+{
+	SMA = 304663.965855444
+	ECC = 0.994812007867902
+	INC = 0.264385206232423
+	LPE = 158.845194783826
+	LAN = 105.995474635702
+	MNA = 2.84269207521106
+	EPH = 607511.808237429
+	REF = 1
+}
+PART
+{
+	name = noseCone
+	cid = 4287907210
+	uid = 3135278934
+	mid = 2588542353
+	launchID = 1
+	parent = 0
+	position = 0,0,0
+	rotation = 0,0,0,1.000001
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = -1
+	sepI = 0
+	sidx = -1
+	attm = 0
+	srfN = , -1
+	attN = bottom01, -1
+	mass = 0.03
+	temp = 434.204551027881
+	tempExt = 366.621873848627
+	tempExtUnexp = 366.514621698466
+	expt = 0.5
+	state = 0
+	connected = False
+	attached = False
+	flag = Squad/Flags/default
+	rTrf = noseCone
+	modCost = 0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 240
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+ACTIONGROUPS
+{
+	Stage = True, 607485.848237404
+	Gear = True, 0
+	Light = False, 0
+	RCS = False, 0
+	SAS = True, 607484.808237404
+	Brakes = False, 0
+	Abort = False, 0
+	Custom01 = False, 0
+	Custom02 = False, 0
+	Custom03 = False, 0
+	Custom04 = False, 0
+	Custom05 = False, 0
+	Custom06 = False, 0
+	Custom07 = False, 0
+	Custom08 = False, 0
+	Custom09 = False, 0
+	Custom10 = False, 0
+}
+DISCOVERY
+{
+	state = -1
+	lastObservedTime = 0
+	lifetime = Infinity
+	refTime = Infinity
+	size = 2
+}
+FLIGHTPLAN
+{
+}
+CTRLSTATE
+{
+	pitch = 0
+	yaw = 0
+	roll = 0
+	trimPitch = 0
+	trimYaw = 0
+	trimRoll = 0
+	mainThrottle = 1
+}

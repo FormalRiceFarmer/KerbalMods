@@ -1,0 +1,81 @@
+pid = 898df98f9d6945b084579017edf32bbc
+name = Ast. ORG-855
+type = SpaceObject
+sit = ORBITING
+landed = False
+landedAt = 
+splashed = False
+met = 280168.902397978
+lct = 280168.902397978
+lastUT = -1
+root = 0
+lat = -0.666061573705116
+lon = -46.8243245757633
+alt = 13850567452.4198
+hgt = -1
+nrm = 0,1,0
+rot = 0.5903348,-0.2244007,0.6679092,0.3937595
+CoM = 0,0,0
+stg = 0
+prst = False
+ref = 0
+ctrl = False
+ORBIT
+{
+	SMA = 14950882122.9912
+	ECC = 0.104857628719864
+	INC = 0.694730519273828
+	LPE = 316.373166132482
+	LAN = -66.8321273955987
+	MNA = 0.441291168607399
+	EPH = 2574700.39043509
+	REF = 0
+}
+PART
+{
+	name = PotatoRoid
+	cid = 0
+	uid = 1156766362
+	mid = 1156766362
+	launchID = 0
+	parent = 0
+	position = 0,0,0
+	rotation = 0,0,0,1
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = 0
+	sepI = 0
+	sidx = 0
+	attm = 0
+	srfN = None, -1
+	mass = 150
+	temp = -1
+	tempExt = 0
+	tempExtUnexp = 0
+	expt = 0.1
+	state = 0
+	connected = True
+	attached = True
+	flag = 
+	rTrf = 
+	modCost = 0
+}
+ACTIONGROUPS
+{
+}
+DISCOVERY
+{
+	state = 29
+	lastObservedTime = 280168.902397978
+	lifetime = 450654.949951172
+	refTime = 1728000
+	size = 4
+}
+FLIGHTPLAN
+{
+}
+CTRLSTATE
+{
+}
