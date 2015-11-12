@@ -1,0 +1,353 @@
+pid = b14b0200391349e6a76bac0d255d4d92
+name = Comms Relay Lander Debris
+type = Debris
+sit = FLYING
+landed = False
+landedAt = 
+splashed = False
+met = 0
+lct = 389686.174050323
+lastUT = 389686.194050323
+root = 0
+lat = 1.14403091537287
+lon = 31.2090585513907
+alt = 770.343262406648
+hgt = 2.756486
+nrm = 0.1279568,-0.9909532,0.04048142
+rot = 0.04722084,-0.322749,0.7031451,0.6318151
+CoM = 0.7877561,-0.4653007,4.606563E-05
+stg = 0
+prst = False
+ref = 0
+ctrl = False
+cPch = 0
+cHdg = 0
+cMod = -1
+ORBIT
+{
+	SMA = 301591.332634117
+	ECC = 0.992003146867896
+	INC = 2.88994954546969
+	LPE = 203.330959620671
+	LAN = 127.918059723303
+	MNA = 3.14137713926078
+	EPH = 389686.194050323
+	REF = 1
+}
+PART
+{
+	name = sweptWing
+	cid = 4293023446
+	uid = 3549956023
+	mid = 1372252593
+	launchID = 1
+	parent = 0
+	position = 0,0,0
+	rotation = 0,0,0,1
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = -1
+	sepI = 0
+	sidx = -1
+	attm = 1
+	srfN = srfAttach, -1
+	mass = 0.275
+	temp = 378.054039731519
+	tempExt = 332.781669193049
+	tempExtUnexp = 332.724650976305
+	expt = 0.1
+	state = 0
+	connected = False
+	attached = False
+	flag = Squad/Flags/default
+	rTrf = sweptWing
+	modCost = 0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 620
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	name = strutConnector
+	cid = 4293016890
+	uid = 3426591831
+	mid = 1372252593
+	launchID = 1
+	parent = 0
+	position = 3.70839595794678,-1.90530097484589,2.45805988896564E-08
+	rotation = 0.07266702,-0.9973564,1.059422E-10,3.074255E-08
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = -1
+	sepI = 0
+	sidx = -1
+	attm = 1
+	srfN = srfAttach, 0
+	mass = 0.05
+	temp = 378.167547920312
+	tempExt = 357.439517374339
+	tempExtUnexp = 357.492756711973
+	expt = 0
+	state = 0
+	connected = False
+	attached = True
+	flag = Squad/Flags/default
+	rTrf = strutConnector
+	modCost = 0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 0
+		pos = 2.524696,7.187978,-0.03897959
+		rot = 1.207034E-08,-3.175534E-06,0.9973565,-0.07266685
+		dir = 0.331387,0.943481,-0.005116391
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	name = strutConnector
+	cid = 4293014966
+	uid = 3860346971
+	mid = 1372252593
+	launchID = 1
+	parent = 0
+	position = 3.77509450912476,-2.5151309967041,1.89583282406147E-08
+	rotation = 0.5777659,-0.8162028,-5.172228E-07,6.708088E-07
+	mirror = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sqor = -1
+	sepI = 0
+	sidx = -1
+	attm = 1
+	srfN = srfAttach, 0
+	mass = 0.05
+	temp = 378.167549019906
+	tempExt = 357.439518204691
+	tempExtUnexp = 357.492757549466
+	expt = 0
+	state = 0
+	connected = False
+	attached = True
+	flag = Squad/Flags/default
+	rTrf = strutConnector
+	modCost = 0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 0
+		pos = 5.306913,2.161022,0.1042474
+		rot = -6.201831E-09,-0.2221053,-0.7817886,0.5826456
+		dir = 0.9260033,0.3770768,0.01819013
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+ACTIONGROUPS
+{
+	Stage = True, 389649.974050289
+	Gear = True, 0
+	Light = False, 0
+	RCS = False, 387410.299009755
+	SAS = False, 389412.625861615
+	Brakes = False, 389474.014050125
+	Abort = False, 0
+	Custom01 = True, 300051.966267853
+	Custom02 = False, 0
+	Custom03 = False, 0
+	Custom04 = False, 0
+	Custom05 = False, 0
+	Custom06 = False, 0
+	Custom07 = False, 0
+	Custom08 = False, 0
+	Custom09 = False, 0
+	Custom10 = False, 0
+}
+DISCOVERY
+{
+	state = -1
+	lastObservedTime = 0
+	lifetime = Infinity
+	refTime = Infinity
+	size = 2
+}
+FLIGHTPLAN
+{
+}
+CTRLSTATE
+{
+	pitch = 0
+	yaw = 0
+	roll = 0
+	trimPitch = 0
+	trimYaw = 0
+	trimRoll = 0
+	mainThrottle = 0
+}
