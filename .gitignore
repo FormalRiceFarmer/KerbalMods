@@ -3,6 +3,7 @@ Kerbaltek
 DarkMultiPlayer/Cache
 DarkMultiPlayer/Flags
 ModuleManager.ConfigCache
+*.ConfigCache
 ModuleManager.ConfigSHA
 ModuleManager.Physics
 ModuleManager.TechTree

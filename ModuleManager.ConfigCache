@@ -16553,6 +16553,30 @@ UrlConfig
 }
 UrlConfig
 {
+	name = HyperEdit
+	type = HyperEdit
+	parentUrl = Kerbaltek/HyperEdit_1.4.2/windowpos
+	url = Kerbaltek/HyperEdit_1.4.2/windowpos/HyperEdit
+	HyperEdit
+	{
+		x = 449
+		y = 70
+	}
+}
+UrlConfig
+{
+	name = Misc_tools
+	type = Misc_tools
+	parentUrl = Kerbaltek/HyperEdit_1.4.2/windowpos
+	url = Kerbaltek/HyperEdit_1.4.2/windowpos/Misc_tools
+	Misc_tools
+	{
+		x = 447
+		y = 52
+	}
+}
+UrlConfig
+{
 	name = IR_Free
 	type = SCALETYPE
 	parentUrl = MagicSmokeIndustries/IR_TweakScale
