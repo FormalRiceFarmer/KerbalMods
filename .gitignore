@@ -12,3 +12,7 @@ toolbar-settings.dat
 /DarkMultiPlayer/Plugins/Data/*.xml
 /MechJeb2/Plugins/PluginData
 /DarkMultiPlayer/Plugins/Data/servers.xml
+ModuleManager.ConfigCache
+ModuleManager.ConfigCache
+*.log
+DarkMultiPlayer/Plugins/Data/DMPModControl.txt
