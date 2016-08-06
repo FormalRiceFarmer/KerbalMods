@@ -1,4 +1,4 @@
-/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -27,13 +27,14 @@ namespace RCSBuildAid
         SettingsLoader ()
         {
             Settings.LoadConfig ();
+            Settings.ModCompatibilityCheck ();
             new AppLauncher ();
         }
     }
 
     public static class Settings
     {
-        const string configPath = "GameData/RCSBuildAid/settings.cfg";
+        const string configPath = "GameData/RCSBuildAid/Plugins/PluginData/settings.cfg";
         static string configAbsolutePath;
         static ConfigNode settings;
 
@@ -60,10 +61,21 @@ namespace RCSBuildAid
         public static bool menu_minimized;
         public static bool applauncher;
         public static bool action_screen;
+        public static bool disable_mod_compatibility_check;
         public static int window_x;
         public static int window_y;
+
+        // TODO refactor
         public static Dictionary<string, bool> resource_cfg = new Dictionary<string, bool> ();
+        public static Dictionary<string, float> altitude_cfg = new Dictionary<string, float> ();
         public static CelestialBody selected_body;
+
+        public static List<PluginMode> EnabledModes = new List<PluginMode> {
+            PluginMode.RCS, 
+            PluginMode.Attitude, 
+            PluginMode.Engine, 
+            PluginMode.Parachutes
+        };
 
         public static void LoadConfig ()
         {
@@ -78,8 +90,8 @@ namespace RCSBuildAid
             menu_res_mass    = GetValue ("menu_res_mass"   , false);
             marker_scale     = GetValue ("marker_scale"    , 1f   );
             include_rcs      = GetValue ("include_rcs"     , true );
-            include_rcs      = GetValue ("eng_include_rcs" , false);
             include_wheels   = GetValue ("include_wheels"  , false);
+            eng_include_rcs  = GetValue ("eng_include_rcs" , false);
             resource_amount  = GetValue ("resource_amount" , false);
             use_dry_mass     = GetValue ("use_dry_mass"    , true );
             show_marker_com  = GetValue ("show_marker_com" , true );
@@ -92,6 +104,7 @@ namespace RCSBuildAid
             toolbar_plugin   = GetValue ("toolbar_plugin"  , true );
             window_x         = GetValue ("window_x"        , 280  );
             window_y         = GetValue ("window_y"        , 114  );
+            disable_mod_compatibility_check = GetValue ("disable_mod_compatibility_check", false);
 
             /* for these resources, set some defaults */
             resource_cfg ["LiquidFuel"] = GetValue (resourceKey ("LiquidFuel"), false);
@@ -117,13 +130,13 @@ namespace RCSBuildAid
         {
             SetValue ("com_reference"   , (int)com_reference);
             SetValue ("plugin_mode"     , (int)plugin_mode);
-            SetValue ("shortcut_key"    , (int)PluginKeys.PLUGIN_TOGGLE.primary);
+            SetValue ("shortcut_key"    , PluginKeys.PLUGIN_TOGGLE.primary.ToString());
             SetValue ("menu_vessel_mass", menu_vessel_mass);
             SetValue ("menu_res_mass"   , menu_res_mass   );
             SetValue ("marker_scale"    , marker_scale    );
             SetValue ("include_rcs"     , include_rcs     );
-            SetValue ("eng_include_rcs" , eng_include_rcs );
             SetValue ("include_wheels"  , include_wheels  );
+            SetValue ("eng_include_rcs" , eng_include_rcs );
             SetValue ("resource_amount" , resource_amount );
             SetValue ("use_dry_mass"    , use_dry_mass    );
             SetValue ("show_marker_com" , show_marker_com );
@@ -137,6 +150,7 @@ namespace RCSBuildAid
             SetValue ("toolbar_plugin"  , toolbar_plugin  );
             SetValue ("window_x"        , window_x        );
             SetValue ("window_y"        , window_y        );
+            SetValue ("disable_mod_compatibility_check", disable_mod_compatibility_check);
 
             if (direction != Direction.none) {
                 SetValue ("direction", (int)direction);
@@ -144,7 +158,39 @@ namespace RCSBuildAid
             foreach (string name in resource_cfg.Keys) {
                 SetValue (resourceKey(name), resource_cfg [name]);
             }
-            settings.Save (configAbsolutePath);
+            foreach (string name in altitude_cfg.Keys) {
+                SetValue (altitudeKey(name), altitude_cfg [name]);
+            }
+
+            try {
+                settings.Save (configAbsolutePath);
+            } catch (System.IO.IsolatedStorage.IsolatedStorageException) {
+                Debug.LogWarning (
+                    string.Format(
+                        "RCS Build Aid failed to save its config, check the path '{0}' exists",
+                        Path.GetDirectoryName(configPath))
+                );
+            }
+        }
+
+        public static void ModCompatibilityCheck () {
+            if (disable_mod_compatibility_check) {
+                Debug.LogWarning ("RCSBuildAid's mod compatibility check disabled.");
+                return;
+            }
+            foreach (var mod in AssemblyLoader.loadedAssemblies) {
+                var assemblyName = mod.assembly.GetName();
+                var modName = assemblyName.Name;
+                if (String.Equals (modName, "FerramAerospaceResearch", StringComparison.OrdinalIgnoreCase) ||
+                    String.Equals (modName, "RealChute", StringComparison.OrdinalIgnoreCase)) {
+                    if (EnabledModes.Remove (PluginMode.Parachutes)) {
+                        Debug.LogWarning ("RCSBuildAid's parachute mode disabled since incompatible mods were detected.");
+                        if (Settings.plugin_mode == PluginMode.Parachutes) {
+                            Settings.plugin_mode = PluginMode.none;
+                        }
+                    }
+                }
+            }
         }
 
         public static void SetValue (string key, object value)
@@ -196,6 +242,23 @@ namespace RCSBuildAid
             return "drycom_" + name;
         }
 
+        public static float GetAltitudeCfg (string bodyName, float defaultValue)
+        {
+            float value;
+            if (altitude_cfg.TryGetValue (bodyName, out value)) {
+                return value;
+            }
+            string key = altitudeKey(bodyName);
+            value = GetValue(key, defaultValue);
+            altitude_cfg[bodyName] = value;
+            return value;
+        }
+
+        static string altitudeKey(string name)
+        {
+            return "drag_altitude_" + name;
+        }
+
         public static void setupToolbar(bool value) {
             Settings.toolbar_plugin = value;
             if (toolbarSetup != null) {
@@ -206,14 +269,14 @@ namespace RCSBuildAid
 
     public static class PluginKeys 
     {
-        public static KeyBinding PLUGIN_TOGGLE   = new KeyBinding ();
+        public static KeyBinding PLUGIN_TOGGLE;
 
-        public static KeyBinding TRANSLATE_UP    = new KeyBinding (KeyCode.K);
-        public static KeyBinding TRANSLATE_DOWN  = new KeyBinding (KeyCode.I);
-        public static KeyBinding TRANSLATE_BACK  = new KeyBinding (KeyCode.N);
-        public static KeyBinding TRANSLATE_FWD   = new KeyBinding (KeyCode.H);
-        public static KeyBinding TRANSLATE_RIGHT = new KeyBinding (KeyCode.L);
-        public static KeyBinding TRANSLATE_LEFT  = new KeyBinding (KeyCode.J);
+        public static KeyBinding TRANSLATE_UP;
+        public static KeyBinding TRANSLATE_DOWN;
+        public static KeyBinding TRANSLATE_BACK;
+        public static KeyBinding TRANSLATE_FWD;
+        public static KeyBinding TRANSLATE_RIGHT;
+        public static KeyBinding TRANSLATE_LEFT;
 
         public static void Setup ()
         {
@@ -224,7 +287,11 @@ namespace RCSBuildAid
             TRANSLATE_RIGHT = new KeyBinding (GameSettings.TRANSLATE_RIGHT.primary);
             TRANSLATE_LEFT  = new KeyBinding (GameSettings.TRANSLATE_LEFT.primary);
 
-            PLUGIN_TOGGLE = new KeyBinding((KeyCode)Settings.GetValue ("shortcut_key", (int)KeyCode.Alpha5));
+            PLUGIN_TOGGLE = new KeyBinding (Parse (Settings.GetValue ("shortcut_key", KeyCode.Alpha5.ToString ())));
+        }
+
+        public static KeyCode Parse(string value) {
+            return (KeyCode)Enum.Parse (typeof(KeyCode), value);
         }
     }
 }

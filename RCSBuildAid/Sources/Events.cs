@@ -1,4 +1,4 @@
-/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -15,63 +15,88 @@
  */
 
 using System;
+using UnityEngine;
 
 namespace RCSBuildAid
 {
     public class Events
     {
-        public event Action<PluginMode> ModeChanged;
-        public event Action<Direction> DirectionChanged;
+        public static event Action<PluginMode> ModeChanged;
+        public static event Action<Direction> DirectionChanged;
         public static event Action ConfigSaving;
-        public static event Action PluginEnabled;
-        public static event Action PluginDisabled;
+        public static event Action<bool> PluginEnabled;
+        public static event Action<bool> PluginDisabled;
+        public static event Action<bool, bool> PluginToggled;
         public static event Action LeavingEditor;
         public static event Action PartChanged;
+        public static event Action RootPartPicked;
+        public static event Action RootPartDropped;
         public static event Action<EditorScreen> EditorScreenChanged;
 
-        public void OnModeChanged ()
+        public static void OnModeChanged ()
         {
             if (ModeChanged != null) {
                 ModeChanged(RCSBuildAid.Mode);
             }
         }
 
-        public void OnDirectionChanged ()
+        public static void OnDirectionChanged ()
         {
             if (DirectionChanged != null) {
                 DirectionChanged (RCSBuildAid.Direction);
             }
         }
 
-        public void OnPluginEnabled ()
+        public static void OnPluginEnabled (bool byUser)
         {
             if (PluginEnabled != null) {
-                PluginEnabled ();
+                PluginEnabled (byUser);
             }
         }
 
-        public void OnPluginDisabled ()
+        public static void OnPluginDisabled (bool byUser)
         {
             if (PluginDisabled != null) {
-                PluginDisabled ();
+                PluginDisabled (byUser);
             }
         }
 
-        public void OnLeavingEditor ()
+        public static void OnPluginToggled (bool value, bool byUser)
+        {
+            if (PluginToggled != null) {
+                PluginToggled (value, byUser);
+            }
+        }
+
+        public static void OnLeavingEditor ()
         {
             if (LeavingEditor != null) {
                 LeavingEditor ();
             }
         }
 
-        public void OnPartChanged ()
+        public static void OnPartChanged ()
         {
             if (PartChanged != null) {
                 PartChanged ();
             }
         }
 
-        public void OnEditorScreenChanged (EditorScreen screen)
+        public static void OnRootPartPicked ()
+        {
+            if (RootPartPicked != null) {
+                RootPartPicked ();
+            }
+        }
+
+        public static void OnRootPartDropped ()
+        {
+            if (RootPartDropped != null) {
+                RootPartDropped ();
+            }
+        }
+
+        public static void OnEditorScreenChanged (EditorScreen screen)
         {
             if (EditorScreenChanged != null) {
                 EditorScreenChanged (screen);
@@ -80,6 +105,7 @@ namespace RCSBuildAid
 
         public void HookEvents ()
         {
+            /* don't add static methods, GameEvents doesn't like that. */
             GameEvents.onGameSceneLoadRequested.Add (onGameSceneChange);
             GameEvents.onEditorPartEvent.Add (onEditorPartEvent);
             GameEvents.onEditorRestart.Add (onEditorRestart);
@@ -114,8 +140,19 @@ namespace RCSBuildAid
 
         void onEditorPartEvent (ConstructionEventType evt, Part part)
         {
+            //MonoBehaviour.print (evt.ToString ());
             OnPartChanged ();
             switch (evt) {
+            case ConstructionEventType.PartPicked:
+                if (part == EditorLogic.RootPart) {
+                    OnRootPartPicked ();
+                }
+                break;
+            case ConstructionEventType.PartDropped:
+                if (part == EditorLogic.RootPart) {
+                    OnRootPartDropped ();
+                }
+                break;
             case ConstructionEventType.PartDeleted:
                 if (part == EditorLogic.RootPart) {
                     RCSBuildAid.SetActive (false);

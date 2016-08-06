@@ -1,4 +1,4 @@
-/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -30,10 +30,9 @@ namespace RCSBuildAid
         bool modeSelect;
         bool softLock;
         bool settings;
-        int plugin_mode_count;
-        const string title = "RCS Build Aid v0.7.2";
+        const string title = "RCS Build Aid v0.8.1";
 
-        KeybindConfig pluginShotcut;
+        KeybindConfig pluginShortcut;
 
         public static bool cBodyListEnabled;
         public static PluginMode cBodyListMode;
@@ -46,6 +45,16 @@ namespace RCSBuildAid
             { PluginMode.Attitude, "Attitude"    },
             { PluginMode.RCS     , "Translation" },
             { PluginMode.Engine  , "Engines"     },
+        };
+
+        static readonly Dictionary<Direction, string> translationMap = new Dictionary<Direction, string> {
+            { Direction.none   , "none"    },
+            { Direction.left   , "port"    },
+            { Direction.right  , "starboard" },
+            { Direction.down   , "ventral" },
+            { Direction.up     , "dorsal"  },
+            { Direction.forward, "fore"    },
+            { Direction.back   , "aft"     },
         };
 
         static readonly Dictionary<Direction, string> rotationMap = new Dictionary<Direction, string> {
@@ -63,24 +72,26 @@ namespace RCSBuildAid
             set { Settings.menu_minimized = value; }
         }
 
+        int plugin_mode_count {
+            get { return Settings.EnabledModes.Count; }
+        }
+
         void Awake ()
         {
-            plugin_mode_count = Enum.GetNames(typeof (PluginMode)).Length - 1;
             winID = gameObject.GetInstanceID ();
             winRect = new Rect (Settings.window_x, Settings.window_y, Style.main_window_width, Style.main_window_height);
             winCBodyListRect = new Rect ();
             load ();
-            DrawModeContent = null;
-            DrawToggleableContent = null;
-            DrawToggleableContent += gameObject.AddComponent<MenuMass> ().DrawContent;
-            DrawToggleableContent += gameObject.AddComponent<MenuResources> ().DrawContent;
-            DrawToggleableContent += gameObject.AddComponent<MenuMarkers> ().DrawContent;
-            RCSBuildAid.events.ModeChanged += gameObject.AddComponent<MenuTranslation> ().onModeChange;
-            RCSBuildAid.events.ModeChanged += gameObject.AddComponent<MenuEngines> ().onModeChange;
-            RCSBuildAid.events.ModeChanged += gameObject.AddComponent<MenuAttitude> ().onModeChange;
+            gameObject.AddComponent<MenuMass> ();
+            gameObject.AddComponent<MenuResources> ();
+            gameObject.AddComponent<MenuMarkers> ();
+            gameObject.AddComponent<MenuTranslation> ();
+            gameObject.AddComponent<MenuEngines> ();
+            gameObject.AddComponent<MenuAttitude> ();
+            gameObject.AddComponent<MenuParachutes> ();
             Events.ConfigSaving += save;
 #if DEBUG
-            DrawToggleableContent += gameObject.AddComponent<MenuDebug> ().DrawContent;
+            gameObject.AddComponent<MenuDebug> ();
 #endif
         }
 
@@ -91,7 +102,7 @@ namespace RCSBuildAid
 
         void Start ()
         {
-            pluginShotcut = new KeybindConfig (PluginKeys.PLUGIN_TOGGLE);
+            pluginShortcut = new KeybindConfig (PluginKeys.PLUGIN_TOGGLE);
         }
 
         void load ()
@@ -169,6 +180,18 @@ namespace RCSBuildAid
             return getModeButtonName (RCSBuildAid.Mode);
         }
 
+        PluginMode getEnabledPluginMode (int mode) {
+            int i = mode % plugin_mode_count;
+            if (i < 0) {
+                i += plugin_mode_count;
+            }
+            return Settings.EnabledModes[i];
+        }
+
+        int getPluginModeIndex () {
+            return Settings.EnabledModes.IndexOf (RCSBuildAid.Mode);
+        }
+
         bool selectModeButton ()
         {
             bool value;
@@ -192,13 +215,8 @@ namespace RCSBuildAid
 
         void nextModeButton(string modeName, int step) {
             if (GUILayout.Button (modeName, style.mainButton, GUILayout.Width (20))) {
-                int i = (int)RCSBuildAid.Mode + step;
-                if (i < 1) {
-                    i = plugin_mode_count;
-                } else if (i > plugin_mode_count) {
-                    i = 1;
-                }
-                RCSBuildAid.SetMode ((PluginMode)i);
+                int i = getPluginModeIndex() + step;
+                RCSBuildAid.SetMode (getEnabledPluginMode(i));
             }
         }
 
@@ -239,17 +257,18 @@ namespace RCSBuildAid
             GUILayout.BeginVertical (GUI.skin.box);
             {
                 int r = Mathf.CeilToInt (plugin_mode_count / 2f);
-                int i = 1;
+                int i = 0;
 
                 GUILayout.BeginHorizontal ();
                 {
-                    while (i <= plugin_mode_count) {
+                    while (i < plugin_mode_count) {
                         GUILayout.BeginVertical ();
                         {
-                            for (int j = 0; (j < r) && (i <= plugin_mode_count); j++) {
-                                if (GUILayout.Button (getModeButtonName((PluginMode)i), style.clickLabel)) {
+                            for (int j = 0; (j < r) && (i < plugin_mode_count); j++) {
+                                PluginMode mode = getEnabledPluginMode (i);
+                                if (GUILayout.Button (getModeButtonName(mode), style.clickLabel)) {
                                     modeSelect = false;
-                                    RCSBuildAid.SetMode ((PluginMode)i);
+                                    RCSBuildAid.SetMode (mode);
                                 }
                                 i++;
                             }
@@ -310,7 +329,7 @@ namespace RCSBuildAid
             GUI.enabled = true;
             Settings.action_screen = GUILayout.Toggle (Settings.action_screen, "Show in Action Groups");
             Settings.marker_autoscale = GUILayout.Toggle (Settings.marker_autoscale, "Marker autoscaling");
-            pluginShotcut.DrawConfig ();
+            pluginShortcut.DrawConfig ();
         }
 
         void drawBodyListWindow (int ID)
@@ -325,12 +344,13 @@ namespace RCSBuildAid
 
         void celestialBodyRecurse (CelestialBody body, int padding)
         {
-            style.listButton.padding.left = padding;
-            if (GUILayout.Button (body.name, style.listButton)) {
-                cBodyListEnabled = false;
-                Settings.selected_body = body;
+            if ((RCSBuildAid.Mode != PluginMode.Parachutes) || body.atmosphere) {
+                style.listButton.padding.left = padding;
+                if (GUILayout.Button (body.name, style.listButton)) {
+                    cBodyListEnabled = false;
+                    Settings.selected_body = body;
+                }
             }
-
             foreach (CelestialBody b in body.orbitingBodies) {
                 celestialBodyRecurse(b, padding + 10);
             }
@@ -361,7 +381,7 @@ namespace RCSBuildAid
 
         public static void TranslationButton()
         {
-            if (GUILayout.Button (RCSBuildAid.Direction.ToString (), MainWindow.style.smallButton)) {
+            if (GUILayout.Button (translationMap [RCSBuildAid.Direction], MainWindow.style.smallButton)) {
                 int i = (int)RCSBuildAid.Direction;
                 i = LoopIndexSelect (1, 6, i);
                 RCSBuildAid.SetDirection ((Direction)i);
@@ -388,7 +408,7 @@ namespace RCSBuildAid
         {
             if (GUILayout.Button (RCSBuildAid.ReferenceType.ToString(), MainWindow.style.smallButton)) {
                 selectNextReference ();
-            } else if (!RCSBuildAid.IsMarkerVisible (RCSBuildAid.ReferenceType)) {
+            } else if (!MarkerManager.IsMarkerVisible (RCSBuildAid.ReferenceType)) {
                 selectNextReference ();
             }
         }
@@ -396,9 +416,9 @@ namespace RCSBuildAid
         static void selectNextReference ()
         {
             bool[] array = { 
-                RCSBuildAid.IsMarkerVisible (MarkerType.CoM), 
-                RCSBuildAid.IsMarkerVisible (MarkerType.DCoM),
-                RCSBuildAid.IsMarkerVisible (MarkerType.ACoM)
+                MarkerManager.IsMarkerVisible (MarkerType.CoM), 
+                MarkerManager.IsMarkerVisible (MarkerType.DCoM),
+                MarkerManager.IsMarkerVisible (MarkerType.ACoM)
             };
             if (!array.Any (o => o)) {
                 return;

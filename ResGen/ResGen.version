@@ -1,0 +1,14 @@
+{
+  "NAME": "ResGen",
+  "URL": "http://bitbucket.org/Taverius/b9-aerospace/raw/HEAD/GameData/ResGen/ResGen.version",
+  "VERSION": {
+    "MAJOR": 0,
+    "MINOR": 28,
+    "PATCH": 2
+  },
+  "KSP_VERSION": {
+    "MAJOR": 0,
+    "MINOR": 25,
+    "PATCH": 0
+  }
+}

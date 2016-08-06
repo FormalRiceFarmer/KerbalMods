@@ -1,9 +1,62 @@
 RCS Build Aid Changelog
 =======================
 Elián Hanisch <lambdae2@gmail.com>
-v0.7.2, June 2015:
+v0.8.1, July 2016:
 
 This document lists important changes between versions.
+
+Version 0.8.1
+-------------
+*Release date: 27/07/2016*
+
+* Fix vectors rendering behind rocket parts.
+
+Version 0.8
+-----------
+*Release date: 04/06/2016*
+
+* Update for KSP 1.1.x.
+* Account toggling rotation/translation axis in RCS.
+* Account full throttle setting in RCS.
+* Account toggling rotation axis in rocket gimbals.
+* Move settings.cfg file to PluginData.
+* Match nomenclature in RCS's settings (starboard instead of right, etc).
+* FIX: NRE spam when closing fairings while using RCSBA.
+
+Version 0.7.7
+-------------
+*Release date: 05/02/2016*
+
+* New parachute mode.
+
+Version 0.7.6
+-------------
+*Release date: 19/12/2015*
+
+* FIX: NREs.
+* FIX: RCS thrust limits weren't accounted.
+
+Version 0.7.5
+-------------
+*Release date: 05/12/2015*
+
+* FIX: The whole plugin.
+
+Version 0.7.4
+-------------
+*Release date: 02/12/2015*
+
+* FIX: gimbal of Vector engine now points the right direction.
+* FIX: RCS were not working with gimbals if set.
+* FIX: marker forces were disabled if root part was removed and placed again.
+
+Version 0.7.3
+-------------
+*Release date: 12/11/2015*
+
+* Add LICENSE file.
+* FIX: reduce arrow flickering when dragging the vessel.
+* FIX: RealFuels black magic.
 
 Version 0.7.2
 -------------

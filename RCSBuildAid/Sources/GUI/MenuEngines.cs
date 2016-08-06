@@ -1,4 +1,4 @@
-/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -23,8 +23,9 @@ namespace RCSBuildAid
     {
         GimbalsControl gimbals;
 
-        void Awake ()
+        protected override void Awake()
         {
+            base.Awake ();
             gimbals = gameObject.AddComponent<GimbalsControl> ();
             gimbals.value = false;
         }
@@ -86,9 +87,14 @@ namespace RCSBuildAid
 
     public class GimbalsControl : ToggleableContent
     {
-        void Awake ()
+        protected override void Awake ()
         {
-            RCSBuildAid.events.DirectionChanged += onDirectionChange;
+            Events.DirectionChanged += onDirectionChange;
+        }
+
+        protected override void OnDestroy()
+        {
+            Events.DirectionChanged -= onDirectionChange;
         }
 
         void onDirectionChange(Direction d) {
@@ -110,7 +116,8 @@ namespace RCSBuildAid
                 MainWindow.RotationButton ();
             }
             GUILayout.EndHorizontal ();
-            Settings.eng_include_rcs = GUILayout.Toggle (Settings.eng_include_rcs, "Include RCS");
+            var includeRCS = GUILayout.Toggle (RCSBuildAid.IncludeRCS, "Include RCS");
+            RCSBuildAid.SetIncludeRCS (includeRCS);
         }
 
         protected override string buttonTitle {

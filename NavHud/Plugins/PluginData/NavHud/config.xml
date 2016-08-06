@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <int name="version">2</int>
+    <rect name="main window position">
+        <xmin>640</xmin>
+        <xmax>650</xmax>
+        <ymin>180</ymin>
+        <ymax>190</ymax>
+    </rect>
+    <rect name="color window position">
+        <xmin>960</xmin>
+        <xmax>970</xmax>
+        <ymin>540</ymin>
+        <ymax>550</ymax>
+    </rect>
+    <rect name="hud text position">
+        <xmin>940</xmin>
+        <xmax>1054</xmax>
+        <ymin>756</ymin>
+        <ymax>816</ymax>
+    </rect>
+    <bool name="enable text">1</bool>
+    <bool name="lock text">1</bool>
+    <keycode name="toggle key">Y</keycode>
+    <bool name="enabled">1</bool>
+    <bool name="linesEnabled">1</bool>
+    <bool name="markersEnabled">1</bool>
+    <bool name="enabledMap">0</bool>
+    <bool name="hideWithUI">1</bool>
+    <double name="hudTextColorR">0</double>
+    <double name="hudTextColorG">1</double>
+    <double name="hudTextColorB">0</double>
+    <double name="hudTextColorA">1</double>
+    <double name="upperHalfColorR">0</double>
+    <double name="upperHalfColorG">0.5</double>
+    <double name="upperHalfColorB">0.300000011920929</double>
+    <double name="upperHalfColorA">0.100000001490116</double>
+    <double name="lowerHalfColorR">0.300000011920929</double>
+    <double name="lowerHalfColorG">0.5</double>
+    <double name="lowerHalfColorB">0</double>
+    <double name="lowerHalfColorA">0.100000001490116</double>
+    <double name="horizonColorR">0.5</double>
+    <double name="horizonColorG">0.5</double>
+    <double name="horizonColorB">0.5</double>
+    <double name="horizonColorA">1</double>
+    <double name="azimuthColorR">0</double>
+    <double name="azimuthColorG">0.300000011920929</double>
+    <double name="azimuthColorB">0</double>
+    <double name="azimuthColorA">0.100000001490116</double>
+    <double name="northColorR">0.5</double>
+    <double name="northColorG">0</double>
+    <double name="northColorB">0</double>
+    <double name="northColorA">1</double>
+    <double name="eastColorR">0</double>
+    <double name="eastColorG">0.5</double>
+    <double name="eastColorB">0</double>
+    <double name="eastColorA">1</double>
+    <double name="southColorR">0</double>
+    <double name="southColorG">0.5</double>
+    <double name="southColorB">0</double>
+    <double name="southColorA">1</double>
+    <double name="westColorR">0</double>
+    <double name="westColorG">0.5</double>
+    <double name="westColorB">0</double>
+    <double name="westColorA">1</double>
+    <double name="headingColorR">0.75</double>
+    <double name="headingColorG">0.5</double>
+    <double name="headingColorB">0</double>
+    <double name="headingColorA">1</double>
+    <double name="alignmentColorR">1</double>
+    <double name="alignmentColorG">0</double>
+    <double name="alignmentColorB">0</double>
+    <double name="alignmentColorA">1</double>
+    <double name="progradeColorR">0</double>
+    <double name="progradeColorG">1</double>
+    <double name="progradeColorB">0</double>
+    <double name="progradeColorA">1</double>
+    <double name="normalColorR">1</double>
+    <double name="normalColorG">0</double>
+    <double name="normalColorB">1</double>
+    <double name="normalColorA">1</double>
+    <double name="radialColorR">0</double>
+    <double name="radialColorG">1</double>
+    <double name="radialColorB">1</double>
+    <double name="radialColorA">1</double>
+    <double name="targetColorR">1</double>
+    <double name="targetColorG">0</double>
+    <double name="targetColorB">1</double>
+    <double name="targetColorA">1</double>
+    <double name="maneuverColorR">0</double>
+    <double name="maneuverColorG">0</double>
+    <double name="maneuverColorB">1</double>
+    <double name="maneuverColorA">1</double>
+    <int name="numberZenithLinesHalf">6</int>
+    <int name="numberAzimuthLinesQuarter">8</int>
+    <int name="numberZenithVerts">128</int>
+    <int name="numberAzimuthVerts">64</int>
+    <double name="vectorSize">0.0299999993294477</double>
+    <double name="lineWidth">0.00300000002607703</double>
+    <double name="distance">1</double>
+</config>

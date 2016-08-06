@@ -473,6 +473,12 @@ TechTree
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
+		Parent
+		{
+			parentID = simpleCommandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
 	}
 	RDNode
 	{
@@ -1064,7 +1070,7 @@ TechTree
 		nodeName = node7_veryHeavyRocketry
 		anyToUnlock = True
 		icon = RDicon_rocketry-veryHeavy
-		pos = -1118,1635,-1
+		pos = -1118, 1559,-1
 		scale = 0.6
 		Parent
 		{
@@ -1453,13 +1459,44 @@ TechTree
 		cost = 4000
 		hideEmpty = False
 		nodeName = ct_antimatterPower
-		anyToUnlock = True
+		anyToUnlock = False
 		icon = RDicon_science-experimental
 		pos = -354,1551,-1
 		scale = 0.6
 		Parent
 		{
 			parentID = advFusionReactions
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = exoticFuelStorage
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = unifiedFieldTheory
+		title = Unified Field Theory
+		description = Unifying all of the theories of physics into one long, ridiculous, blackboard-destroying equation has been quite profitable for us.
+		cost = 10000
+		hideEmpty = False
+		nodeName = ct_unifiedFieldTheory
+		anyToUnlock = True
+		icon = RDicon_science-experimental
+		pos = -163,1751,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = exoticReactions
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = antimatterPower
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -1488,12 +1525,6 @@ TechTree
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
-		Parent
-		{
-			parentID = exoticReactions
-			lineFrom = RIGHT
-			lineTo = LEFT
-		}
 	}
 	RDNode
 	{
@@ -1518,7 +1549,7 @@ TechTree
 	{
 		id = advNuclearPropulsion
 		title = High Efficiency Nuclear Propulsion
-		description = Research into increasing the power of our nuclear thermal engines. It's unlikely to get any better than this, boss!
+		description = Research into increasing the power of our nuclear engines. It's unlikely to get any better than this, boss!
 		cost = 1000
 		hideEmpty = False
 		nodeName = ct_advNuclearPropulsion
@@ -1529,6 +1560,56 @@ TechTree
 		Parent
 		{
 			parentID = improvedNuclearPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = expNuclearPropulsion
+		title = Experimental Nuclear Propulsion
+		description = It's been said that nuclear power is basically a really expensive way of boiling water. We beg to disagree - we can boil almost* anything* now!
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_expNuclearPropulsion
+		anyToUnlock = True
+		icon = RDicon_propulsion-nuclear
+		pos = -736,1635,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = advNuclearPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = experimentalRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = exoticNuclearPropulsion
+		title = Exotic Nuclear Propulsion
+		description = Research into the strangest, weirdest, all all-out craziest forms of nuclear propulsion.
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_exoticNuclearPropulsion
+		anyToUnlock = True
+		icon = RDicon_propulsion-nuclear
+		pos = -545,1635,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = expNuclearPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = giganticRocketry
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -1551,12 +1632,6 @@ TechTree
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
-		Parent
-		{
-			parentID = experimentalRocketry
-			lineFrom = RIGHT
-			lineTo = LEFT
-		}
 	}
 	RDNode
 	{
@@ -1568,7 +1643,7 @@ TechTree
 		nodeName = ct_experimentalRocketry
 		anyToUnlock = True
 		icon = RDicon_rocketry-experimental
-		pos = -927,1635,-1
+		pos = -927,1559,-1
 		scale = 0.6
 		Parent
 		{
@@ -1579,19 +1654,38 @@ TechTree
 	}
 	RDNode
 	{
-		id = expAircraftEngines
-		title = Experimental Aircraft Engines
-		description = Engines intended for planes, not rockets. I guess you could get creative, though.
+		id = giganticRocketry
+		title = Gigantic Rocketry
+		description = Despite our detractors' repeated claims to the contrary, we CAN build it bigger.
 		cost = 1500
 		hideEmpty = False
-		nodeName = ct_expAircraftEngines
-		anyToUnlock = False
-		icon = RDicon_flight-hypersonic
-		pos = -736, 1180, -1
+		nodeName = ct_giganticRocketry
+		anyToUnlock = True
+		icon = RDicon_rocketry-experimental
+		pos = -736,1559,-1
 		scale = 0.6
 		Parent
 		{
-			parentID = aerospaceTech
+			parentID = experimentalRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = colossalRocketry
+		title = Colossal Rocketry
+		description = Another one-up on our competitors. We may need a larger launch pad...
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_colossalRocketry
+		anyToUnlock = True
+		icon = RDicon_rocketry-experimental
+		pos = -545,1559,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = giganticRocketry
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -1633,6 +1727,334 @@ TechTree
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
+		Parent
+		{
+			parentID = exoticAlloys
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = exoticAlloys
+		title = Exotic Alloys
+		description = Only the toughest and lightest of alloys are allowed into this exclusive club.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_exoticAlloys
+		anyToUnlock = True
+		icon = RDicon_composites
+		pos = -927,1412,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = nanolathing
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = offworldManufacturing
+		title = Off-World Robotics
+		description = Research into how to create complex robotic systems, including factory assembly lines... in space!
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_offworldManufacturing
+		anyToUnlock = True
+		icon = RDicon_construction-advanced
+		pos = -927,1355,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = metaMaterials
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = experimentalActuators
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = orbitalMegastructures
+		title = Orbital Megastructures
+		description = The biggest and heaviest Kerbal construction projects.
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_orbitalMegastructures
+		anyToUnlock = True
+		icon = RDicon_generic
+		pos = -545,1385,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = orbitalAssembly
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = orbitalAssembly
+		title = Orbital Assembly
+		description = Building things on Kerbin is overrated. Building things in orbit is now merely overly expensive.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_orbitalAssembly
+		anyToUnlock = True
+		icon = RDicon_engineering-precision
+		pos = -736,1385,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = offworldManufacturing
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = exoticAlloys
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advActuators
+		title = Advanced Actuators
+		description = Advanced techniques for making everything mobile with the help of motors.
+		cost = 300
+		hideEmpty = False
+		nodeName = ct_advActuators
+		anyToUnlock = False
+		icon = RDicon_generic
+		pos = -1309,1300,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = actuators
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = experimentalActuators
+		title = Experimental Actuators
+		description = You can never have too much mobility.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_experimentalActuators
+		anyToUnlock = False
+		icon = RDicon_generic
+		pos = -1118,1300,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = composites
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advActuators
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = subsonicFlight
+		title = Subsonic Flight
+		description = Sometimes, it's not enough to be fast.
+		cost = 160
+		hideEmpty = False
+		nodeName = ct_subsonicFlight
+		anyToUnlock = False
+		icon = RDicon_aerospaceTech
+		pos = -1519,1240,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = aerodynamicSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = efficientFlightSystems
+		title = Efficient Flight Systems
+		description = Who would have thought? Sometimes, we want to go slower and use a teensy bit less fuel.
+		cost = 300
+		hideEmpty = False
+		nodeName = ct_efficientFlightSystems
+		anyToUnlock = False
+		icon = RDicon_aerodynamics-advanced
+		pos = -1309,1240,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = subsonicFlight
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = specializedFlightSystems
+		title = Specialized Flight Systems
+		description = Sometimes, you need a little less jet.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_specializedFlightSystems
+		anyToUnlock = False
+		icon = RDicon_aerodynamics-advanced
+		pos = -1118,1240,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = efficientFlightSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = expAircraftEngines
+		title = Experimental Aircraft Engines
+		description = Engines intended for planes, not rockets. I guess you could get creative, though.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_expAircraftEngines
+		anyToUnlock = False
+		icon = RDicon_flight-hypersonic
+		pos = -736, 1180, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = aerospaceTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = aerospaceComposites
+		title = Aerospace Composites
+		description = Light, heat resistant and tough.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_aerospaceComposites
+		anyToUnlock = False
+		icon = RDicon_composites
+		pos = -927,1120 , -1
+		scale = 0.6
+		Parent
+		{
+			parentID = experimentalAerodynamics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advAerospaceEngineering
+		title = Advanced Aerospace Engineering
+		description = Pointy shapes, blunt shapes and how they interact with airflow.
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_advAerospaceEngineering
+		anyToUnlock = False
+		icon = RDicon_composites
+		pos = -736,1120 , -1
+		scale = 0.6
+		Parent
+		{
+			parentID = aerospaceComposites
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = enhancedSurvivability
+		title = Enhanced Survivability
+		description = Decrease the number of tearful goodbyes by increasing the survivability of our pilots.
+		cost = 45
+		hideEmpty = False
+		nodeName = ct_enhancedSurvivability
+		anyToUnlock = False
+		icon = RDicon_commandmodules
+		pos = -1946, 930, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = survivability
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = simpleCommandModules
+		title = Simple Command Modules
+		description = Command modules for those baby steps into space.
+		cost = 90
+		hideEmpty = False
+		nodeName = ct_simpleCommandModules
+		anyToUnlock = False
+		icon = RDicon_commandmodules
+		pos = -1724, 930, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = enhancedSurvivability
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = heavyCommandModules
+		title = Heavy Command Modules
+		description = Big spacecraft need bigger command modules.
+		cost = 300
+		hideEmpty = False
+		nodeName = ct_heavyCommandModules
+		anyToUnlock = False
+		icon = RDicon_commandmodules
+		pos = -1309, 930, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = commandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = specializedCommandModules
+		title = Specialized Command Modules
+		description = Fancy, purpose-built spacecraft need fancy, purpose-built command modules.
+		cost = 300
+		hideEmpty = False
+		nodeName = ct_specializedCommandModules
+		anyToUnlock = False
+		icon = RDicon_commandmodules
+		pos = -1118, 930, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = heavyCommandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
 	}
 	RDNode
 	{
@@ -1649,6 +2071,25 @@ TechTree
 		Parent
 		{
 			parentID = experimentalScience
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = resourceExploitation
+		title = Resource Exploitation
+		description = There's money to be made here! Drill baby drill!
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_resourceExploitation
+		anyToUnlock = False
+		icon = RDicon_fuelSystems-advanced
+		pos = -545,870 , -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advOffworldMining
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -1731,6 +2172,25 @@ TechTree
 		Parent
 		{
 			parentID = highTechElectricalSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = mechatronics
+		title = Mechatronics
+		description = The rumours of robot-led world domination are greatly exaggerated.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_mechatronics
+		anyToUnlock = False
+		icon = 
+		pos = -927, 620, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = automation
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -1832,6 +2292,82 @@ TechTree
 	}
 	RDNode
 	{
+		id = advGriddedThrusters
+		title = Advanced Gridded Thrusters
+		description = Some engineers wanted to call this covalent propulsion, but luckily we convinced them not to bond with that idea.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_advGriddedThrusters
+		anyToUnlock = False
+		icon = RDicon_propulsion-ion
+		pos = -736, 730, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advIonPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = expGriddedThrusters
+		title = Experimental Gridded Thrusters
+		description = In the dark future of the third millenium, there is only ion propulsion.
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_expGriddedThrusters
+		anyToUnlock = False
+		icon = RDicon_propulsion-ion
+		pos = -545, 730, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advGriddedThrusters
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advSolarTech
+		title = Advanced Solar Technology
+		description = The discovery of the lens has our electrical engineers all abuzz about the possibilities for solar energy generation.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_advSolarTech
+		anyToUnlock = False
+		icon = RDicon_electrics-large
+		pos = -1118, 470, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = largeElectrics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advPVMaterials
+		title = Advanced Photovoltaic Materials
+		description = New, stronger, intentionally bendy photovoltaic cells!
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_advPVMaterials
+		anyToUnlock = False
+		icon = RDicon_electronics
+		pos = -927, 500, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advSolarTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
 		id = cuttingEdgeSolarTech
 		title = Cutting-Edge Solar Technology
 		description = These new exotic panels are well grounded in reality.
@@ -1844,7 +2380,7 @@ TechTree
 		scale = 0.6
 		Parent
 		{
-			parentID = largeElectrics
+			parentID = advSolarTech
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -1883,6 +2419,18 @@ TechTree
 		Parent
 		{
 			parentID = experimentalElectrics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advSolarTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advSolarTech
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -1940,6 +2488,270 @@ TechTree
 		Parent
 		{
 			parentID = advHeatManagement
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = recycling
+		title = Recycling
+		description = Reduceable, reuseable, recyclable technologies.
+		cost = 90
+		hideEmpty = False
+		nodeName = ct_recycling
+		anyToUnlock = False
+		icon = RDicon_automation
+		pos = -1724, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = basicScience
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = hydroponics
+		title = Hydroponics
+		description = Growing things without getting soiled!
+		cost = 160
+		hideEmpty = False
+		nodeName = ct_hydroponics
+		anyToUnlock = True
+		icon = RDicon_evaTech
+		pos = -1520, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = recycling
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = storageTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = shortTermHabitation
+		title = Short Term Habitation
+		description = A Kerbal, a tiger, a zebra, a chimpanzee and a hyena all walk into a space capsule...
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_shortTermHabitation
+		anyToUnlock = True
+		icon = RDicon_evaTech
+		pos = -1118, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = hydroponics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = logistics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = longTermHabitation
+		title = Long Term Habitation
+		description = Advanced psychological and material studies dedicated to the advancement of Kerbalkind.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_longTermHabitation
+		anyToUnlock = False
+		icon = RDicon_start
+		pos = -927, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = shortTermHabitation
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = colonization
+		title = Colonization
+		description = When spreading Kerbalkind through random explosions is just not enough.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_colonization
+		anyToUnlock = False
+		icon = RDicon_start
+		pos = -545, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = longTermHabitation
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advLogistics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advColonization
+		title = Advanced Colonization
+		description = Everything you need for a fully automonous Kerbal colonization effort - just add water!
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_advColonization
+		anyToUnlock = False
+		icon = RDicon_start
+		pos = -354, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = orbitalMegastructures
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = colonization
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = storageTech
+		title = Storage Technology
+		description = For those times when a cardboard box just won't do!
+		cost = 90
+		hideEmpty = False
+		nodeName = ct_storageTech
+		anyToUnlock = False
+		icon = RDicon_fuelSystems-highPerformance
+		pos = -1724, 260, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = basicScience
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = logistics
+		title = Logistics
+		description = Making bigger and better cardboard boxes!
+		cost = 300
+		hideEmpty = False
+		nodeName = ct_logistics
+		anyToUnlock = False
+		icon = RDicon_fuelSystems-highPerformance
+		pos = -1309, 260, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = storageTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advLogistics
+		title = Advanced Logistics
+		description = Moving boxes from place to place... in space!
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_advLogistics
+		anyToUnlock = False
+		icon = RDicon_fuelSystems-highPerformance
+		pos = -736, 260, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = logistics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = massiveRocketry
+		title = Massive Rocketry
+		description = Significantly larger rockets are sometimes needed. For those times, we have these.
+		cost = 1000
+		hideEmpty = True
+		nodeName = node8_massiveRocketry
+		anyToUnlock = False
+		icon = RDicon_rocketry-veryHeavy
+		pos = -927,1604,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = highPerformanceFuelSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = veryHeavyRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = massiveStructure
+		title = Massive Structure
+		description = Significantly larger rockets are sometimes needed. For those times, we have these.
+		cost = 1000
+		hideEmpty = True
+		nodeName = node8_massiveStructure
+		anyToUnlock = False
+		icon = RDicon_construction-advanced
+		pos = -927,1514,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = metaMaterials
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = highPerformanceFuelSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = giganticStructure
+		title = Gigantic Structure
+		description = Significantly larger rockets are sometimes needed. For those times, we have these.
+		cost = 1500
+		hideEmpty = True
+		nodeName = node9_giganticStructure
+		anyToUnlock = False
+		icon = RDicon_metamaterials
+		pos = -736,1514,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = massiveStructure
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}

@@ -1,8 +1,35 @@
 toolbars
 {
+	MAINMENU
+	{
+		toolbar_857571444
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 0
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+		toolbar_1297548564
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+	}
 	SPACECENTER
 	{
-		toolbar_55793929
+		toolbar_1297548564
 		{
 			x = 300
 			y = 300
@@ -17,7 +44,7 @@ toolbars
 	}
 	EDITOR
 	{
-		toolbar_1290519015
+		toolbar_1318403573
 		{
 			x = 300
 			y = 300
@@ -27,12 +54,12 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = RCSBuildAid.mainButton,sirkut.IREditorButton,interstellar.thermal_button,interstellar.mega_button
+			visibleButtons = 
 		}
 	}
 	FLIGHT
 	{
-		toolbar_759987394
+		toolbar_670112231
 		{
 			x = 300
 			y = 300
@@ -42,91 +69,7 @@ toolbars
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = sirkut.IREditorButton
-		}
-	}
-	MAINMENU
-	{
-		toolbar_1290519015
-		{
-			x = 300
-			y = 300
-			width = 250
-			height = 38
-			autoHide = False
-			drawBorder = True
-			useKSPSkin = False
-			buttonOrder = 
-			visibleButtons = 
-		}
-		toolbar_55793929
-		{
-			x = 300
-			y = 300
-			width = 250
-			height = 38
-			autoHide = False
-			drawBorder = True
-			useKSPSkin = False
-			buttonOrder = 
-			visibleButtons = 
-		}
-		toolbar_1550405167
-		{
-			x = 300
-			y = 300
-			width = 250
-			height = 38
-			autoHide = False
-			drawBorder = True
-			useKSPSkin = False
-			buttonOrder = 
-			visibleButtons = 
-		}
-	}
-	SETTINGS
-	{
-		toolbar_1550405167
-		{
-			x = 300
-			y = 300
-			width = 250
-			height = 38
-			autoHide = False
-			drawBorder = True
-			useKSPSkin = False
-			buttonOrder = 
-			visibleButtons = 
-		}
-	}
-	FLIGHTMAP
-	{
-		toolbar_214609372
-		{
-			x = 300
-			y = 300
-			width = 250
-			height = 38
-			autoHide = False
-			drawBorder = True
-			useKSPSkin = False
-			buttonOrder = 
-			visibleButtons = 
-		}
-	}
-	TRACKSTATION
-	{
-		toolbar_1944452391
-		{
-			x = 300
-			y = 300
-			width = 250
-			height = 38
-			autoHide = False
-			drawBorder = True
-			useKSPSkin = False
-			buttonOrder = 
-			visibleButtons = 
+			visibleButtons = interstellar.mega_button
 		}
 	}
 }

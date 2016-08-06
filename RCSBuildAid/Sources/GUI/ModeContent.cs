@@ -1,4 +1,4 @@
-/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -29,6 +29,17 @@ namespace RCSBuildAid
             if (mode == workingMode) {
                 MainWindow.DrawModeContent += DrawContent;
             }
+        }
+
+        protected virtual void Awake ()
+        {
+            Events.ModeChanged += onModeChange;
+        }
+
+        protected virtual void OnDestroy ()
+        {
+            Events.ModeChanged -= onModeChange;
+            MainWindow.DrawModeContent -= DrawContent;
         }
     }
 }

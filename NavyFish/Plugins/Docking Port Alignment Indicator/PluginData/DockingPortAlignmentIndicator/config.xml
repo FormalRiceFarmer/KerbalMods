@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <double name="gui_scale">0.860000014305115</double>
+    <rect name="window_position">
+        <xmin>1303.69</xmin>
+        <xmax>1576.31</xmax>
+        <ymin>403.69</ymin>
+        <ymax>676.31</ymax>
+    </rect>
+    <bool name="drawHudIcon">1</bool>
+    <bool name="allowAutoPortTargeting">1</bool>
+    <bool name="excludeDockedPorts">1</bool>
+    <bool name="showHUDIconWhileEva">0</bool>
+    <bool name="alignmentFlipXAxis">0</bool>
+    <bool name="alignmentFlipYAxis">0</bool>
+    <bool name="translationFlipXAxis">0</bool>
+    <bool name="translationFlipYAxis">0</bool>
+    <bool name="rollFlipAxis">0</bool>
+</config>

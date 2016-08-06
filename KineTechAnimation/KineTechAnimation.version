@@ -1,0 +1,14 @@
+{
+  "NAME": "KineTechAnimation",
+  "URL": "http://bitbucket.org/Taverius/b9-aerospace/raw/HEAD/GameData/KineTechAnimation/KineTechAnimation.version",
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 1,
+    "PATCH": 1
+  },
+  "KSP_VERSION": {
+    "MAJOR": 0,
+    "MINOR": 25,
+    "PATCH": 0
+  }
+}

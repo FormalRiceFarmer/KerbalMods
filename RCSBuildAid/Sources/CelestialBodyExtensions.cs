@@ -1,4 +1,4 @@
-﻿/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+﻿/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -37,6 +37,16 @@ namespace RCSBuildAid
         public static float ASLDensity (this CelestialBody body)
         {
             return (float)body.atmDensityASL;
+        }
+
+        public static float density (this CelestialBody body, float altitude)
+        {
+            return (float)body.GetDensity (body.GetPressure(altitude), 300);
+        }
+
+        public static float gravity (this CelestialBody body, float altitude)
+        {
+            return (float)body.gMagnitudeAtCenter / Mathf.Pow ((float)body.Radius + altitude, 2);
         }
     }
 }

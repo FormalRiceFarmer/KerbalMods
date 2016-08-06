@@ -1,4 +1,4 @@
-/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -52,6 +52,7 @@ namespace RCSBuildAid
         double maxAcc;
 
         DebugVesselTree vesselTreeWindow;
+        GUIText guiText;
 
         void Start ()
         {
@@ -59,6 +60,8 @@ namespace RCSBuildAid
                 gameObject.SetActive(false);
                 return;
             }
+
+            guiText = gameObject.GetComponent<GUIText> ();
             guiText.transform.position = new Vector3 (0.82f, 0.94f, 0f);
             vessel = FlightGlobals.ActiveVessel;
             guiText.text = "no vessel";
@@ -137,6 +140,40 @@ namespace RCSBuildAid
                                   Planetarium.GetUniversalTime(), body);
             vssl.orbitDriver.orbit = orbit;
             orbit.Init();
+        }
+    }
+
+
+    /* add with ModuleManager */
+    public class DragAverage : PartModule
+    {
+        [KSPField(guiActive = true, guiName = "Cd", guiFormat = "F2")]
+        public float Cd;
+
+        [KSPField(guiActive = true, guiName = "AvgCd", guiFormat = "F2")]
+        public float AvgCd;
+
+        List<float> values = new List<float> ();
+
+        [KSPEvent(guiActive = true, guiName = "Clear average")]
+        public void Clear()
+        {
+            values = new List<float> ();
+        }
+
+        void FixedUpdate()
+        {
+            Cd = part.DragCubes.AreaDrag;
+            values.Add (Cd);
+            float f = 0;
+            for (int i = 0; i < values.Count; i++) {
+                f += values [i];
+            }
+            AvgCd = f / values.Count;
+
+            if (values.Count > 1000) {
+                values.RemoveAt (0);
+            }
         }
     }
 

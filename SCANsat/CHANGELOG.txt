@@ -1,3 +1,139 @@
+Version 16.3 - 2016-6-27
+------------------------
+
+- Adds new resource types and Module Manager scanner configs for KSP Interstellar Extended Version 1.9
+     - Deprecated unused He-3 and Thorium resource types
+
+- Updated for Mechjeb 2.5.8
+
+
+Version 16.2 - 2016-6-21
+------------------------
+
+- Update for KSP 1.1.3
+
+- Updates and minor changes to KSPedia entry
+- Add terrain height multipliers for use with Module Manager when using planet rescaling mods (Sigma Dimensions)
+- Rename and clarify the background scanning toggle button
+- Clarify background scanning status in context menus and scanning indicators
+- Implement a silent science collection method (KOS support for not opening the results window)
+- Add new terrain color palettes and change some default palettes
+- Allow planetary resource configs to be loaded if no global config is defined
+- Some GUI performance and garbage creation optimizations
+
+
+Version 16.1 - 2016-5-2
+------------------------
+
+- Update for KSP 1.1.2
+
+- Update API for Kerbalism support
+- Fixed an error that prevented the UI from opening after exiting the Mission Control building
+
+Version 16.0 - 2016-4-19
+------------------------
+
+- Update for KSP 1.1 final release
+- Update for MechJeb 2.5.7
+
+- KSPedia Entry
+    - 17 New KSPedia pages covering SCANsat basics and features
+	
+- Add science experiment for low resolution resource scan (M700 scanner)
+    - Adjust other science reward amounts
+	
+- Add window scaling function
+    - Adjust scale in the Settings window
+
+- Misc and Bug Fixes
+	- Add target selection button to big map
+	- Add new RPM storage module; Module Manager config edited to add this module to any part with an internal space
+	- Make scanners easier to turn off when they run out of power
+	- Fix error that prevented orbit lines from crossing the East/West border in zoom maps
+	- Window reset button will now reset all window positions and scale
+	- Fix bug in instruments window resource readout
+	- Make sure new save files apply all SCANsat default values and options
+	- Fixed potential error with ground tracks
+	- Fixed potential error with .csv exporter
+
+
+Version 14.9 - 2016-3-6
+------------------------
+
+- Add new zoom map buttons to small map, big map and toolbar
+- Improved zoom map functionality
+    - When zoom map is first opened it targets the active vessel
+	- Added re-sync to vessel button in the top-right corner
+
+- Added slope cutoff slider to color management window
+    - Adjusts the cutoff between the two color pairs
+	- Lower cutoff to make slope map better in the zoom map
+
+- Color Management window button removed from small map and big map in flight scene
+    - Added Color Management window button to the top of the settings menu
+
+- Added GeoEnergy resource support for PathFinder
+- When a new planet is detected SCANsat tries to determine its highest elevation point
+    - Used for planets that don't have a terrain config defined in the SCANcolors.cfg file; ie Kopernicus planets
+	- Max elevation point used to set the max height used for SCANsat maps
+	- Max elevation sometimes returns values too high; adjust values in the color management window
+- Some changes in how data is loaded from the save file; no end-user effect
+- Fixed error that prevented SCANsat contracts from generating before the player left the Kerbin system
+
+Version 14.8 - 2016-2-10
+------------------------
+
+- Fix RPM and Kopernicus incompatibility
+- Add new CRP resources and configs
+
+Version 14.7 - 2016-1-16
+------------------------
+
+-Fix Contract config error
+
+Version 14.6 - 2016-1-15
+------------------------
+
+- Fix Kopernicus compatibility (Thanks ThomasKerman)
+- Allow mouse-over info and overlay tooltips to fall back to low resolution resource data in some cases
+- Add a warning when stock resource scanning is disabled without having Module Manager installed
+- Fixed some issues affecting scanner power usage and scanning altitude indicators
+- Allow for included contracts to be disabled through the ScanSatOfficial Contract Type (Thanks DBT85)
+- Fix a bug that was preventing loading of the color config file when additional planets are installed
+- Add MetalOre as a SCANsat resource and MetalOre scanner modules to EPL scanner parts
+
+Version 14.5 - 2015-12-22
+------------------------
+
+- Misc and Bug Fixes
+	- Fix some .csv export related issues
+	- Allow for disabling the stock resource scan threshold
+	- Fix ocean depth indicator
+	- Fix multi spectral sensor normal map
+	- Fix some potential issues when using multiple different sensors of the same type
+	- Add new survey waypoints as they are generated
+
+Version 14.4 - 2015-11-14
+------------------------
+
+- New export functions
+	- Option to sse a true grey-scale color scheme
+	- Option to export a .csv file with coordinates and terrain height for each pixel
+	- Option to manually specify the big map width
+	
+- Stock resource scan threshold
+	- Active when stock resource scanning is disabled
+	- Set a SCANsat resource scanning threshold level above which the stock resource scan will apply for each celestial body
+
+- Misc and Bug Fixes
+	- Fix science data return on transmission failure
+	- Zoom maps use variable terrain hieght ranges based on the local min and max terrain height
+	- Add an ocean depth indicator to the instruments window
+	- Add a distance-to-landing-target indicator on instruments window when within 15km
+	- Fix drawing the terrain height behind the biome map
+	- Fix some errors in ground track drawing
+	
+
 Version 14.3 - 2015-11-10
 ------------------------
 - Update for KSP 1.0.5

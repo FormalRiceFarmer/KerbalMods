@@ -1,4 +1,4 @@
-﻿/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+﻿/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -13,6 +13,8 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+using KSP.UI.Screens;
 
 namespace RCSBuildAid
 {
@@ -78,8 +80,8 @@ namespace RCSBuildAid
                 null, null, visibleScenes, GameDatabase.Instance.GetTexture(iconPath, false));
             if (RCSBuildAid.Enabled) {
                 /* this doesn't seem to work */
-                //button.SetTrue (false);
-                button.toggleButton.startTrue = true;
+                button.SetTrue (false);
+                //button.toggleButton.star = true; FIXME?
             }
             Events.PluginEnabled += onPluginEnable;
             Events.PluginDisabled += onPluginDisable;
@@ -104,12 +106,16 @@ namespace RCSBuildAid
             RCSBuildAid.SetActive (false);
         }
 
-        void onPluginEnable() {
-            button.SetTrue (false);
+        void onPluginEnable(bool byUser) {
+            if (byUser) {
+                button.SetTrue (false);
+            }
         }
 
-        void onPluginDisable() {
-            button.SetFalse (false);
+        void onPluginDisable(bool byUser) {
+            if (byUser) {
+                button.SetFalse (false);
+            }
         }
     }
 }

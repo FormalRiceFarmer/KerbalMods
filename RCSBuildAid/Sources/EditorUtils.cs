@@ -1,4 +1,4 @@
-﻿/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+﻿/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -16,6 +16,9 @@
 
 using System;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace RCSBuildAid
 {
@@ -23,6 +26,19 @@ namespace RCSBuildAid
     {
         static List<PartModule> tempList;
         static Type partModuleType;
+
+        public static bool isInputFieldFocused ()
+        {
+            GameObject obj = EventSystem.current.currentSelectedGameObject;
+            if (obj == null) {
+                return false;
+            }
+            InputField input = obj.GetComponent<InputField> ();
+            if (input == null) {
+                return false;
+            }
+            return input.isFocused;
+        }
 
         public static List<PartModule> GetModulesOf<T> () where T : PartModule
         {

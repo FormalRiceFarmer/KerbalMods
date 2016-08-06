@@ -1,4 +1,4 @@
-/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -43,6 +43,16 @@ namespace RCSBuildAid
             if (value) {
                 update ();
             }
+        }
+
+        protected virtual void Awake ()
+        {
+            MainWindow.DrawToggleableContent += DrawContent;
+        }
+
+        protected virtual void OnDestroy ()
+        {
+            MainWindow.DrawToggleableContent -= DrawContent;
         }
 
         protected virtual void onToggle ()

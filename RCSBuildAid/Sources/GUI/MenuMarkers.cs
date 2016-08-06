@@ -1,4 +1,4 @@
-/* Copyright © 2013-2015, Elián Hanisch <lambdae2@gmail.com>
+/* Copyright © 2013-2016, Elián Hanisch <lambdae2@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -35,10 +35,10 @@ namespace RCSBuildAid
                 {
                     for (int i = 0; i < 3; i++) {
                         MarkerType marker = (MarkerType)i;
-                        bool visibleBefore = RCSBuildAid.IsMarkerVisible(marker);
+                        bool visibleBefore = MarkerManager.IsMarkerVisible(marker);
                         bool visibleAfter = GUILayout.Toggle (visibleBefore, marker.ToString());
                         if (visibleBefore != visibleAfter) {
-                            RCSBuildAid.SetMarkerVisibility(marker, visibleAfter);
+                            MarkerManager.SetMarkerVisibility(marker, visibleAfter);
                         }
                     }
                 }
