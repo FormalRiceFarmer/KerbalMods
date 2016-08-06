@@ -16,3 +16,7 @@ ModuleManager.ConfigCache
 ModuleManager.ConfigCache
 *.log
 DarkMultiPlayer/Plugins/Data/DMPModControl.txt
+ModuleManager.ConfigCache
+ModuleManager.ConfigSHA
+RCSBuildAid/Plugins/PluginData/settings.cfg
+TriggerTech/KSPAlternateResourcePanel/settings.cfg
