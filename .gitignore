@@ -21,3 +21,5 @@ ModuleManager.ConfigSHA
 RCSBuildAid/Plugins/PluginData/settings.cfg
 TriggerTech/KSPAlternateResourcePanel/settings.cfg
 NavHud/Plugins/PluginData/NavHud/config.xml
+.svn/
+TriggerTech/KSPAlternateResourcePanel/settings.cfg

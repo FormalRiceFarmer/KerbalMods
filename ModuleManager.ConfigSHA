@@ -1,4 +1,4 @@
-SHA = 65-A9-71-9F-81-59-85-5D-4D-2E-30-F4-2A-45-AD-35-71-B9-A7-D9-19-19-8E-F2-88-89-36-95-0B-26-12-85
+SHA = 94-06-FC-D2-4E-7C-CB-E3-6F-A0-94-1D-69-A7-A7-DA-2D-DF-87-9A-89-00-D1-9A-C2-5C-3A-39-1B-48-C4-FC
 version = 2.6.25.0
 KSPVersion = 1.1.3.1289
 FilesSHA
@@ -286,17 +286,17 @@ FilesSHA
 	FILE
 	{
 		filename = B9PartSwitch/B9PartSwitch-TweakScale
-		SHA = 2F-49-23-BD-45-89-90-DE-E7-A1-CE-94-73-5C-8C-35-F1-5D-46-A7-B2-DB-9E-7D-A9-6B-83-E3-96-15-93-F3
+		SHA = F8-BF-37-EC-48-C0-EB-67-AE-C5-38-68-35-BB-43-54-A5-4C-AB-B8-50-95-2C-9C-FB-FE-98-CC-9A-36-3B-6F
 	}
 	FILE
 	{
 		filename = B9PartSwitch/DefaultTankTypes
-		SHA = A0-59-17-8F-17-85-FB-B0-BF-B8-CA-E9-10-F3-C2-F0-14-6A-CB-59-D2-DD-88-47-03-E6-E6-A8-5B-3E-07-88
+		SHA = 73-AD-CB-FE-28-ED-50-3B-E2-22-2E-61-9C-97-33-E8-BA-96-8B-E5-B7-F4-FD-B2-59-F2-0A-5F-73-F0-3E-83
 	}
 	FILE
 	{
 		filename = B9PartSwitch/PartInfo
-		SHA = D1-A6-63-D5-04-A4-DC-41-BC-79-1D-97-44-41-13-C4-26-FA-00-F9-83-D9-A0-AA-F5-4E-23-DD-3D-54-48-46
+		SHA = AB-26-1B-8A-D1-48-C8-2A-FC-40-8B-78-06-C5-39-DB-CB-D3-0A-90-C9-6C-BF-46-C1-B9-5D-25-19-2C-A7-CB
 	}
 	FILE
 	{
@@ -2707,6 +2707,321 @@ FilesSHA
 	{
 		filename = MagicSmokeIndustries/Parts/Legacy/TPS/part
 		SHA = E2-AE-AB-55-04-9F-22-B9-11-B6-F5-8C-04-45-BA-38-9C-19-77-B7-A9-A8-F3-55-A4-54-21-86-01-C3-27-9E
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4liftfan-10-1/mk4liftfan-10-1
+		SHA = 50-E3-14-52-F0-3E-9C-0E-05-5F-EC-58-03-1D-AD-0A-A2-8C-29-8B-B6-A4-95-E2-46-E0-CD-DE-7E-84-C4-DF
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4liftfan-25-1/mk4liftfan-25-1
+		SHA = 1E-47-EA-C0-16-45-DC-7F-71-F5-A1-43-9A-29-AC-82-2C-D7-E6-C1-C5-CD-F7-5B-23-BD-F6-CA-25-45-C7-56
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4liftfan-375-1/mk4liftfan-375-1
+		SHA = DA-7C-DC-FD-B5-EA-84-6C-1A-19-9B-DB-0F-6C-25-2B-81-59-BC-68-63-5F-C9-C3-DB-34-35-FF-D6-B1-1E-EC
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4multimodal-125-1/mk4multimodal-125-1
+		SHA = 61-64-23-43-74-23-93-4F-56-6E-3E-04-FA-04-44-01-6B-98-D5-BF-A6-53-29-9F-E2-73-5F-C7-4F-62-57-B3
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4multimodal-25-1/mk4multimodal-25-1
+		SHA = 5F-19-0E-BF-45-22-C0-5E-91-07-8D-CD-1A-60-24-5D-12-5A-29-43-87-F9-E5-0C-36-22-B3-78-CD-A8-F1-02
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4multimodal-25-2/mk4multimodal-25-2
+		SHA = EB-5E-BC-C8-48-F2-7E-08-67-85-BC-AB-51-93-60-59-F4-D8-47-13-C7-BA-9D-2E-9F-7C-C8-26-BE-ED-65-2B
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4propfan-125-1/mk4propfan-125-1
+		SHA = D2-42-6B-FE-9D-06-50-83-A0-D7-FD-C4-BC-35-91-3A-71-01-1C-6E-33-6F-AD-C9-0C-3F-60-47-C7-C3-3A-6F
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4turbofan-25-1/mk4turbofan-25-1
+		SHA = E3-76-A8-0B-8D-E5-94-72-42-BD-42-52-6E-C1-FE-20-F4-1B-8A-4E-C2-31-E4-28-E0-11-7B-31-61-66-F5-17
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4turbofan-25-2/mk4turbofan-25-2
+		SHA = 3C-51-02-71-04-84-02-C4-5B-6A-5E-23-5D-C4-1E-66-B2-FF-5E-26-27-B3-19-D7-24-BC-70-45-51-86-56-DF
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4turbojet-25-1/mk4turbojet-25-1
+		SHA = F0-3E-F5-17-7A-88-92-7C-57-CC-5B-EC-6C-61-95-4D-11-74-E6-50-CD-D9-B7-88-20-E8-11-87-B2-79-94-BC
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4turboprop-125-1/mk4turboprop-125-1
+		SHA = 53-19-92-79-6F-8C-F1-59-81-F9-41-11-88-AE-B8-66-16-6A-C8-D7-8F-28-12-9D-F1-96-4E-51-0D-8D-5F-05
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Engine/mk4vtol-0625-1/mk4vtol-0625-1
+		SHA = BF-C5-7E-BD-B5-71-E7-FC-03-24-31-E0-CD-5C-6B-E0-81-D0-FC-23-35-3F-89-61-3B-6F-EF-EA-2A-AB-A5-F3
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4adapter-1
+		SHA = 7E-82-53-F3-75-3A-D8-5E-CA-8B-E6-BC-49-09-11-43-26-0E-C1-DA-DE-AE-FB-1B-EF-6E-9E-24-ED-59-C5-12
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4adapter-2
+		SHA = 03-68-1B-DB-DD-49-B8-E9-57-95-47-78-42-AE-81-D2-26-78-2B-A7-42-A5-A1-99-01-01-78-C8-25-4C-66-78
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4adapter-3
+		SHA = C6-DF-5B-9D-0F-03-2D-3B-E8-E3-49-72-C5-41-0A-B3-9E-A1-88-6F-13-A5-AC-B1-01-75-83-F5-20-91-2C-F6
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4cargo-1
+		SHA = D8-0A-32-D9-A3-86-FA-1E-FA-2F-AE-5B-DD-7B-C9-6A-A3-A9-D9-A8-7E-E0-6E-AE-DE-38-92-A1-26-28-65-3F
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4cargo-2
+		SHA = 6B-A8-18-1C-07-8C-69-CF-5C-9E-80-B8-37-B2-CB-2B-CC-C8-1E-95-98-27-D7-B8-0D-80-07-D4-C4-C8-A5-44
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4cargo-3
+		SHA = BB-FB-6F-74-82-3B-3D-C9-77-A8-BD-F9-0F-60-6F-8D-9E-CC-92-09-E9-56-68-CA-58-F0-3C-D5-28-02-63-05
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4cargo-drop-1
+		SHA = 82-A8-46-CD-4A-DA-32-FF-A0-35-D4-8C-50-53-8E-85-3F-AF-81-C2-93-AD-EE-D9-19-A6-02-1E-75-3A-94-DB
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4cargo-drop-2
+		SHA = 50-0C-A2-68-EA-10-D6-73-9C-34-1C-1D-11-64-EF-4C-5D-1B-42-4D-A3-27-3F-F3-B6-98-E9-9E-B3-C7-8F-27
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4cargo-drop-3
+		SHA = 64-7E-08-68-44-E4-63-54-57-1C-A1-0A-AE-89-E7-AF-1D-4D-46-BF-E2-B4-D6-6F-81-F0-53-44-CA-86-88-98
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4cargodoor-inline-1
+		SHA = 5F-E0-31-7F-35-6E-85-2E-E6-A4-4A-E5-9D-E1-44-FB-97-1B-6E-21-54-84-20-15-21-4A-31-04-90-53-64-FF
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4cargotail-1
+		SHA = DC-37-29-25-A9-39-44-15-97-8E-D3-99-7F-2B-78-E5-01-3B-CF-32-9D-D6-56-4A-26-B1-3C-D8-F1-AC-13-29
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4fuselage-1
+		SHA = 9A-3F-AA-7F-EE-06-43-EB-FF-D4-FB-DA-94-ED-91-77-04-40-31-64-C7-DC-69-BC-DD-7E-CC-24-E3-BC-A5-30
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4fuselage-2
+		SHA = 1A-E9-9C-55-85-27-80-B7-E4-1A-AF-B8-5E-54-F1-49-25-47-2B-B9-CC-A0-EC-27-05-75-0E-34-32-24-48-0C
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4fuselage-3
+		SHA = F8-4C-5C-DE-AC-24-4D-6B-48-A6-89-A1-1A-D4-6B-83-78-EA-A6-25-84-0E-78-E8-9A-E8-72-8B-DC-C7-C1-89
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4servicebay-1
+		SHA = 70-FC-E5-EE-90-55-D3-F1-6F-9C-16-AB-42-32-C6-A4-33-B0-93-B5-B9-F1-5B-CC-80-7B-54-66-FD-F2-35-99
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4tail-1
+		SHA = 2A-46-C4-C5-CC-8B-20-D5-B1-02-6E-2E-8B-95-34-50-ED-8B-D0-59-45-D2-9C-BD-24-48-A6-9F-0D-79-82-3D
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4tail-2
+		SHA = 9A-3A-4E-25-C3-15-DD-4B-97-1F-99-BC-AD-24-DE-4F-BF-BB-0C-A0-20-A8-B7-24-30-08-09-04-91-2B-C4-FB
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Fuselage/mk4tail-3
+		SHA = 50-28-43-E1-A5-10-4E-94-32-B3-60-FE-81-23-CC-08-AE-B8-35-92-4B-DB-DF-9C-54-01-D8-99-E3-54-AB-2E
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Intake/mk4intake-largecircular
+		SHA = BB-CF-32-41-E3-4F-5F-6F-5B-D4-09-DC-CF-21-0A-2F-07-7E-B1-91-6B-5A-CC-F1-95-99-97-65-7E-EB-D2-E9
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Intake/mk4intake-largeshock
+		SHA = C5-DB-02-45-50-08-C7-15-D7-0B-1D-63-BF-02-CD-C4-CD-43-75-48-D7-B7-79-0E-D6-09-C2-7A-26-5B-06-C8
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Intake/mk4intake-radial-1
+		SHA = EA-09-48-15-62-BF-A3-00-54-F1-DF-04-9F-04-0A-51-98-E0-16-5D-C7-5C-3E-BF-6E-41-31-E9-3C-F4-67-2E
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Intake/mk4intake-radial-2
+		SHA = C4-01-8F-70-20-93-AF-9A-49-0C-9C-A2-B6-4E-DB-11-C2-5C-DD-A0-A3-EE-23-37-F6-3B-50-8F-48-B6-F5-3B
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nacelle/mk4enginecooler-25-1
+		SHA = 01-DE-07-60-89-2F-5C-97-60-E0-F5-89-B8-9C-E0-9A-B8-F1-A8-24-AB-F3-DE-F8-75-EC-0D-84-B6-97-C3-56
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nacelle/mk4enginenacelle-25-1
+		SHA = A6-97-2D-37-1F-18-0F-55-70-BD-C9-9D-5F-C2-56-8B-E0-88-FB-33-C1-11-F7-BA-92-32-01-61-15-11-0E-22
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nacelle/mk4enginenacelle-25-2
+		SHA = 45-A0-FE-E3-39-1E-3B-DE-C8-C9-71-BD-51-15-59-72-CB-86-C5-69-13-E1-C9-94-9B-04-87-40-CB-1C-8B-75
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nacelle/mk4fueltank-25-1
+		SHA = F9-BE-26-1C-5B-FE-6B-9D-E3-A1-1C-FD-3C-78-68-F4-30-96-F2-2A-A8-20-B3-4F-FD-15-31-40-8E-22-19-40
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nacelle/mk4fueltank-25-2
+		SHA = 77-E7-10-2D-51-79-89-AF-85-79-68-3A-96-85-FE-D6-ED-3C-92-FB-98-A0-44-5C-79-9F-B8-41-48-68-F1-FB
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nacelle/mk4fueltank-25-3
+		SHA = A9-4F-3A-60-CC-E2-48-B0-BF-3A-FA-53-45-9F-98-92-11-F2-C0-2A-0F-85-8A-FE-46-70-84-72-57-CB-A7-0C
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nacelle/mk4fueltank-25-4
+		SHA = 7D-58-1F-08-D4-7F-C8-86-D9-1A-7D-8E-DB-AE-49-2E-51-50-76-F0-BE-5C-94-CF-9E-53-D9-99-B0-EE-5C-81
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nacelle/mk4pod-1
+		SHA = 9C-D6-4F-3B-3D-43-5B-36-AE-44-D2-B8-5A-72-64-6E-DF-FC-6A-FD-56-5E-01-43-9B-CE-AA-5C-8B-64-C4-15
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nacelle/mk4pod-2
+		SHA = 29-77-70-3B-48-5D-B8-44-84-2F-D7-5A-E6-59-63-13-83-A8-65-3A-C1-68-91-6B-EC-71-CF-83-1A-57-20-F3
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nosecone/mk4nose-docking
+		SHA = 6F-1A-00-90-5B-ED-36-17-4E-6F-1D-5D-F9-45-5B-E3-EC-84-65-64-7C-51-02-9E-76-F8-39-A6-84-8E-F7-5A
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Nosecone/mk4nose
+		SHA = 7F-DF-3A-46-6B-C3-E9-45-1E-2A-82-1A-34-6F-08-38-11-F5-8B-F7-EE-35-22-71-DB-33-EF-74-80-E4-C9-60
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Pods/mk4cockpit-1/mk4cockpit-1
+		SHA = 8B-F2-AE-AA-0E-40-02-E6-05-56-D0-7D-1A-AA-CD-9C-F9-90-BA-CF-08-57-92-CC-E7-23-1B-78-B6-CE-50-C6
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Pods/mk4cockpit-2/mk4cockpit-2
+		SHA = 36-9B-33-30-8F-B4-29-F4-6A-74-BC-F6-A0-BA-BB-9F-A7-DF-D0-98-16-15-2D-F7-3D-AD-72-5C-56-45-D9-26
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Pods/mk4crewcabin-1/mk4crewcabin-1
+		SHA = 86-D7-B0-B0-58-94-EA-2F-18-DE-54-F7-05-76-56-27-A9-5B-C2-51-30-54-73-2F-E9-D2-F9-F5-0C-0A-F8-E4
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Pods/mk4drone-1/mk4drone-1
+		SHA = A0-91-39-73-2F-9B-32-9B-45-6E-A9-02-94-4D-A6-AB-70-C1-B1-90-A6-2C-7E-DC-01-06-DB-A3-9F-53-51-23
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/RCS/mk4rcsblister-1
+		SHA = FA-D9-92-93-48-EB-0F-47-2A-E4-A7-11-F6-1E-D2-6B-E3-94-AB-71-85-BF-A7-66-88-B1-79-AC-D4-CF-40-EB
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/RCS/mk4rcsblister-2
+		SHA = 25-8F-74-9B-FF-58-07-AC-07-2B-0B-46-46-FB-FC-72-75-42-60-F2-9A-C5-C6-ED-CC-90-2A-89-BA-0C-62-05
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Shoulders/mk4cockpit-shoulder-1
+		SHA = 71-D7-F7-C6-E3-4D-98-30-D3-76-AB-A8-29-CE-52-F4-2C-22-92-40-AF-95-D9-E2-6B-6C-1F-BB-77-01-75-27
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Shoulders/mk4cockpit-shoulder-2
+		SHA = 65-64-75-1B-8D-F3-20-AB-9C-26-C9-4D-3A-78-86-5B-7E-C2-CB-5D-90-AF-A8-B1-7A-77-C2-E8-72-58-42-D4
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Parts/Shoulders/mk4cockpit-shoulder-3
+		SHA = A6-DB-3D-74-30-A0-D0-AD-9D-E0-67-B7-6F-EE-EE-5C-0B-D1-8F-BA-55-29-ED-71-ED-57-29-62-0E-4A-BE-AD
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Patches/MkIVCLS
+		SHA = 7B-DB-F6-96-45-62-33-38-F2-0D-8A-A8-63-55-46-02-05-A5-CC-A0-6D-44-FE-5B-D4-45-66-D6-CD-E5-DA-87
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Patches/MkIVCTT
+		SHA = F8-69-F5-76-A9-68-B1-F6-9C-6E-94-B5-84-29-78-F7-A4-1E-69-A9-AA-84-5A-D9-2A-43-30-5B-6D-38-97-95
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Patches/MkIVFAR
+		SHA = B4-5C-78-70-A9-F2-97-BD-2F-48-30-5F-D4-3E-B1-FD-52-84-27-72-E0-C7-D8-43-9F-C3-F5-D8-09-29-4F-08
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Patches/MkIVFuelTanks
+		SHA = 54-14-9F-1D-87-DE-11-D9-80-E3-3D-F3-28-A8-AC-D8-40-36-E3-A5-DE-ED-E2-C5-F1-70-73-DD-31-61-0E-45
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Patches/MkIVRPM
+		SHA = 06-75-22-E5-A9-3C-F7-57-22-83-06-4F-2D-79-57-9D-30-E7-64-E8-59-96-6A-9B-E8-78-0E-18-96-DC-5F-79
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Spaces/mk4cockpit/mk4cockpit-internal-rpm
+		SHA = 0D-E4-B4-4F-B7-92-24-69-D5-60-02-2A-7A-B3-E8-12-9A-04-97-05-32-ED-78-1D-38-44-18-14-08-D2-7E-3A
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Spaces/mk4cockpit/mk4cockpit-internal
+		SHA = F4-AF-DC-ED-88-2A-9D-4D-1A-94-BE-10-4F-5C-48-76-12-AF-E2-DB-8D-AD-7C-BF-A1-1B-54-83-F7-FD-72-FD
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Spaces/mk4cockpit-2/mk4cockpit-2internal
+		SHA = 65-AC-C0-3E-10-D3-5D-12-08-A4-62-1C-4F-F9-56-B1-D3-66-B6-6B-B7-B9-A9-5F-A5-51-3E-3D-B0-96-B9-69
+	}
+	FILE
+	{
+		filename = MarkIVSystem/Spaces/mk4crewcabin/mk4crewcabin-internal
+		SHA = 0C-C7-45-3F-47-AD-07-47-57-95-9D-52-08-16-B2-F1-67-D3-8E-4B-FB-92-FF-3E-43-D6-81-1E-CB-2B-CA-B9
 	}
 	FILE
 	{
@@ -7557,6 +7872,11 @@ FilesSHA
 	{
 		filename = Trajectories/Trajectories
 		SHA = 2F-CE-03-1B-C6-CD-A6-2C-06-61-6C-60-EE-C7-85-39-F9-3D-3E-40-BA-77-44-71-FF-A7-FE-F8-AB-E0-F9-B8
+	}
+	FILE
+	{
+		filename = TriggerTech/KSPAlternateResourcePanel/settings
+		SHA = FF-30-66-02-80-5C-00-56-D0-93-38-D8-7B-B1-9B-98-F9-BA-47-E4-FB-D0-A9-5E-C2-19-F5-50-9C-DD-A4-68
 	}
 	FILE
 	{

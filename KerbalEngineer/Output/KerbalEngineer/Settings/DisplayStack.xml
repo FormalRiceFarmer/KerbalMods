@@ -10,10 +10,10 @@
   </SettingItem>
   <SettingItem>
     <Name>windowPositionX</Name>
-    <Value xsi:type="float">1582</Value>
+    <Value xsi:type="float">1329</Value>
   </SettingItem>
   <SettingItem>
     <Name>windowPositionY</Name>
-    <Value xsi:type="float">840</Value>
+    <Value xsi:type="float">660</Value>
   </SettingItem>
 </ArrayOfSettingItem>

@@ -15,9 +15,9 @@
     </rect>
     <rect name="hud text position">
         <xmin>940</xmin>
-        <xmax>1054</xmax>
+        <xmax>1061</xmax>
         <ymin>756</ymin>
-        <ymax>816</ymax>
+        <ymax>831</ymax>
     </rect>
     <bool name="enable text">1</bool>
     <bool name="lock text">1</bool>
