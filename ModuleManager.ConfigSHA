@@ -1,4 +1,4 @@
-SHA = 94-06-FC-D2-4E-7C-CB-E3-6F-A0-94-1D-69-A7-A7-DA-2D-DF-87-9A-89-00-D1-9A-C2-5C-3A-39-1B-48-C4-FC
+SHA = 34-9C-BE-B3-01-5C-F5-4F-16-7C-DD-1B-1A-B0-AC-38-7D-91-55-51-34-11-BC-C4-8B-A1-84-01-85-18-19-E8
 version = 2.6.25.0
 KSPVersion = 1.1.3.1289
 FilesSHA
@@ -1610,6 +1610,11 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = Infernal Robotics/IR_TweakScale
+		SHA = 96-5E-95-AA-62-6A-86-84-12-EF-BF-CE-A8-BD-1C-53-27-E4-11-28-0B-BD-CF-30-C3-DA-04-98-59-8C-18-6D
+	}
+	FILE
+	{
 		filename = InterstellarFuelSwitch/Parts/InterstellarGasTank/InterstellarGasTank-PB-Stack
 		SHA = F4-23-26-D7-C6-3F-DF-33-43-FC-91-0F-60-95-75-11-99-F9-A8-16-5E-AD-89-E3-9A-4D-78-98-69-06-73-F8
 	}
@@ -2622,91 +2627,6 @@ FilesSHA
 	{
 		filename = KWRocketry/Parts/Structural/kwstrutConnectorMedium/part
 		SHA = FB-1F-3C-AD-9B-9D-AA-6F-D1-F8-B7-51-7F-B4-33-69-AC-93-C4-C7-6A-D9-43-27-12-CB-78-6C-4C-BF-EE-F2
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/IR_TweakScale
-		SHA = 96-5E-95-AA-62-6A-86-84-12-EF-BF-CE-A8-BD-1C-53-27-E4-11-28-0B-BD-CF-30-C3-DA-04-98-59-8C-18-6D
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/InfernalRobotics_CTT
-		SHA = F3-7C-6E-98-6C-39-2A-15-0E-BC-63-7E-23-37-16-54-89-A2-19-1B-77-69-57-FA-EF-9C-FE-12-AD-76-01-E5
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_TweakScale
-		SHA = 4F-C8-A3-64-98-B0-14-73-9A-EE-01-84-19-F3-1F-DF-B0-04-65-1D-63-73-71-A1-34-37-5C-7E-E7-6A-85-78
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/AdjustableRail/part
-		SHA = C0-BC-D9-25-61-A8-E6-60-8A-4F-3C-94-AC-98-24-29-60-20-E7-B5-04-0C-89-6D-38-96-CC-8F-B0-59-E6-29
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/dockingwasher/part
-		SHA = D4-39-90-97-F0-77-DB-C9-1C-AF-9F-68-30-0C-0F-2E-95-D7-85-D5-08-68-B5-71-EC-51-18-48-22-8A-92-65
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/dockingwasher_free/part
-		SHA = 4A-94-7E-03-72-5F-FA-E1-3A-75-3D-12-24-10-C6-99-6E-79-EB-42-B9-AE-51-7D-53-B1-1F-BE-61-FC-3B-E8
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_Gantry/part
-		SHA = 12-32-7B-FC-CC-20-C8-BF-6F-81-B1-41-BA-41-56-B0-CE-7A-A0-DE-1F-EA-B2-F1-C9-67-75-2B-A0-7A-E2-FF
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_Gantry/partVariant
-		SHA = 32-A5-FA-E8-4C-53-39-4C-4A-76-22-C6-C7-1D-BD-A8-2B-C0-AD-8F-5F-EE-74-D0-97-9B-0F-50-0C-1B-75-CE
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_HingeClosed/part
-		SHA = 25-E2-CC-72-13-B3-F7-7E-F0-74-7C-2D-BA-EB-98-50-60-95-1E-C3-C0-EE-B5-10-F2-02-C1-83-92-B9-AE-5E
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_HingeOpen/part
-		SHA = 0A-B2-F9-16-B1-C6-1D-63-48-E4-D9-CC-C8-37-C2-60-8D-2B-0C-3C-8A-85-B9-69-1B-FD-7F-58-C8-8D-C9-BC
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_HingeTall/part
-		SHA = 70-2F-A7-AF-B3-FA-7A-54-DF-40-45-B3-44-56-54-A4-64-8A-7F-2C-FD-19-61-D8-F7-7F-A7-63-43-AD-14-FC
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_HingeTallND/part
-		SHA = 8A-C7-12-D4-99-3A-0B-54-36-DA-AC-9C-DD-81-48-75-B2-90-B7-F4-0E-22-C2-FC-11-55-AD-EB-B2-F5-08-13
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_Piston/part
-		SHA = 1F-F7-89-27-66-9E-DD-48-F5-DB-B3-01-64-DB-A0-4E-8E-9B-50-8B-F8-15-4B-B5-E5-EE-2D-58-4A-2A-6A-27
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_Rotatron/part
-		SHA = ED-C7-4F-3C-D4-18-53-EC-B3-B6-87-3B-F2-93-FD-09-BD-99-96-D6-C2-39-AE-15-18-78-32-51-C0-D3-09-D0
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_RotatronMK2/part
-		SHA = 8F-90-94-B2-4C-20-90-4A-E9-0B-90-9C-80-AC-54-C4-93-6D-A2-32-DA-02-D2-5E-8D-10-BF-21-C4-EB-0E-AE
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/IR_RotatronVTOL/part
-		SHA = 2D-C7-08-E3-EB-91-2E-B7-89-F9-FA-27-D0-F2-7A-07-2C-40-53-0B-06-A8-F6-31-68-DB-FB-BC-68-84-EC-31
-	}
-	FILE
-	{
-		filename = MagicSmokeIndustries/Parts/Legacy/TPS/part
-		SHA = E2-AE-AB-55-04-9F-22-B9-11-B6-F5-8C-04-45-BA-38-9C-19-77-B7-A9-A8-F3-55-A4-54-21-86-01-C3-27-9E
 	}
 	FILE
 	{
@@ -7870,13 +7790,1158 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = SXT/Partdisabler
+		SHA = 59-FE-FA-28-6A-A4-42-FD-14-D3-31-4B-32-F8-29-46-77-2D-C4-98-7D-72-C3-D9-3F-19-99-DF-23-4C-8B-23
+	}
+	FILE
+	{
+		filename = SXT/PropEnabler
+		SHA = 12-B2-15-0D-A7-6C-B6-6C-42-8B-E7-D0-F3-58-62-39-7A-3A-C4-C3-D6-EE-49-EC-5E-54-75-5D-A3-81-C3-F4
+	}
+	FILE
+	{
+		filename = SXT/Agencies/Agents
+		SHA = 52-B1-56-17-5C-0A-3E-48-83-08-AE-BD-B6-AB-53-0C-A4-54-D5-5B-5F-C5-93-75-4F-F2-AC-B6-0D-26-58-94
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/BDArmoury
+		SHA = 59-E4-9F-5D-1F-A1-E9-EA-09-FA-24-5A-F8-7F-13-69-A4-C4-0C-01-4E-08-05-3E-94-26-03-E4-D1-FC-21-1D
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/FerramAeroSpaceTweaks
+		SHA = DE-42-1A-9C-6C-58-5F-9A-D3-E2-53-60-39-69-E5-8E-91-7F-4A-B0-8D-73-B1-6E-1E-A5-5F-A3-09-AB-2C-D3
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/FirespitterCompatibility
+		SHA = 66-E3-91-E6-17-05-27-33-29-86-AD-BC-4D-28-E8-BE-7E-F4-20-CF-80-AA-F8-3B-76-01-87-10-8D-91-CB-D2
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/KSPI_Compat
+		SHA = DD-3E-08-28-69-1F-B4-67-22-1E-C6-03-A9-79-AA-86-06-C3-5B-1B-7B-25-A3-FC-FE-F7-4A-3D-13-25-1A-34
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/RT2MM
+		SHA = 42-FA-2F-FC-72-56-0D-BD-DA-49-12-7D-CB-63-94-69-B8-C4-6B-F9-83-4E-85-B4-7C-98-19-AD-DC-FB-96-D7
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_CLS
+		SHA = 27-63-2C-B5-AA-D0-2B-06-6A-4F-E3-4D-6C-6B-BB-C0-AD-53-80-49-70-79-88-CA-3B-B1-58-5E-2F-B8-84-9D
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_GenericTweaks
+		SHA = DF-AE-D3-1A-70-44-55-B8-F7-C6-02-67-35-FB-EB-20-F9-ED-77-57-A2-D9-74-23-C8-A6-C3-35-58-D6-1A-67
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_KAS
+		SHA = 58-EF-F5-83-A4-7A-A7-20-07-5D-1B-92-6B-FA-5E-B1-46-72-2D-1B-D5-E1-3A-7D-A8-24-12-BF-40-F8-3A-71
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_modularFuelTanks
+		SHA = 7F-3F-69-FB-71-FD-12-0C-2A-27-89-EF-B8-75-49-76-6B-F6-ED-CD-B4-F8-BD-27-69-7C-E9-2B-92-EF-AE-BF
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_RPMivaswitcher
+		SHA = A3-92-78-30-71-34-3B-47-7E-1C-9C-88-11-2E-62-36-62-4E-C2-5E-5D-13-5C-94-1F-D6-14-E2-38-EF-AF-97
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_TweakScale
+		SHA = 61-E8-3A-37-5F-46-FB-6A-AD-65-EE-61-98-0D-5A-A5-7D-71-90-02-C0-98-58-F9-F9-98-6F-60-25-CF-4B-02
+	}
+	FILE
+	{
+		filename = SXT/OldParts/LargeJet
+		SHA = 5C-70-3E-BA-EC-B1-35-3C-DC-DD-22-74-77-D3-87-15-A9-42-AF-C5-F2-20-BA-56-F7-2C-DA-4E-D2-C0-66-78
+	}
+	FILE
+	{
+		filename = SXT/OldParts/mk3Ramp
+		SHA = 8B-F3-D2-7D-CD-6D-C0-1F-B4-7F-EE-A9-AE-4E-25-79-91-A4-66-E1-A7-84-C7-E5-1E-4A-41-DF-29-AC-CE-79
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/airIntake/part1
+		SHA = C1-B4-9A-B3-B5-F4-19-55-FB-AF-0A-C8-74-93-CA-00-88-BC-1F-A1-ED-77-4E-71-80-60-23-BB-6D-9C-00-47
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/airIntake/part1b
+		SHA = F1-EA-88-FB-06-8D-41-CD-E4-72-96-B1-CE-56-42-EC-91-DA-1E-5B-E6-19-20-C4-92-3B-38-38-15-BF-96-E0
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/airIntake/part2
+		SHA = 4E-F8-E1-DA-F4-87-04-A0-39-5C-7D-2A-79-64-D0-D7-CD-E3-BA-75-FB-09-D4-81-AF-7C-EB-00-C3-3A-9A-BF
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/airIntake/part3
+		SHA = EC-7F-8C-2A-E2-D0-1F-29-0D-E6-2C-26-24-15-9E-04-11-EC-84-D3-08-64-58-FF-F8-B9-7E-7A-59-51-D9-F7
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/airIntake/part4Large
+		SHA = E1-8F-E4-B9-4C-26-A4-08-A2-82-36-EC-DF-C4-BE-4E-65-A4-D4-18-D7-6C-54-2B-16-5A-7F-DC-60-5D-AA-D8
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/elevon0a
+		SHA = F5-1B-8D-9C-65-EE-9C-1D-55-CB-29-1C-09-55-CE-26-CD-8E-87-22-11-D6-2E-34-C7-C8-1F-65-C7-71-83-50
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/elevon0b
+		SHA = 0C-13-0F-F5-A4-57-B2-B2-40-7A-87-AC-1D-0F-07-E9-29-E8-07-11-80-00-D2-07-6C-EF-A7-A1-CB-4C-4B-27
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/elevon1
+		SHA = 1D-33-E8-4F-AD-4E-FA-1C-FB-5A-16-EB-93-F3-36-13-04-49-25-FD-7F-AF-4D-76-EB-70-7A-9A-B2-A0-ED-AF
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/elevon2
+		SHA = B4-18-4C-D5-46-90-89-E8-E3-EC-AA-F3-C6-7E-7C-31-3E-DA-86-E0-78-BD-B8-FB-61-93-0A-17-BA-7B-0F-1B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/part
+		SHA = 58-26-ED-24-48-A5-B9-C0-AE-A2-09-35-B4-51-13-2F-6B-C8-3B-EE-52-8A-E5-0C-48-56-99-76-64-4F-6D-56
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/partFolding
+		SHA = D7-77-52-BE-81-A5-DD-C3-68-51-DD-3C-2D-04-87-6F-92-E3-B0-71-12-4F-A3-C1-11-26-09-CE-B5-A2-07-4D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/partHalf
+		SHA = 0D-66-62-1C-53-9E-64-84-46-32-63-79-0E-A6-8F-D7-9E-8C-4A-74-E0-C4-59-17-03-FD-6D-64-39-87-2D-10
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/partLarge
+		SHA = 56-2C-0D-34-3C-5E-E2-73-23-55-99-59-12-C2-2F-3B-55-00-48-8A-E6-3D-72-82-D6-6C-8E-56-AD-62-C5-E3
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/partLarger
+		SHA = 30-B4-71-71-C4-08-C2-F5-49-B1-30-BE-DD-54-31-72-0C-09-6E-7B-45-C8-91-B9-5D-2D-7B-BA-F1-B8-08-BD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/partWingTipRound
+		SHA = 35-22-3F-71-B6-21-BD-4F-66-5F-3B-39-FA-18-1D-6F-30-F9-DF-E7-DE-DE-6F-E4-C0-61-80-71-4C-89-8B-06
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Bonny/part
+		SHA = 78-48-DC-35-6B-B5-BD-0B-78-D4-94-15-41-95-C6-47-93-A5-DF-45-AD-29-DD-5D-0E-74-98-4E-2E-0E-B0-38
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Bonny/partClyde
+		SHA = C2-6F-FE-79-05-97-3C-69-45-01-FB-81-08-93-90-3B-47-7F-1C-51-8F-52-22-74-46-C1-C3-44-22-79-16-F6
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Bonny/partTail
+		SHA = 1E-F5-39-B6-FB-76-CB-D4-07-59-14-8A-ED-1C-4A-84-E1-A8-9F-D0-AE-0E-24-49-14-DE-D1-7F-52-DF-F4-B1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Buzzard/part
+		SHA = 57-2C-0B-0D-0F-02-50-A6-6A-83-E6-43-BA-80-E0-6E-C7-D2-E3-1F-A3-A7-EA-56-B4-A4-98-5F-A6-3B-C0-ED
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Ke111/part
+		SHA = 9E-46-80-DD-E0-18-57-20-6F-C9-E7-9A-A1-CE-AF-AA-78-73-90-E6-55-47-85-41-D6-91-93-C2-75-1B-40-9E
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Kossak/Adaptor2
+		SHA = 2E-D2-93-8E-DB-DC-15-C8-F8-67-AD-05-BA-F2-39-83-55-38-89-A7-15-91-F1-85-AA-8A-45-37-1D-12-AC-5B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Kossak/part
+		SHA = 92-8B-19-AD-10-B7-26-36-8E-E9-94-63-8D-89-38-63-16-05-92-7B-54-8F-16-9F-EC-7C-F8-A4-A9-0F-1C-16
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Lark/part
+		SHA = 28-4E-A9-58-39-AA-7F-FF-BE-8F-CD-9E-1F-F6-1D-C6-D2-18-40-F2-EB-99-71-C0-77-96-80-A5-75-81-6D-35
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk1BEntente/Mk2Apapt
+		SHA = E1-83-D9-28-AB-4A-97-FF-9C-FE-68-A4-D6-F0-D6-04-35-78-87-73-06-23-CF-A0-36-64-10-31-D1-62-40-89
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk1BEntente/Mk2ApaptShort
+		SHA = 1B-0F-9F-9B-1E-43-09-72-DF-8B-C9-D9-BC-45-A8-8A-49-A6-8D-59-D7-A4-1D-94-21-7E-75-94-C0-BD-41-A3
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk1BEntente/part
+		SHA = 2E-28-E9-0E-E9-E7-F2-46-ED-16-0D-C9-B9-A1-0E-B1-ED-62-88-D2-91-1A-46-A1-02-AE-C6-FB-88-01-E5-98
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk1BEntente/Size2LFfuselageLong
+		SHA = 55-60-1A-25-45-DE-F6-0B-B5-B6-07-EA-C8-3F-A6-E2-36-D5-17-4F-41-CB-C9-68-F5-59-27-C2-A3-65-DE-DD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk1BEntente/Size2LFfuselageShort
+		SHA = CF-93-EA-8F-6E-93-67-B8-25-A6-EC-42-58-51-35-AD-51-6E-B3-AB-00-B0-04-57-34-A1-CA-12-B2-4D-00-5E
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk3Cockpit/Goose
+		SHA = CE-E4-EA-C5-EE-45-84-57-07-A4-F9-A4-10-5C-55-91-BF-F8-D3-26-0A-26-08-27-65-C2-36-03-D4-B3-03-D1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk3Cockpit/Mk3Cockpit_Shuttle
+		SHA = FD-E7-DF-CF-B1-FF-FF-FD-43-46-A1-31-29-26-56-87-F9-67-AE-32-2C-17-86-09-38-A9-D6-35-A4-5B-E7-22
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Control/airBrake/Airbrake1
+		SHA = AD-DF-12-28-6F-94-3D-EB-24-16-90-E5-5F-20-B4-AE-EB-67-13-DB-85-A5-AA-7B-06-19-F6-D9-70-66-34-88
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Control/airBrake/Airbrake2
+		SHA = B8-12-B5-12-C8-D2-F4-3C-C2-06-51-E9-D0-71-60-F3-79-90-06-91-E4-43-6F-8B-DF-55-9C-2D-6F-F8-FA-9B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Control/airBrake/Airbrake3
+		SHA = 9A-5E-08-76-C4-7A-ED-F0-2A-F7-4C-6B-5C-6D-89-5B-FD-68-1C-9E-3E-CF-37-C2-49-6E-1D-62-12-E5-CD-C5
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/0Mk2LinearAerospike/part
+		SHA = 30-99-C9-41-BE-12-07-CF-5C-C1-B5-25-C6-EC-E7-14-C3-1D-C6-13-FE-ED-41-1F-BC-42-1E-0C-D7-52-C4-71
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/211D
+		SHA = 3C-85-F1-F6-E6-5B-00-2F-39-EA-6D-73-C7-48-7F-1E-3B-66-13-AE-D4-67-EE-BA-E5-D2-A5-7A-3C-28-C8-F3
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/211F
+		SHA = 93-E2-C3-D2-42-BF-98-54-76-8B-4C-6C-5B-79-E0-8C-05-C5-CC-F9-3E-30-BE-12-66-9F-80-00-28-51-DB-AE
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/550
+		SHA = C6-C9-CC-33-39-45-BF-A2-B5-52-10-4B-2C-35-4D-3A-09-F9-70-6C-17-14-6D-80-CE-ED-35-63-AA-CA-CE-77
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/eFan
+		SHA = 8A-7B-1D-B5-E6-5B-07-90-40-E1-EB-06-CC-09-F6-53-1E-AC-9A-AC-F7-9A-40-0F-A3-93-CB-9C-B1-4C-5E-7D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/J213
+		SHA = 1B-6F-FE-88-CC-38-E3-6C-CA-81-BF-39-0D-81-2C-5E-14-9E-20-1A-47-B0-4A-63-6C-44-90-7B-9A-76-DB-9B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/LancerEngine
+		SHA = 11-BC-D6-F9-3C-2E-43-B2-97-62-C6-44-45-5C-F0-C3-C2-62-9B-B6-FF-51-85-C0-FB-70-B3-5F-4E-27-5F-E9
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/LancerShockCone
+		SHA = C6-85-A4-61-57-27-64-B9-D4-99-F8-06-8F-DA-C3-AD-45-74-A2-90-CD-53-8A-3F-8A-17-BF-75-BE-D9-56-6F
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/Merlin66
+		SHA = 24-0A-E8-76-6D-B3-11-48-38-F5-49-A3-7B-98-DC-3E-9E-8F-FF-A7-C7-10-A4-12-15-9A-72-15-8E-80-27-FF
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/mk2CargoBay
+		SHA = 59-D3-76-06-C3-DE-F3-01-9C-59-49-5A-90-F8-58-1B-08-62-82-6C-79-E9-F3-E5-78-BC-37-A3-B1-68-ED-D6
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/NK12M
+		SHA = 06-D0-BB-E5-E6-85-AF-B5-C5-F0-D9-EC-A1-F0-5C-89-52-26-72-92-94-5E-4E-FB-A2-F2-14-70-F3-40-81-E8
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/PT6
+		SHA = 1C-BE-9D-22-5E-89-80-0B-31-1E-87-6E-AA-64-0A-F2-04-14-1F-B8-64-CD-33-54-0A-61-3B-64-E3-37-FE-F0
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/R2800
+		SHA = 83-7F-35-18-54-1D-41-3C-F0-97-02-E0-A0-86-8A-59-D7-1C-9A-98-FD-77-04-68-E1-E6-88-86-DC-73-9D-D9
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/radialAttach
+		SHA = A2-E0-50-48-56-0D-32-B1-A8-85-14-F7-E3-80-49-CE-FC-F1-7D-90-FB-61-AC-F8-CD-16-F7-76-0F-21-5F-85
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/vtol
+		SHA = 56-28-77-9E-2B-7C-6B-9E-A5-5E-22-92-F9-81-F6-19-09-EB-63-CF-A8-07-0A-D8-64-6D-2E-F5-AA-1F-CB-C1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/TinyJet/part
+		SHA = D9-B9-6F-75-86-E9-F8-89-00-0E-0E-73-E5-8A-9A-49-45-10-B0-5A-8A-AF-74-DB-1D-4B-3A-54-77-BC-B2-4A
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/part
+		SHA = 34-F0-FE-A3-84-AD-C2-DA-AD-59-ED-57-EC-BF-DB-83-E4-CE-F9-02-40-FC-7A-22-64-11-34-BD-E5-5F-B9-5E
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/part25mTailConnector
+		SHA = 3D-CB-07-A4-F6-CF-84-59-AC-B6-87-51-C7-B3-AC-CB-0D-D5-D6-22-79-D8-99-39-30-96-41-79-25-17-1B-C6
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/partPassenger Cabin1Long
+		SHA = CA-CC-84-A3-46-73-A9-EE-34-CE-39-89-84-B2-42-0D-6B-DF-35-DE-1D-E5-20-F0-44-3E-2D-21-C6-8D-52-CE
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/partPassengerCabin0Short
+		SHA = 72-B7-45-4B-95-F8-5F-FD-B3-D8-23-8D-88-C5-E4-36-87-1D-6B-B0-3A-50-D1-D6-72-2B-12-64-F4-E1-90-77
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/partSmall
+		SHA = A6-87-9E-4C-E2-1C-45-9E-F5-93-E2-AD-77-8F-7C-DC-51-BA-9D-18-24-92-CD-7E-AC-F9-0B-5C-15-82-56-21
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/radialWindow
+		SHA = BC-7F-5F-38-0D-9D-1A-19-EC-72-83-BE-DE-AC-6F-D8-3E-32-46-5A-1C-63-2F-E5-65-48-CE-1D-8F-3B-E4-8F
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/smalladaptor
+		SHA = AE-AD-CC-0F-7C-4D-AA-00-80-0E-6A-EF-C4-5C-29-54-3E-B6-E9-40-D3-A1-FF-74-0D-00-CE-79-11-DD-36-AF
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/Old/partLarge
+		SHA = 7A-2E-CF-D1-B8-A5-1C-8B-4D-63-34-EF-EB-64-4C-AF-AC-D5-35-83-E7-FA-53-B7-B3-10-D4-8C-54-D2-4F-C4
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/Old/partLargeLong
+		SHA = 89-D8-2B-B1-30-9A-43-42-55-E7-83-5D-59-04-07-29-C5-5D-A3-0D-0A-80-B7-D0-6E-D7-C9-9D-29-95-6B-E9
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/Hull
+		SHA = E1-69-82-0A-F9-AF-8B-98-05-EF-AF-D4-19-53-CB-EA-55-65-34-33-3C-57-1C-DD-D2-2B-6D-4A-0A-0C-73-DA
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/NoseCockpit
+		SHA = DA-4A-E4-11-89-0E-35-67-9E-29-8A-C1-28-15-57-70-5B-14-F1-5E-86-EC-91-44-1A-94-12-5D-7A-9A-97-5D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/part375mTailConnector
+		SHA = D1-54-80-5E-2C-8B-22-66-C0-06-E9-22-A7-09-1D-34-60-EC-C7-5A-89-89-42-3A-35-7B-4F-47-6B-A8-4D-A4
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/RadialCockpit
+		SHA = C7-02-7A-40-07-94-C5-CA-EB-23-73-98-85-02-96-49-95-AD-72-25-63-5C-C9-4E-7F-C0-28-DF-94-96-D8-CC
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/RadialHull
+		SHA = 58-26-F1-46-56-BD-F7-03-AC-43-62-29-1E-70-1E-88-0D-2A-4A-83-C2-D4-B9-3E-59-3F-88-8D-13-62-7A-FF
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/RadialHullEnd
+		SHA = 95-E9-5D-7C-E8-26-B8-7F-6D-E3-09-80-41-6B-92-99-E8-E7-95-12-91-3E-C5-7B-F8-08-CB-8A-5C-94-AA-AF
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/ramp
+		SHA = 44-3A-28-7A-BF-05-3F-64-2E-7F-4F-6F-F5-AE-1D-67-C1-6C-82-2B-41-50-50-55-38-8E-49-91-C0-E6-62-CD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/Size3-Mk3
+		SHA = BA-C1-A1-D2-02-2B-90-38-FD-CC-FF-88-D4-7F-C8-06-B3-B7-64-14-87-18-84-6A-72-97-21-BD-4F-B9-83-36
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Mk2/Mk2SAS/part
+		SHA = A9-76-9A-34-98-9F-24-80-00-1E-F9-EE-54-86-08-E3-80-F1-2F-CC-C5-A1-84-EA-2E-30-C0-E5-2A-98-FA-17
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Mk2/Mk2SAS/part10degree
+		SHA = 4B-74-12-E5-FF-51-9C-6B-F0-B2-77-C6-5F-37-1C-0A-2E-80-44-A0-7B-E5-AD-9B-FD-89-4D-E9-22-AB-AE-08
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Mk2/Mk2SAS/part225degree
+		SHA = D2-05-51-C1-8D-2B-00-37-31-59-0B-CB-ED-DB-9F-04-79-57-47-82-61-0A-30-43-E8-1B-C8-D6-17-04-24-20
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Mk2/SU27adaptor/long
+		SHA = B4-C6-87-C5-93-EB-95-3C-C5-4B-89-39-A5-36-8B-97-83-93-77-F2-FB-1F-C2-E5-85-C6-2F-FB-8D-81-3B-7C
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Science/AvionicsNoseCone/avionics
+		SHA = A2-98-75-F4-28-C1-01-F8-1C-13-2E-3B-A3-9C-59-E3-B3-FC-DA-64-B0-E2-F0-95-BD-0B-D3-A5-3C-A0-54-B7
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Science/MiniGoo/part
+		SHA = B4-A0-5C-0C-55-5A-EA-EB-D5-63-78-B7-E2-34-BA-6C-EA-3B-5B-C9-80-BC-8F-AB-E4-3D-4C-01-B0-1C-56-63
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Utility/crashPad/part
+		SHA = 30-8F-33-31-AD-66-94-17-02-50-20-06-E1-70-E2-BE-B0-12-4B-08-DF-F0-22-2E-9F-A7-78-1E-40-B5-AF-6B
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Utility/crashPad/partSmall
+		SHA = D4-F2-84-F0-C1-43-14-7E-C3-4C-EC-B2-D1-CE-42-22-5D-F6-5A-22-54-11-2E-29-3A-20-AA-D1-18-B8-FB-0C
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Utility/floats/part
+		SHA = 6C-24-16-2A-50-3D-FE-44-1C-5B-49-36-98-50-47-5C-FA-C9-6A-10-D6-D5-D0-0E-B6-E6-B2-A4-F7-29-60-AB
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Utility/floats/partMid
+		SHA = 19-58-7E-35-2A-35-46-44-6B-5A-E2-04-A0-4B-C6-8E-77-87-DC-4D-BA-49-4F-3B-4E-F8-1B-7A-55-0A-1A-02
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Utility/floats/partOutboard
+		SHA = C7-BD-F8-6D-AF-18-BC-EE-AC-05-AE-8D-42-22-31-77-BD-4B-7E-E3-00-68-47-F4-97-71-B0-F3-F1-55-4C-C2
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/375mProbe/part
+		SHA = D8-CA-EF-86-73-EC-EF-D2-92-45-92-10-C8-63-58-78-F5-ED-5E-8B-73-80-72-B9-7F-77-FB-DD-4F-C5-B3-69
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/Dontstay/partAntenna
+		SHA = 9E-CF-16-D1-23-A8-B3-56-2A-D2-A5-9F-61-D1-32-2B-A5-EA-42-E6-94-8C-74-9D-1A-4B-F5-56-9A-F7-6A-98
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/Dontstay/partProbe
+		SHA = 33-9E-11-55-E1-D0-44-87-2A-1A-87-90-63-E5-53-73-8A-0A-38-55-8D-D2-DC-B0-E1-E5-E3-C8-24-8D-4A-CE
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/HECS-Ranger/partProbe
+		SHA = 50-27-F9-B1-26-77-8A-BB-5C-BB-C1-F5-D8-1B-16-28-21-6D-51-5E-28-E9-7C-1C-98-11-7F-CE-16-61-B9-31
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/probe/Alouette
+		SHA = 7C-80-4D-B7-1A-9A-77-17-50-E3-B9-8B-B3-6F-F9-6D-B8-5E-07-53-3A-61-69-BD-C4-C2-3F-BB-51-E5-0C-A1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/probe/AntennaTube
+		SHA = 1C-8D-9E-2D-68-66-AA-04-28-94-06-C6-EC-52-FE-ED-15-1E-56-E4-C0-E1-C8-44-1F-96-4D-9B-68-0D-46-2B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/probe/part
+		SHA = B2-C1-ED-F9-9C-19-AA-D4-E9-84-A7-66-5F-43-8F-ED-22-C9-E1-DE-6D-C8-04-6A-A4-4D-28-A0-50-47-0D-70
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/Space2001/Monolith/part
+		SHA = 4E-9F-A5-EE-9B-CB-A5-75-28-D3-5D-19-83-37-1D-40-51-71-69-5F-CD-6B-29-A0-07-06-95-2A-2B-DD-50-E9
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Aero/noseCone/part
+		SHA = 4C-94-C2-8D-08-35-E1-BD-54-50-DC-B5-0F-C4-79-94-79-23-0A-36-B5-3E-08-6F-17-11-FF-7E-95-B4-E9-D7
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Command/MEM/part
+		SHA = DE-49-2A-5F-5A-D9-61-34-3B-25-C4-22-5B-18-CF-CD-ED-9D-AC-58-F1-60-87-23-2E-A8-A4-72-EF-46-2C-11
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Command/MEM/partDescentModule
+		SHA = 4E-2D-AB-45-A2-DE-47-E0-3A-BD-C4-0A-7A-06-3C-DA-6E-F2-8A-BA-2E-B8-E6-DF-64-5F-58-6B-8C-70-26-07
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Control/OMS/part
+		SHA = EA-48-1B-32-47-BF-D7-75-54-86-7B-F0-59-24-FD-3B-48-BC-39-C0-C6-BB-EE-55-4B-D9-BD-13-0E-DA-10-B8
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Control/RCSBoon/part
+		SHA = DA-1E-87-2C-E8-8B-99-93-0E-2A-C1-F3-E8-65-88-B9-FB-1E-F1-95-DE-09-FE-9D-7A-98-A7-D4-3F-15-9B-2D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Control/RCSRack/part
+		SHA = D7-05-D1-F0-CE-55-31-A1-EF-63-29-AE-FF-C5-DD-BE-DB-95-AF-C2-69-D1-96-7F-F1-50-D0-BC-0C-7F-0F-C6
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Control/Vernier/part
+		SHA = D0-E8-61-22-64-7A-76-0B-A1-2E-A4-AA-89-80-31-77-7B-49-1B-EB-15-1D-BE-A2-9C-26-94-22-B9-E6-B0-78
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/BlackAdder/BlackAdder
+		SHA = 4A-95-3E-BD-0F-59-60-05-10-D5-C9-95-19-97-77-8A-3E-75-CC-D3-DD-10-93-98-17-C8-F3-F4-07-93-8C-73
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/BlackAdder/BlackAdderGoesForth
+		SHA = E7-92-C2-9A-3F-1F-73-EB-25-D2-32-87-F2-D8-B5-7E-CA-AF-AD-05-4A-B1-95-40-FA-AD-AC-74-8F-AC-5D-FB
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/BlackAdder/Waxwig
+		SHA = B4-5F-9C-EF-78-CD-D9-7E-82-AB-27-18-61-28-03-FF-B6-84-B1-74-C4-87-E4-81-24-FB-ED-5E-29-60-72-D3
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/J2Engine/part
+		SHA = 22-FE-C9-49-F8-CB-62-D4-FA-58-9D-E8-16-DA-FF-FC-EA-11-82-6E-7E-9C-5E-1D-39-AE-4C-8C-0E-D9-BE-F3
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/K170/25mEngineMidrange
+		SHA = E4-3F-D1-68-55-B7-D6-98-58-84-2B-31-D3-63-28-47-4B-7D-53-AE-36-4F-6F-EE-31-E1-00-48-1B-B6-FB-07
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/K170/part
+		SHA = 02-40-FC-9A-9F-24-70-15-88-61-85-DA-47-81-17-02-0E-6B-5D-6B-59-1A-45-5E-73-BF-A3-1E-F3-79-2E-E3
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/KickMotor/PALMX30
+		SHA = A2-C6-DF-E9-EE-B6-0D-FB-32-68-3C-FF-6D-AC-60-87-18-86-9D-86-29-46-2E-70-21-8D-8F-12-F8-D1-19-15
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/Kopo4e/KOPO4E
+		SHA = 1A-25-CB-CD-0A-0C-92-28-5A-7E-95-A1-8B-7D-AE-FD-00-5B-FE-39-1A-85-C9-27-38-44-40-6F-09-49-D3-53
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/NERVA/part
+		SHA = 79-84-6A-DD-C3-DF-05-94-35-D6-EF-A4-E0-37-DE-6C-FE-09-EF-0F-3B-FC-F9-20-54-09-A3-76-4E-19-FA-1D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/NERVA/partFatmun
+		SHA = BB-BB-56-EE-69-FB-35-A7-A8-A4-46-9F-14-F6-C7-FD-B2-D7-90-CA-B0-94-88-12-5A-97-75-71-AE-D0-E4-98
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/size2SRB/part
+		SHA = 90-94-D2-B8-1A-E1-18-F0-A2-E6-D2-AF-B1-81-58-8F-9E-CB-A0-49-B8-44-25-D8-93-42-50-C2-17-1E-B1-D1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/Vanguard/AJ10
+		SHA = 97-8C-30-F5-AD-E0-16-34-05-4A-3F-57-8D-DE-D5-7B-E5-DD-57-5A-D2-C7-BA-39-C2-78-C4-A0-41-90-33-B1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/Vanguard/AJ10LongNozzle
+		SHA = 8C-E2-BF-B2-C8-07-B2-BB-C8-AA-E7-A7-D2-91-07-A4-77-4E-EE-38-88-03-0F-4B-FD-B9-5D-86-1B-17-63-BB
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/Vanguard/launchClamp1
+		SHA = B6-66-2F-0C-A5-C8-5E-2A-D0-83-F4-C3-B0-76-7C-6D-A6-2A-80-13-D2-FA-C8-DC-AC-CE-3B-E9-B7-C9-D4-01
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/Vanguard/X405
+		SHA = 82-E5-ED-24-5D-DE-B3-37-51-D8-7A-35-F7-E8-38-E8-4D-D1-44-D1-77-A3-32-15-F2-6F-62-5C-36-02-FD-8A
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/Barrel/fuelTank
+		SHA = AC-C7-C0-11-81-A2-06-69-A2-80-79-9A-08-61-FB-42-70-52-EB-F8-DE-F7-EF-97-56-D6-B2-63-90-6F-C0-DD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/CargoBay1/part
+		SHA = 86-3B-54-3F-D7-66-1B-AE-83-B4-A2-A6-08-4A-DF-DA-2A-83-24-58-FC-07-33-81-61-19-16-99-EB-39-21-38
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/part
+		SHA = 67-EB-87-07-01-48-E0-1E-AF-2A-C0-E9-1A-3D-DA-7E-CE-55-84-FD-7F-77-EF-76-F0-B6-A5-C9-B3-BE-DB-87
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partGold
+		SHA = E0-62-73-FE-8A-6E-AE-6D-5D-F9-89-1E-B9-76-60-73-58-28-8A-9B-C6-58-D9-44-6E-2A-81-84-E6-07-F3-46
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partStandalone
+		SHA = F1-E2-F7-D9-D2-F2-B7-8B-C4-7C-6E-D5-32-C3-13-26-5D-6C-C4-17-D4-51-A0-C3-7F-89-F1-58-4A-27-F8-D2
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partStructural
+		SHA = EE-B0-30-C9-B7-49-F3-B0-0C-34-7E-FE-5D-6B-75-22-6F-BB-F5-88-F8-B5-45-44-78-FC-34-37-5D-C2-D3-CF
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partStructuralBasic
+		SHA = 98-DE-9A-E1-24-24-19-BD-B1-26-92-E3-83-A6-AB-71-00-61-88-E6-C4-73-10-C7-02-CD-6D-24-68-3C-B0-EE
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partStructuralOpen
+		SHA = 6E-8E-14-EF-28-F7-5D-B8-96-1D-DE-07-E9-B5-35-01-67-91-96-61-5E-B1-F5-1B-DB-26-4D-6F-97-05-CB-F2
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partStructuralOpenSmall
+		SHA = 03-71-B8-94-87-EE-5A-F1-38-AC-20-BC-4A-A8-B5-E8-C4-D3-15-2D-E7-8A-AF-45-F1-06-33-7A-9B-0B-D5-53
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/part
+		SHA = E5-98-B8-01-98-63-DE-A4-3B-07-8B-8B-11-F6-47-EA-ED-B0-5E-5C-46-CE-73-5F-94-84-EB-60-59-B4-15-A2
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partGold
+		SHA = 5D-76-C6-BF-B6-93-C3-3A-2B-50-28-C0-77-BD-4D-09-F9-CB-6B-BF-ED-89-0C-BE-7A-95-BD-CB-27-59-3C-62
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partStandalone
+		SHA = 2B-00-CA-AF-9A-F6-90-FF-58-FF-62-80-D6-B4-1C-5F-5E-64-C3-12-0C-E2-DF-3C-1A-D7-A6-34-E5-F6-6E-D7
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partStructural
+		SHA = 9E-C7-32-47-22-48-BE-DE-00-4E-B5-98-1E-68-42-F8-E4-37-15-11-2F-C6-78-4D-FC-35-65-BF-7F-6B-EC-B5
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partStructuralBasic
+		SHA = BA-85-2A-44-39-E5-C4-24-8D-43-A9-A0-8A-E9-F0-F9-B2-A2-06-E5-D6-24-69-14-F7-DA-6C-9A-E8-43-BF-03
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partStructuralOpen
+		SHA = 81-C5-87-A0-B6-64-81-20-BB-3C-43-2E-7F-F5-5C-A4-FF-02-CD-09-EF-99-B3-C6-EE-B0-90-9D-06-C6-E7-ED
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partStructuralOpenSmall
+		SHA = B3-2B-F8-44-3F-A4-F5-0F-C2-DB-AC-07-36-6B-F4-83-B3-68-0D-12-FD-3D-4E-DC-4E-F7-F0-7A-00-14-CC-9C
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/NASA25m/16
+		SHA = D6-65-DC-BD-0B-B3-DF-A8-FB-5D-BD-50-E1-77-22-D9-78-96-BB-DF-67-FE-F6-2D-5C-0E-EF-D4-BA-08-B8-A2
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/NASA25m/32
+		SHA = 95-B5-49-41-45-24-BC-AB-82-00-0F-5C-18-C5-FE-D4-24-09-52-F9-A2-8C-BC-8F-0B-59-53-E0-3D-DF-12-89
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/NASA25m/64
+		SHA = 8C-BF-B2-42-C7-E5-82-88-DF-E6-22-12-58-A5-10-BA-95-F3-B6-63-38-9B-F0-27-10-3D-F7-A5-BB-87-C4-8A
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/RadialFuel/part
+		SHA = 43-45-DD-96-08-FA-C4-2A-46-53-C3-64-A5-E0-77-DD-89-F3-FB-63-E3-48-48-84-D7-7C-4D-D7-8F-E6-59-FA
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/Vanguard/fuelTank
+		SHA = C6-99-DF-E9-A1-9E-16-C7-DC-BB-E6-A0-C8-1D-CF-07-AA-05-53-72-F0-33-22-ED-2B-35-FE-18-D1-10-0C-3E
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Utility/RadialAttachShroud/part
+		SHA = 56-AC-E9-48-36-4A-08-DE-A8-1E-99-E5-F1-3C-E6-B6-AE-18-94-3E-7D-3B-48-E4-E7-B3-9F-69-FC-68-6C-C8
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Electrical/RTG/part
+		SHA = 73-D3-8C-02-B7-40-23-13-9F-04-9B-ED-64-AF-27-45-33-AE-69-3E-98-7D-2C-33-65-F1-44-C6-52-3A-37-5A
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Electrical/RTG/partBasic
+		SHA = 45-A2-FB-32-CF-4D-3C-99-DF-14-88-C4-B0-E7-C0-7B-20-58-C8-36-C9-5C-87-50-11-45-52-19-4E-09-9A-EB
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Electrical/solarHex/part
+		SHA = F6-4C-6E-B1-73-B1-B1-9C-4D-CD-97-1D-AA-81-F5-A0-42-19-23-36-75-52-11-ED-14-E6-22-38-EF-37-22-12
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Electrical/solarHex/partLarge
+		SHA = 39-A8-A7-89-9D-9A-2A-94-7B-3E-29-C1-30-13-E4-54-8C-31-73-39-CF-96-B6-D5-93-8F-B2-B6-41-EC-AB-3B
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/CANIOT/part
+		SHA = F7-0E-19-68-85-96-11-62-37-BA-86-19-12-1E-77-66-31-22-4A-AD-29-20-F4-8C-9A-FC-C8-69-8D-A0-85-F6
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/DLK-S3EHabitat
+		SHA = D4-80-A2-AD-52-E5-C0-54-2D-81-32-9A-6E-B7-5F-39-89-52-D9-37-93-83-EA-30-66-35-88-88-EC-33-0E-E6
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/fuelTank
+		SHA = BB-3E-70-E3-84-C5-04-F6-E3-CA-CD-7F-A2-08-B0-3D-46-1D-36-22-C8-09-B2-2E-F4-16-74-8A-D6-63-EC-DF
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/ISK-30CrewCabin
+		SHA = 30-0D-01-68-44-A7-83-1C-24-44-7A-0D-67-43-55-94-3C-20-9C-84-F6-15-19-AF-3F-5A-B3-26-C7-5C-E0-F5
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/LanderModule
+		SHA = 22-52-3C-01-E1-AB-4F-63-24-D9-B9-78-F1-15-BE-43-75-4F-D2-29-BF-F9-5F-9C-FE-DC-A6-5B-13-F2-CB-7C
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/serviceModule
+		SHA = 41-FD-B0-7C-4A-A4-DC-E5-B3-FD-06-BA-BD-61-B2-00-E5-D9-B2-8A-57-9F-6B-ED-6D-AB-F2-68-6C-27-D9-A4
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/smallFuelTank
+		SHA = 8F-43-B5-0D-4F-E0-CC-31-FF-34-C1-0D-B3-8F-40-E4-D9-F6-B0-33-7B-04-AB-03-00-55-D2-48-1A-81-80-87
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/smallScience
+		SHA = 94-E5-C3-2A-D9-82-3F-C2-18-6C-9C-DA-0B-B2-1D-D3-E5-55-6F-C7-87-0D-64-6E-6F-C1-20-77-2B-C4-18-D7
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/smallServiceModule
+		SHA = D5-90-72-49-CF-9F-5A-58-9F-AB-0B-05-8F-E9-47-E5-E3-11-42-FE-C0-38-F5-B3-EE-36-5C-07-08-6C-7E-D7
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/SSP-10CrewCabin
+		SHA = 00-6C-28-3A-A6-0A-6C-93-C3-DF-F3-4C-18-C1-EA-69-1D-48-71-94-0F-89-B9-D9-42-02-8B-DB-8D-0C-AF-5D
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/SSP-20CrewCabin
+		SHA = 24-FB-F6-73-E7-EF-CB-CC-C0-D2-AA-EA-E8-80-5F-64-91-E5-4B-09-1B-BB-D6-0A-C7-76-7D-34-87-DC-FF-91
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/SPKTR/part
+		SHA = 43-BD-AE-C1-B1-67-5A-33-43-CF-93-68-7F-46-46-E7-8A-3A-32-43-46-AA-29-C3-66-62-C8-0B-71-3B-A3-34
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/Airlock/internal
+		SHA = DA-2C-56-1B-BA-FA-43-54-91-BA-C7-2F-77-9E-3E-41-A0-38-61-51-DD-3F-2C-0A-0A-46-8C-AF-6E-6B-E8-6D
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/Airlock/part
+		SHA = C2-44-9A-86-C2-33-11-71-5E-F5-0F-19-B7-A0-D7-19-B9-F9-3A-9E-36-38-F9-06-C2-B1-79-FD-28-0E-14-B0
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/capsuleHat/part
+		SHA = 5F-F7-1B-23-DD-F2-48-4A-C8-D7-7E-98-FC-1E-44-4E-12-54-76-25-6D-EE-25-EF-24-3A-FF-B8-3F-1F-3A-3F
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/dockingPort375/dockingPortSr
+		SHA = 58-E0-B7-BE-52-3D-40-C6-C6-A6-1E-86-B4-4F-2E-9F-CA-32-07-8F-D0-59-DC-77-FA-0E-97-E5-3F-52-BD-F3
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/smallPipes/6way
+		SHA = 87-41-44-79-6D-1F-22-AB-32-76-6A-DB-C4-6F-6D-FC-B9-F7-7B-9A-05-F0-68-AD-67-20-CC-F0-BA-E9-91-8C
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/smallPipes/long
+		SHA = E1-44-07-39-D9-8A-B8-EA-BE-73-45-7D-4F-C7-24-BF-2B-97-10-18-CA-79-40-47-0D-0B-B1-41-B0-D6-D3-4C
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/smallPipes/short
+		SHA = D0-7D-A0-6E-22-06-7A-44-B6-9E-7B-00-FA-24-64-42-38-53-B7-32-9B-39-0D-9B-E5-E3-7F-91-E3-E2-4C-52
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/smallPipes/turn
+		SHA = D7-38-E2-64-0B-76-BD-66-7C-B9-48-87-4C-63-04-1F-68-E4-0C-72-8B-74-B5-8F-D2-2D-F4-47-17-3A-C3-59
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/smallPipes/GirderSet/long
+		SHA = 31-73-29-A6-12-27-E7-4F-5A-63-F0-24-50-44-44-54-1F-DF-93-D9-76-7D-32-C2-39-D3-64-9A-16-2A-9A-C2
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/structuralPanel/part
+		SHA = 96-C8-9A-37-E6-07-50-A1-84-54-97-BE-88-2A-08-2E-1B-C0-C4-93-8E-C9-E0-5C-59-63-23-BE-D8-6C-9B-32
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/structuralPanel/partHexagon
+		SHA = FA-6F-B1-30-13-68-3C-22-9F-57-08-74-A4-22-43-C3-4E-65-5A-75-4B-30-BF-B9-FF-E7-8B-A2-1E-2A-27-05
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Engine/K15/partLarge
+		SHA = 6F-C5-CC-0C-51-86-C1-43-8F-03-9C-EA-08-80-97-9F-98-08-58-5E-36-D4-3F-A7-47-84-6E-11-44-3F-4B-38
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Engine/K15/partMedium
+		SHA = F2-C4-73-5E-07-CB-35-73-9B-3C-C0-0F-6F-E4-A1-62-09-EC-38-9C-47-80-DD-36-DB-1B-DB-58-0D-B7-11-87
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Engine/K15/partzNK21
+		SHA = 64-0B-B6-38-F8-64-C1-25-51-3D-87-0C-CC-EE-11-F9-CD-41-F8-7B-82-54-25-BD-0C-67-03-A1-DD-58-F0-AE
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Engine/K15/stackSeperator
+		SHA = DF-50-88-BB-03-49-1D-69-C5-5D-6E-ED-A7-DF-4D-50-B4-8D-6D-4E-88-AC-E2-09-0C-53-90-51-5A-24-2E-AE
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Engine/K15/stackSeperator2
+		SHA = 8B-BA-15-A6-98-84-59-98-8F-AF-47-1B-CC-55-05-77-A9-B2-EB-CE-57-9C-E0-FE-46-0B-72-09-45-9B-4A-93
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Hull/5mQuadAdaptor/part
+		SHA = 6D-5B-BD-7E-CE-80-56-BD-9B-AB-E0-E0-69-B8-D4-5E-DD-32-E6-FA-0D-37-E1-A7-9C-74-93-7C-3C-8F-72-3D
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Hull/5mQuadAdaptor/size23adapt
+		SHA = 5D-06-A9-27-06-A0-A2-03-E6-A0-5B-0C-A0-44-E8-6B-B8-81-90-87-38-99-52-EE-3F-68-76-CD-49-11-A6-DB
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/5mTank0
+		SHA = AB-5F-6E-65-B3-89-DC-60-2E-09-C2-1C-41-F8-0D-22-C6-F4-03-93-E4-43-3D-90-2B-E8-A0-FB-14-2D-74-00
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/5mTank0NoseCap
+		SHA = E3-4E-BB-7F-9E-D6-27-F1-CE-9D-E4-18-62-8C-5F-48-B3-49-1F-F1-67-F7-09-BC-59-39-AE-88-95-CD-B7-73
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/5mTank1
+		SHA = 94-AE-59-5A-B0-E0-5C-A5-BC-A3-FA-8B-1B-FC-CC-05-5B-94-51-11-F8-96-7B-72-41-A4-CE-07-F7-49-F9-F0
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/5mTank2
+		SHA = 0E-32-B5-35-8C-33-94-2F-15-0D-AA-64-15-8D-13-CE-F7-5C-32-36-24-BA-FA-A8-1B-D0-EF-D7-84-83-2D-E4
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/5mTank3
+		SHA = 59-29-1C-CA-2B-1B-5C-4E-3B-CA-15-0F-85-72-A1-D4-8D-FD-13-38-7A-05-8B-FF-92-84-8C-03-AD-A7-D4-7A
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/size5multiengine
+		SHA = B5-4C-D7-00-14-9F-48-AC-EC-AC-84-EB-D2-B3-75-01-83-AF-7D-04-09-A3-75-CB-0B-51-76-A5-CD-D8-B4-9A
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage1-2
+		SHA = 77-01-2A-4F-1E-70-84-15-A0-2F-C4-F9-CF-5E-A9-F0-3B-82-B7-8C-41-15-06-8A-86-6F-6E-30-92-A2-BA-95
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage1-2Small
+		SHA = 06-AF-5A-19-07-00-1E-A4-1D-AB-01-45-98-67-07-D4-A5-00-2F-67-2A-FC-E7-A8-B4-DD-82-62-22-ED-76-48
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage1Base
+		SHA = 63-27-5B-2E-5F-6A-04-34-6C-D6-11-C6-B0-4E-5C-B2-EE-EC-42-F4-13-88-5F-0B-2D-78-7D-BC-95-E4-D4-E7
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage2Adapt
+		SHA = F7-D7-4B-C6-3A-A1-45-B2-E3-DB-DB-61-6C-95-07-61-90-17-B3-4C-EF-A9-46-82-C5-EC-BE-91-13-B1-53-C2
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage2Engine
+		SHA = 0A-99-67-B7-FC-25-3B-F1-CB-85-46-88-48-AA-72-DD-7E-0A-A0-8D-FF-53-EE-49-0D-40-39-FD-3F-FA-33-97
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage3
+		SHA = EC-A6-A2-AD-BA-8C-24-F4-72-9E-2A-B2-8D-C2-0A-1C-45-C5-4E-9E-5D-AC-27-2F-4F-13-9A-20-90-52-C3-07
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage3Engine
+		SHA = 9E-F0-C1-BF-CF-17-BB-30-8E-8B-4C-93-A8-C0-A4-40-59-58-0E-90-FA-C5-80-2E-4F-09-00-E9-18-F6-4E-3E
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage3Upper
+		SHA = 5B-55-A3-CC-25-E9-13-1A-AD-6B-CC-CA-AA-83-A5-1E-7E-EC-95-D7-35-A8-1D-D1-C7-F7-6A-AE-B7-D7-14-C6
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Tsar/2-5-3-75
+		SHA = F1-4B-84-C8-1C-2E-16-B1-09-B1-40-79-9B-AA-16-CD-DA-20-17-2B-14-6B-55-03-B8-1F-28-38-16-B2-C5-79
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Tsar/3-75-0
+		SHA = 0C-45-E5-D9-DD-F6-0F-03-80-30-EA-25-65-83-76-4E-E3-BA-5E-99-CA-14-89-FD-17-FD-69-DB-0B-93-3C-49
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Tsar/3-75-5
+		SHA = 9D-6F-A8-AC-E5-0B-EA-B9-92-E3-01-1C-39-68-6D-A9-9D-7A-A2-AA-D0-FB-D5-A2-F9-0E-49-A5-3E-DE-16-D0
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Tsar/5-to-7-25
+		SHA = DB-65-20-50-BC-D7-C2-7C-0E-FA-75-6A-64-8A-DD-71-0D-D8-9E-3E-0B-AB-DF-C0-4D-DC-43-CB-56-49-4E-5E
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Tsar/gridfin
+		SHA = 9D-7D-76-E7-E9-DF-93-65-14-24-6A-AE-44-4D-6B-5E-CD-76-8C-FA-FF-FE-37-44-8A-E5-47-42-3F-39-67-06
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/box
+		SHA = D3-9D-4D-F0-7B-72-43-A2-2D-9B-FD-52-AF-6C-26-C4-D2-8B-EA-87-92-CD-02-45-8C-10-D2-15-B6-14-3E-F8
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/fuel
+		SHA = 36-4D-68-2B-1A-8D-3A-71-1E-04-04-46-83-B1-25-CA-92-34-CB-14-21-8F-3D-4B-00-AE-F1-36-5F-F3-FB-C1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Narrow0wheels
+		SHA = 51-C2-3F-09-EE-A9-F9-3A-85-5A-5C-08-91-B0-2B-F1-18-2F-AC-6A-36-34-B9-A8-EA-2C-F8-41-76-2C-A2-F1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Narrow1cabin
+		SHA = B8-75-E5-98-90-76-D1-D2-D3-C3-11-EF-2A-92-EB-C5-16-34-45-D0-16-AF-D8-13-AE-38-60-85-9F-84-5A-5F
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Narrow2middle
+		SHA = 15-EB-5F-4A-3E-EE-56-C8-9F-58-78-0F-A9-CE-0B-F1-B8-EF-38-00-28-F3-45-13-E8-BA-3B-D0-D9-D8-EB-51
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Narrow3rear
+		SHA = 8C-B3-11-2E-B9-81-37-56-15-32-B4-12-3E-DF-FA-05-57-E5-02-8A-D0-56-D5-97-F1-1C-2D-E5-F4-01-62-A2
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Wide0wheels
+		SHA = 0F-44-AF-52-CF-86-62-59-FB-8E-3F-5B-C5-96-EC-E3-6C-18-91-77-AF-F9-2A-5D-07-FB-7E-14-54-9E-5A-30
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Wide1cabin
+		SHA = 43-13-C2-F4-B5-8C-99-CD-11-E9-97-40-81-B8-A1-F4-7A-50-76-36-12-E6-49-02-51-ED-97-C9-D8-59-AB-95
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Wide2middle
+		SHA = C3-2B-4C-DF-5A-47-9C-2F-7F-CB-CC-BF-A3-3E-78-49-E3-B1-85-D5-1E-4D-95-D4-E0-08-92-AB-AE-C1-D2-E6
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Wide3rear
+		SHA = CF-83-3E-E5-24-5B-B8-E2-B1-72-D1-22-7C-EC-3B-D5-D2-2A-39-17-17-6F-F5-34-79-D9-24-85-B6-6C-DB-E3
+	}
+	FILE
+	{
+		filename = SXT/Spaces/BonnyInternals/internal
+		SHA = 7E-0D-61-B1-64-48-B4-7D-7D-9D-16-EB-3C-8D-1D-87-E9-A5-FC-72-99-56-EA-5C-9D-55-9B-9C-91-FE-F3-16
+	}
+	FILE
+	{
+		filename = SXT/Spaces/Clyde/internal
+		SHA = E0-33-DF-3E-D3-B4-39-73-3B-DF-88-5F-DC-6B-BE-C8-C4-0C-5A-37-5F-69-81-16-5A-B9-1C-17-CB-38-A2-4E
+	}
+	FILE
+	{
+		filename = SXT/Spaces/Duna/internal
+		SHA = 7C-30-48-F6-ED-E1-CB-C4-12-1D-A9-CD-B3-4B-95-E2-B2-57-5B-A5-BD-92-6F-A3-8E-80-9E-62-60-AA-7A-64
+	}
+	FILE
+	{
+		filename = SXT/Spaces/Entente/internal
+		SHA = E2-23-B9-56-03-F6-68-84-CB-F7-D3-DA-46-00-B8-93-D9-46-3F-CB-7E-2B-7E-9B-AF-18-A6-F9-D3-8D-B0-25
+	}
+	FILE
+	{
+		filename = SXT/Spaces/Entente/internalRPM
+		SHA = CE-E9-FB-56-E7-21-79-A7-F7-0E-6C-4C-E9-00-DE-A6-81-36-32-ED-6D-63-86-1C-A4-EE-AE-95-E5-64-9D-B5
+	}
+	FILE
+	{
+		filename = SXT/Spaces/FuesInternals/internal
+		SHA = 53-C9-75-87-D7-B7-4E-B9-0B-0B-E6-3B-D0-F2-84-84-16-4E-18-30-EF-73-73-21-2F-5A-03-5D-DA-6F-7A-4F
+	}
+	FILE
+	{
+		filename = SXT/Spaces/ke111/internal
+		SHA = 71-63-68-FA-08-D6-18-B9-64-82-B1-40-21-87-AA-D1-81-40-B2-70-D6-EB-26-91-34-88-9E-18-91-E7-A6-3C
+	}
+	FILE
+	{
+		filename = SXT/Spaces/kondor/internal
+		SHA = EB-27-D0-B2-8C-D4-79-B3-9B-DA-5D-5F-8B-70-BE-48-36-33-FA-81-36-98-26-A2-D0-2D-39-35-3A-32-AB-7A
+	}
+	FILE
+	{
+		filename = SXT/Spaces/kossak/internal
+		SHA = AF-5E-89-73-75-A0-2A-38-57-AB-93-45-18-1B-1D-57-80-70-2C-86-4E-99-9E-39-CA-FC-BA-7B-61-E0-CF-9E
+	}
+	FILE
+	{
+		filename = SXT/Spaces/kossak/internalRPM
+		SHA = FC-2C-52-0F-3C-1D-B7-C5-29-04-51-45-62-FB-3A-CE-F8-C7-B7-FA-78-A1-A5-1E-B4-3B-DD-22-63-37-A4-05
+	}
+	FILE
+	{
+		filename = SXT/Spaces/MEMInternals/internal
+		SHA = 43-44-BD-69-B0-25-E6-79-26-11-D6-F0-43-7C-C2-5F-54-8A-49-67-0E-F3-4D-C1-EA-EB-E9-4D-BA-BC-D2-5A
+	}
+	FILE
+	{
+		filename = SXT/Spaces/truckCabin/internal
+		SHA = 4D-0E-AA-BC-94-18-E0-BD-62-16-79-6E-29-7C-BE-38-4D-A3-CE-B2-DE-B2-29-6E-D1-36-9C-4C-5B-5E-57-E5
+	}
+	FILE
+	{
+		filename = SXT/Spaces/truckCabin/internalwide
+		SHA = 8A-BD-60-07-00-79-10-44-31-42-C0-09-E3-EE-CA-DC-D3-32-51-C9-BB-6C-91-45-BE-BA-D4-9A-82-47-B1-92
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/fairingSize0
+		SHA = 1F-58-83-6A-8A-31-C3-30-AB-89-04-A7-6F-FA-A0-DD-76-C4-68-69-AF-D5-4C-80-05-97-84-C9-4B-84-FE-77
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/fairingSize5
+		SHA = 8D-A6-3F-2D-A8-B5-E2-3B-61-9D-2F-33-5F-F1-BF-F2-53-98-65-0F-63-1A-D1-37-81-65-48-F2-8D-8C-A8-14
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/HeatShieldsize0
+		SHA = A9-9E-54-C3-42-DB-E5-88-58-2A-EF-97-6B-EC-97-18-F9-9D-57-B6-4E-AF-4D-5E-54-3A-7F-E4-50-02-31-BA
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/HeatShieldsize5
+		SHA = 7A-69-6F-47-B0-AD-B2-A0-57-D6-10-3B-CB-5F-77-D2-2C-AA-17-BD-93-DB-ED-87-71-11-28-86-93-34-37-BF
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/minidecouplertech
+		SHA = 54-4F-E5-B6-EC-2D-65-A5-FB-AB-CB-83-58-E3-1F-E2-22-F4-AF-3B-56-F1-57-DB-03-B1-F8-EF-5C-C6-6D-B4
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/mk2Structural
+		SHA = E8-1F-18-4C-78-78-A8-BB-63-85-E4-14-39-19-E0-A7-62-AB-3C-AC-46-59-FC-B8-30-C6-5B-D9-0A-79-3C-5A
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/Satellite_Contract_Satisfaction
+		SHA = DC-CE-CD-96-C9-F1-76-36-E2-5F-A1-FB-CE-25-16-5B-DF-FE-0B-FC-FD-98-53-F1-8A-1D-A9-9F-F3-63-1F-99
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/Engines/Ion/tweak
+		SHA = 5E-D5-F9-02-CD-1E-B5-F1-F6-4E-88-91-5F-78-F5-C9-F0-2E-3F-13-DE-66-9C-CC-4C-A2-1D-CB-C3-13-B9-94
+	}
+	FILE
+	{
 		filename = Trajectories/Trajectories
 		SHA = 2F-CE-03-1B-C6-CD-A6-2C-06-61-6C-60-EE-C7-85-39-F9-3D-3E-40-BA-77-44-71-FF-A7-FE-F8-AB-E0-F9-B8
 	}
 	FILE
 	{
 		filename = TriggerTech/KSPAlternateResourcePanel/settings
-		SHA = FF-30-66-02-80-5C-00-56-D0-93-38-D8-7B-B1-9B-98-F9-BA-47-E4-FB-D0-A9-5E-C2-19-F5-50-9C-DD-A4-68
+		SHA = 5C-AF-54-5F-09-48-97-D9-43-25-30-9E-6E-BF-6C-6C-BC-E4-45-ED-EF-D8-D9-E7-5B-68-13-BE-E1-EF-AD-C4
 	}
 	FILE
 	{
